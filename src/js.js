@@ -55,11 +55,7 @@ function checkAndSendAnalytics() {
     const xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
 
-    xhr.addEventListener('readystatechange', function () {
-        if (this.readyState === 4) {
-            console.log(this.responseText);
-        }
-    });
+    xhr.addEventListener('readystatechange', function () {});
 
     xhr.open('POST', '/analytic');
     xhr.setRequestHeader('Content-Type', 'application/json');
