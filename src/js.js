@@ -47,11 +47,19 @@ function checkAndSendAnalytics() {
     const token = getCookie('token');
     if (!token) return;
 
+    // Referrer kontrolü
+    let referrerData = document.referrer || 'direct';
+    if (referrerData === window.location.href) {
+        referrerData = 'same_page';
+    }
+
     const data = JSON.stringify({
         token: token,
         url: window.location.href,
-        referrer: document.referrer,
+        referrer: referrerData,
         user_agent: navigator.userAgent,
+        timestamp: new Date().toISOString(),
+        page_title: document.title,
     });
 
     const xhr = new XMLHttpRequest();
