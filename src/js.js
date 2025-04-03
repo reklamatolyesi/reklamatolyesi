@@ -50,13 +50,13 @@ function checkAndSendAnalytics() {
     const data = JSON.stringify({
         token: token,
         url: window.location.href,
+        referrer: document.referrer,
+        user_agent: navigator.userAgent,
     });
 
     const xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
-
     xhr.addEventListener('readystatechange', function () {});
-
     xhr.open('POST', '/analytic');
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(data);
