@@ -69,4 +69,4 @@ checkAndCreateToken();
 checkAndSendAnalytics();
 
 // Her 1 saniyede bir analitik gönder
-setInterval(checkAndSendAnalytics, 1000);
+setInterval(checkAndSendAnalytics, 5000);
