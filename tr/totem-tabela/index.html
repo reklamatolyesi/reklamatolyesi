@@ -3,11 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>Totem Tabela</title>
   <meta name="description" content="Dış mekan totem ve yönlendirme tabelaları" />
   <meta name="keywords" content="totem tabela, pylon tabela, yol tabelası, yönlendirme tabelası" />
@@ -15,61 +18,217 @@
   <meta property="og:description" content="Dış mekan totem ve yönlendirme tabelaları" />
   <meta property="og:image" content="https://reklamatolyesi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=uwiuu" />
-  <link rel="shortcut icon" href="/img/icon.png?v=uwiuu" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=s2ty6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=s2ty6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=s2ty6" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=uwiuu">
+  
+  
+<link rel="stylesheet" href="style.css?v=s2ty6">
 </head>
 
 <body>
-  <div id="header"><div class="qwzex">
-  <div class="qwzextitle">
-    <div class="qwzextitlebody">
-      <div class="qwzextitlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="qwzextitlebodylang">
+  <div id="header"><div class="xjw09">
+  <div class="xjw09title">
+    <div class="xjw09titlebody">
+      <div class="xjw09titlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="qwzexbody">
-    <a href="/tr"><img src="/img/logo.svg" class="qwzexbodylogo" /></a>
+  <div class="xjw09body">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=s2ty6"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="xjw09bodylogo"
+    /></a>
+    <button type="button" class="xjw09-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="qwzexmenubody">
-    <div class="qwzexmenu">
-      <div class="qwzexmenulistbody">
-        <div class="qwzexmenulist">
+  <div class="xjw09menubody">
+    <div class="xjw09menu" id="menu-2-root">
+      <div class="xjw09menulistbody">
+        <div class="xjw09menulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="xjw09languages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("xjw09menu-open")) {
+        root.classList.remove("xjw09menu-open");
+      } else {
+        root.classList.add("xjw09menu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="p6baw-title f36">
+  <div id="content"><div class="qzhh5-title f36">
   <span>Totem Tabela</span>
 </div>
-<div class="p6baw">
-  <div class="p6baw-menu"><a   href="/tr/dijital-baski" >Dijital Baskı</a><a   href="/tr/tabela" >Tabela</a><a   href="/tr/grafik-tasarim" >Grafik Tasarım</a><a   href="/tr/arac-kaplama" >Araç Kaplama</a><a   href="/tr/promosyon-urunleri" >Promosyon Ürünleri</a><a   href="/tr/stand-sistemleri" >Stand ve Fuar Sistemleri</a><a   href="/tr/kurumsal-filo-giydirme" >Kurumsal Filo Giydirme</a><a   href="/tr/ticari-arac-reklamlari" >Ticari Araç Reklamları</a><a   href="/tr/arac-reklam-tasarimi" >Araç Reklam Tasarımı</a><a   href="/tr/tam-arac-kaplama" >Tam Araç Kaplama</a><a   href="/tr/kurumsal-promosyon" >Kurumsal Promosyon</a><a   href="/tr/ofis-promosyonlari" >Ofis Promosyonları</a><a   href="/tr/teknolojik-promosyonlar" >Teknolojik Promosyonlar</a><a   href="/tr/tekstil-promosyonlari" >Tekstil Promosyonları</a><a   href="/tr/vinil-baski" >Vinil Baskı</a><a   href="/tr/uv-baski" >UV Baskı</a><a   href="/tr/solvent-baski" >Solvent Baskı</a><a   href="/tr/tekstil-baski" >Tekstil Baskı</a><a   href="/tr/promosyon-baski" >Promosyon Baskı</a><a   href="/tr/fuar-standlari" >Fuar Standları</a><a   href="/tr/roll-up-banner" >Roll Up Banner</a><a   href="/tr/orumcek-stand" >Örümcek Stand</a><a   href="/tr/stand-aksesuarlari" >Stand Aksesuarları</a><a   href="/tr/kutu-harf" >Kutu Harf</a><a   href="/tr/led-tabela" >LED Tabela</a><a class="active"  href="/tr/totem-tabela" >Totem Tabela</a><a   href="/tr/isikli-tabela" >Işıklı Tabela</a><a   href="/tr/ic-mekan-yonlendirme" >İç Mekan Yönlendirme</a><a   href="/tr/kapi-isimlikleri" >Kapı İsimlikleri</a><a   href="/tr/kat-planlari" >Kat Planları</a><a   href="/tr/dis-mekan-yonlendirme" >Dış Mekan Yönlendirme</a><a   href="/tr/logo-tasarimi" >Logo Tasarımı</a><a   href="/tr/kurumsal-kimlik" >Kurumsal Kimlik</a><a   href="/tr/brosur-tasarimi" >Broşür Tasarımı</a><a   href="/tr/sosyal-medya-tasarimi" >Sosyal Medya Tasarımı</a></div>
-  <div class="p6baw-desc">
-    <div class="p6baw-img">
-      <img src="" width="100%" />
-    </div>
-    <div class="p6baw-body"><h1>Gaziantep'te profesyonel totem tabela üretimi yapıyoruz. İşletmenizin konumunu vurgulayan, uzaktan görünürlüğü yüksek ve kurumsal kimliğinizi yansıtan özel tasarım totem tabelalar üretiyoruz. Çelik konstrüksiyon, alüminyum kompozit kaplama ve özel aydınlatma sistemleriyle dayanıklı ve etkileyici çözümler sunuyoruz. Tek yüz, çift yüz, ışıklı, ışıksız ve LED ekranlı totem seçenekleriyle ihtiyaçlarınıza özel alternatifler sağlıyoruz. Statik hesaplama, zemin etüdü ve rüzgar yükü analizi ile güvenli ve sağlam uygulamalar gerçekleştiriyoruz. 3D tasarım, fotorealistik görselleştirme ve teknik çizim hizmetlerimizle projenizi önceden görme imkanı sunuyoruz. Ücretsiz keşif, belediye izin süreçleri takibi ve montaj sonrası teknik servis desteğiyle eksiksiz hizmet veriyoruz. Gaziantep'te totem tabela konusunda uzmanlaşmış ekibimiz ve rekabetçi fiyatlarımızla kurumsal müşterilerimize hizmet veriyoruz.</h1></div>
+<div class="qzhh5">
+  <div class="qzhh5-menu-btn">
+    <span>Menü</span>
+    <span class="material-symbols-outlined qzhh5-icon">menu</span>
+  </div>
+  <div class="qzhh5-menu">
+        <div class="qzhh5-menu-group">
+          <button type="button" class="qzhh5-top">
+            <div>Dijital Baskı</div>
+            <span class="material-symbols-outlined qzhh5-icon">expand_more</span>
+          </button>
+          <div class="qzhh5-sub">
+            <a class="qzhh5-sub-link" href="/tr/dijital-baski/">Dijital Baskı</a><a class="qzhh5-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="qzhh5-sub-link" href="/tr/uv-baski/">UV Baskı</a><a class="qzhh5-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="qzhh5-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="qzhh5-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          </div>
+        </div>
+        <div class="qzhh5-menu-group open">
+          <button type="button" class="qzhh5-top active">
+            <div>Tabela</div>
+            <span class="material-symbols-outlined qzhh5-icon">expand_more</span>
+          </button>
+          <div class="qzhh5-sub show">
+            <a class="qzhh5-sub-link" href="/tr/tabela/">Tabela</a><a class="qzhh5-sub-link" href="/tr/kutu-harf/">Kutu Harf</a><a class="qzhh5-sub-link" href="/tr/led-tabela/">LED Tabela</a><a class="qzhh5-sub-link active" href="/tr/totem-tabela/">Totem Tabela</a><a class="qzhh5-sub-link" href="/tr/isikli-tabela/">Işıklı Tabela</a>
+          </div>
+        </div>
+        <div class="qzhh5-menu-group">
+          <button type="button" class="qzhh5-top">
+            <div>Grafik Tasarım</div>
+            <span class="material-symbols-outlined qzhh5-icon">expand_more</span>
+          </button>
+          <div class="qzhh5-sub">
+            <a class="qzhh5-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="qzhh5-sub-link" href="/tr/logo-tasarimi/">Logo Tasarımı</a><a class="qzhh5-sub-link" href="/tr/kurumsal-kimlik/">Kurumsal Kimlik</a><a class="qzhh5-sub-link" href="/tr/brosur-tasarimi/">Broşür Tasarımı</a><a class="qzhh5-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          </div>
+        </div>
+        <div class="qzhh5-menu-group">
+          <button type="button" class="qzhh5-top">
+            <div>Araç Kaplama</div>
+            <span class="material-symbols-outlined qzhh5-icon">expand_more</span>
+          </button>
+          <div class="qzhh5-sub">
+            <a class="qzhh5-sub-link" href="/tr/arac-kaplama/">Araç Kaplama</a><a class="qzhh5-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="qzhh5-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="qzhh5-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="qzhh5-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          </div>
+        </div>
+        <div class="qzhh5-menu-group">
+          <button type="button" class="qzhh5-top">
+            <div>Promosyon Ürünleri</div>
+            <span class="material-symbols-outlined qzhh5-icon">expand_more</span>
+          </button>
+          <div class="qzhh5-sub">
+            <a class="qzhh5-sub-link" href="/tr/promosyon-urunleri/">Promosyon Ürünleri</a><a class="qzhh5-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="qzhh5-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="qzhh5-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="qzhh5-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          </div>
+        </div>
+        <div class="qzhh5-menu-group">
+          <button type="button" class="qzhh5-top">
+            <div>Stand ve Fuar Sistemleri</div>
+            <span class="material-symbols-outlined qzhh5-icon">expand_more</span>
+          </button>
+          <div class="qzhh5-sub">
+            <a class="qzhh5-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="qzhh5-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="qzhh5-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="qzhh5-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="qzhh5-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          </div>
+        </div></div>
+  <div class="qzhh5-desc">
+    
+    <div class="qzhh5-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Totem Tabela Üretimi</h2></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel totem tabela üretimi yapıyoruz. İşletmenizin konumunu vurgulayan, uzaktan görünürlüğü yüksek ve kurumsal kimliğinizi yansıtan özel tasarım totem tabelalar üretiyoruz. Çelik konstrüksiyon, alüminyum kompozit kaplama ve özel aydınlatma sistemleriyle dayanıklı ve etkileyici çözümler sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Totem Tabela Seçenekleri</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Totem tabela sistemlerimiz, tek yüz, çift yüz, ışıklı, ışıksız ve LED ekranlı totem seçenekleriyle ihtiyaçlarınıza özel alternatifler sağlar. Dış mekan yönlendirme ve bilgilendirme sistemleri için idealdir. Paslanmaz çelik, alüminyum kompozit ve dayanıklı malzemeler kullanarak, hava şartlarına dayanıklı totem tabelalar üretiyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Statik hesaplama, zemin etüdü ve rüzgar yükü analizi ile güvenli ve sağlam uygulamalar gerçekleştiriyoruz. 3D tasarım, fotorealistik görselleştirme ve teknik çizim hizmetlerimizle projenizi önceden görme imkanı sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Destek</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Totem tabela hizmetlerimizde, ücretsiz keşif, belediye izin süreçleri takibi ve montaj sonrası teknik servis desteğiyle eksiksiz hizmet veriyoruz. Profesyonel montaj ekibimizle, totem tabelalarınızı güvenli şekilde uyguluyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle totem tabela sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli üretim ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Totem tabela ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
+<p>    </p>
+<p>    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Totem Tabela konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kalite ve Güven</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Totem Tabela hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Totem Tabela konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Totem Tabela ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.</p>
+<p>    </p></p></p>
+<p>    <h3 style="font-size: 20px;">Hizmet Sürecimiz</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Totem Tabela hizmetlerimizde, proje başlangıcından teslimata kadar tüm süreçte müşterilerimizle yakın iletişim halinde çalışıyoruz. Ücretsiz keşif ve ölçüm hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Profesyonel montaj ekibimizle, işlerinizi güvenli şekilde uyguluyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Gaziantep'te Totem Tabela konusunda 15 yıllık deneyimimizle, binlerce başarılı projeye imza attık. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz. Kalite standartlarımızdan asla taviz vermeden, sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz.</p>
+<p>    </p></p></div>
   </div>
 </div>
+
+<script>
+  const menuToggleBtn = document.querySelector(".qzhh5-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".qzhh5-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".qzhh5-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
+    });
+  }
+
+  document.querySelectorAll(".qzhh5-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".qzhh5-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".qzhh5-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".qzhh5-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
+</script>
 
 </div>
   <div id="footer"><a
@@ -103,6 +262,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -127,13 +295,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -144,7 +316,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=uwiuu"></script>
-<script src="/src/cookie.js?v=uwiuu"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=s2ty6"></script>
+<script defer src="/src/cookie.js?v=s2ty6"></script>
 
 </html>

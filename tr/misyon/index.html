@@ -3,99 +3,182 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>Misyon</title>
-  <meta name="description" content="Modern teknoloji ve yaratıcı çözümlerle markaları en iyi şekilde temsil etmeyi hedefleyen reklam ajansı." />
+  <meta name="description" content="Modern teknoloji ve yaratıcı çözümlerle markaları en iyi şekilde temsil etmeyi hedefleyen reklam ajansı. Gaziantep'te 15 yıllık deneyimle profesyonel hizmet...." />
   <meta name="keywords" content="reklam ajansı misyon, gaziantep reklam misyon, kaliteli reklam hizmetleri" />
   <meta property="og:title" content="Misyon" />
-  <meta property="og:description" content="Modern teknoloji ve yaratıcı çözümlerle markaları en iyi şekilde temsil etmeyi hedefleyen reklam ajansı." />
+  <meta property="og:description" content="Modern teknoloji ve yaratıcı çözümlerle markaları en iyi şekilde temsil etmeyi hedefleyen reklam ajansı. Gaziantep'te 15 yıllık deneyimle profesyonel hizmet...." />
   <meta property="og:image" content="https://reklamatolyesi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=qznk3" />
-  <link rel="shortcut icon" href="/img/icon.png?v=qznk3" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=h081l" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=h081l" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=h081l" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=qznk3">
+  
+  
+<link rel="stylesheet" href="style.css?v=h081l">
 </head>
 
 <body>
-  <div id="header"><div class="ewjn2">
-  <div class="ewjn2title">
-    <div class="ewjn2titlebody">
-      <div class="ewjn2titlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="ewjn2titlebodylang">
+  <div id="header"><div class="hj4dq">
+  <div class="hj4dqtitle">
+    <div class="hj4dqtitlebody">
+      <div class="hj4dqtitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="ewjn2body">
-    <a href="/tr"><img src="/img/logo.svg" class="ewjn2bodylogo" /></a>
+  <div class="hj4dqbody">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=h081l"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="hj4dqbodylogo"
+    /></a>
+    <button type="button" class="hj4dq-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="ewjn2menubody">
-    <div class="ewjn2menu">
-      <div class="ewjn2menulistbody">
-        <div class="ewjn2menulist">
+  <div class="hj4dqmenubody">
+    <div class="hj4dqmenu" id="menu-2-root">
+      <div class="hj4dqmenulistbody">
+        <div class="hj4dqmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="hj4dqlanguages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("hj4dqmenu-open")) {
+        root.classList.remove("hj4dqmenu-open");
+      } else {
+        root.classList.add("hj4dqmenu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="sk5fw-title f36">
+  <div id="content"><div class="y99p5-title f36">
   <span>Misyon</span>
 </div>
-<div class="sk5fw">
-  <div class="sk5fw-menu-btn">
+<div class="y99p5">
+  <div class="y99p5-menu-btn">
     <span>Menü</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined y99p5-icon">menu</span>
   </div>
-  <div class="sk5fw-menu"><a   href="/tr/hakkimizda" >Hakkımızda</a><a class="active"  href="/tr/misyon" >Misyon</a><a   href="/tr/vizyon" >Vizyon</a><a   href="/tr/kalite-politikamiz" >Kalite Politikamız</a><a   href="/tr/gizlilik-politikasi" >Gizlilik Politikası</a><a   href="/tr/kisisel-veriler" >Kişisel Veriler</a><a   href="/tr/kullanici-haklari" >Kullanıcı Hakları</a><a   href="/tr/yasal-uyari" >Yasal Uyarı</a></div>
-  <div class="sk5fw-desc">
-    <div class="sk5fw-desc-body">
-      <div class="sk5fw-img">
-        <img src="" width="100%" />
-      </div>
-      
-    </div>
-    <div class="sk5fw-body"><h1><h2 style="font-size: 24px;">Misyonumuz</h2></h1>
-<p>    <p style=" font-size: 16px;"></p>
+  <div class="y99p5-menu"><a class="y99p5-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="y99p5-menu-link active" href="/tr/misyon/">Misyon</a><a class="y99p5-menu-link" href="/tr/vizyon/">Vizyon</a><a class="y99p5-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="y99p5-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="y99p5-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="y99p5-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="y99p5-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a></div>
+  <div class="y99p5-desc">
+    
+    <div class="y99p5-body"><p><h2 style="font-size: 24px;">Misyonumuz</h2></p>
+<p>    <p style="font-size: 16px;"></p>
 <p>        Misyonumuz, modern teknoloji ve yaratıcı çözümlerle müşterilerimizin markalarını en iyi şekilde temsil etmektir. Her projede kalite standartlarımızdan ödün vermeden, müşteri memnuniyetini ön planda tutarak çalışıyoruz. Yenilikçi yaklaşımımız ve profesyonel ekibimizle, reklam ve tanıtım sektöründe fark yaratmayı hedefliyoruz.</p>
 <p>    </p></p>
-<p>    <p style=" font-size: 16px;"></p>
+<p>    <p style="font-size: 16px;"></p>
 <p>        Sürdürülebilir büyüme stratejimiz doğrultusunda, çevre dostu malzemeler kullanıyor ve enerji verimliliğine önem veriyoruz. Gaziantep ve çevre illerdeki işletmelere kaliteli hizmet sunarak, bölge ekonomisine katkı sağlamayı amaçlıyoruz.</p>
-<p>    </p></p></div>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kalite ve Müşteri Memnuniyeti Odaklı Çalışma</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, her projede en yüksek kalite standartlarını uyguluyoruz. Üretim süreçlerimizde kullandığımız malzemelerin kalitesi, işçilik standartlarımız ve teslimat sürelerimiz konusunda asla taviz vermiyoruz. Müşterilerimizin beklentilerini aşmak için sürekli kendimizi geliştiriyor, teknolojik altyapımızı yeniliyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Profesyonel ekibimiz, sektördeki en son gelişmeleri takip ediyor ve bu gelişmeleri müşterilerimizin faydasına sunuyor. Her projede detaylı planlama yapıyor, müşterilerimizle yakın iletişim halinde çalışıyoruz. Proje başlangıcından teslimata kadar tüm süreçte müşteri memnuniyetini ön planda tutuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Yenilikçi Yaklaşım ve Teknolojik Altyapı</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam sektöründeki teknolojik gelişmeleri yakından takip ediyor, üretim tesisimizdeki makine parkurumuzu sürekli yeniliyoruz. En son dijital baskı teknolojilerini kullanarak yüksek kaliteli baskılar yapıyoruz. LED tabela sistemleri, modern araç kaplama teknikleri ve yaratıcı grafik tasarım çözümleriyle müşterilerimize en iyi hizmeti sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Sürdürülebilir büyüme stratejimiz doğrultusunda, çevre dostu malzemeler kullanıyor ve enerji verimliliğine önem veriyoruz. Geri dönüştürülebilir malzemeler tercih ediyor, atık yönetimi konusunda sorumlu davranıyoruz. Çevreye duyarlı üretim süreçlerimizle hem müşterilerimize hem de topluma değer katıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Bölgesel Ekonomiye Katkı ve Toplumsal Sorumluluk</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Gaziantep ve çevre illerdeki işletmelere kaliteli hizmet sunarak, bölge ekonomisine katkı sağlamayı amaçlıyoruz. Yerel işletmelerle çalışarak bölgesel kalkınmaya destek oluyoruz. Genç yeteneklere fırsat vererek, sektördeki istihdama katkıda bulunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Toplumsal sorumluluk projelerimiz kapsamında, sosyal fayda sağlayan projelerde yer alıyoruz. Eğitim kurumları, sivil toplum kuruluşları ve kamu kurumları için özel fiyatlandırma ve destek programları sunuyoruz. Reklam sektöründe etik değerlere bağlı kalarak, dürüst ve şeffaf bir hizmet anlayışıyla çalışıyoruz.</p>
+<p>    </p>
+<p>    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Misyon konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kalite ve Güven</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Misyon hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Misyon konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Misyon ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.</p>
+<p>    </p></p></p></div>
   </div>
 </div>
 
 <script>
-  document.querySelector('.sk5fw-menu-btn').addEventListener('click', function () {
-    document.querySelector('.sk5fw-menu').classList.toggle('active');
-    const icon = this.querySelector('i');
-    icon.classList.toggle('fa-bars');
-    icon.classList.toggle('fa-times');
+  const menuToggleBtn = document.querySelector(".y99p5-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".y99p5-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".y99p5-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
+    });
+  }
+
+  document.querySelectorAll(".y99p5-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".y99p5-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".y99p5-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".y99p5-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
   });
 </script>
 
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
 </div>
   <div id="footer"><a
   href="https://api.whatsapp.com/send/?phone=905316791014&text=&app_absent=0"
@@ -128,6 +211,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -152,13 +244,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -169,7 +265,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=qznk3"></script>
-<script src="/src/cookie.js?v=qznk3"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=h081l"></script>
+<script defer src="/src/cookie.js?v=h081l"></script>
 
 </html>

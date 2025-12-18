@@ -3,11 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>Dış Mekan Yönlendirme</title>
   <meta name="description" content="Dış mekan profesyonel yönlendirme sistemleri" />
   <meta name="keywords" content="dış mekan yönlendirme, park yönlendirme, site yönlendirme, kampüs yönlendirme" />
@@ -15,61 +18,217 @@
   <meta property="og:description" content="Dış mekan profesyonel yönlendirme sistemleri" />
   <meta property="og:image" content="https://reklamatolyesi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=o1mpc" />
-  <link rel="shortcut icon" href="/img/icon.png?v=o1mpc" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=v4gex" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=v4gex" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=v4gex" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=o1mpc">
+  
+  
+<link rel="stylesheet" href="style.css?v=v4gex">
 </head>
 
 <body>
-  <div id="header"><div class="e2q8a">
-  <div class="e2q8atitle">
-    <div class="e2q8atitlebody">
-      <div class="e2q8atitlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="e2q8atitlebodylang">
+  <div id="header"><div class="lg4uv">
+  <div class="lg4uvtitle">
+    <div class="lg4uvtitlebody">
+      <div class="lg4uvtitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="e2q8abody">
-    <a href="/tr"><img src="/img/logo.svg" class="e2q8abodylogo" /></a>
+  <div class="lg4uvbody">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=v4gex"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="lg4uvbodylogo"
+    /></a>
+    <button type="button" class="lg4uv-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="e2q8amenubody">
-    <div class="e2q8amenu">
-      <div class="e2q8amenulistbody">
-        <div class="e2q8amenulist">
+  <div class="lg4uvmenubody">
+    <div class="lg4uvmenu" id="menu-2-root">
+      <div class="lg4uvmenulistbody">
+        <div class="lg4uvmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="lg4uvlanguages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("lg4uvmenu-open")) {
+        root.classList.remove("lg4uvmenu-open");
+      } else {
+        root.classList.add("lg4uvmenu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="new8y-title f36">
+  <div id="content"><div class="i2g2w-title f36">
   <span>Dış Mekan Yönlendirme</span>
 </div>
-<div class="new8y">
-  <div class="new8y-menu"><a   href="/tr/dijital-baski" >Dijital Baskı</a><a   href="/tr/tabela" >Tabela</a><a   href="/tr/grafik-tasarim" >Grafik Tasarım</a><a   href="/tr/arac-kaplama" >Araç Kaplama</a><a   href="/tr/promosyon-urunleri" >Promosyon Ürünleri</a><a   href="/tr/stand-sistemleri" >Stand ve Fuar Sistemleri</a><a   href="/tr/kurumsal-filo-giydirme" >Kurumsal Filo Giydirme</a><a   href="/tr/ticari-arac-reklamlari" >Ticari Araç Reklamları</a><a   href="/tr/arac-reklam-tasarimi" >Araç Reklam Tasarımı</a><a   href="/tr/tam-arac-kaplama" >Tam Araç Kaplama</a><a   href="/tr/kurumsal-promosyon" >Kurumsal Promosyon</a><a   href="/tr/ofis-promosyonlari" >Ofis Promosyonları</a><a   href="/tr/teknolojik-promosyonlar" >Teknolojik Promosyonlar</a><a   href="/tr/tekstil-promosyonlari" >Tekstil Promosyonları</a><a   href="/tr/vinil-baski" >Vinil Baskı</a><a   href="/tr/uv-baski" >UV Baskı</a><a   href="/tr/solvent-baski" >Solvent Baskı</a><a   href="/tr/tekstil-baski" >Tekstil Baskı</a><a   href="/tr/promosyon-baski" >Promosyon Baskı</a><a   href="/tr/fuar-standlari" >Fuar Standları</a><a   href="/tr/roll-up-banner" >Roll Up Banner</a><a   href="/tr/orumcek-stand" >Örümcek Stand</a><a   href="/tr/stand-aksesuarlari" >Stand Aksesuarları</a><a   href="/tr/kutu-harf" >Kutu Harf</a><a   href="/tr/led-tabela" >LED Tabela</a><a   href="/tr/totem-tabela" >Totem Tabela</a><a   href="/tr/isikli-tabela" >Işıklı Tabela</a><a   href="/tr/ic-mekan-yonlendirme" >İç Mekan Yönlendirme</a><a   href="/tr/kapi-isimlikleri" >Kapı İsimlikleri</a><a   href="/tr/kat-planlari" >Kat Planları</a><a class="active"  href="/tr/dis-mekan-yonlendirme" >Dış Mekan Yönlendirme</a><a   href="/tr/logo-tasarimi" >Logo Tasarımı</a><a   href="/tr/kurumsal-kimlik" >Kurumsal Kimlik</a><a   href="/tr/brosur-tasarimi" >Broşür Tasarımı</a><a   href="/tr/sosyal-medya-tasarimi" >Sosyal Medya Tasarımı</a></div>
-  <div class="new8y-desc">
-    <div class="new8y-img">
-      <img src="" width="100%" />
-    </div>
-    <div class="new8y-body"><h1>Gaziantep'te profesyonel dış mekan yönlendirme sistemleri üretiyoruz. Site, kampüs, park, sanayi bölgesi gibi geniş alanlar için dayanıklı ve etkili yönlendirme çözümleri sunuyoruz. Alüminyum kompozit, paslanmaz çelik, galvaniz sac gibi dış mekan şartlarına dayanıklı malzemelerle üretim yapıyoruz. Reflektif folyolar, LED aydınlatma sistemleri ve solar enerjili çözümlerle gece-gündüz görünürlük sağlıyoruz. Totem yönlendirmeler, yol tabelaları, park işaretleri için standartlara uygun sistemler tasarlıyoruz. UV dayanımlı baskılar, özel kaplama teknikleri ve anti-vandal sistemlerle uzun ömürlü uygulamalar gerçekleştiriyoruz. 3D tasarım, görselleştirme ve teknik çizim hizmetlerimizle projenizi önceden görme imkanı sunuyoruz. Statik hesaplamalar, zemin etüdü ve rüzgar yükü analizleriyle güvenli montaj sağlıyoruz. Ücretsiz keşif, profesyonel montaj ve bakım hizmetleriyle eksiksiz çözümler üretiyoruz. Gaziantep'te dış mekan yönlendirme sistemleri konusunda uzmanlaşmış ekibimiz ve rekabetçi fiyatlarımızla kurumsal müşterilerimize hizmet veriyoruz.</h1></div>
+<div class="i2g2w">
+  <div class="i2g2w-menu-btn">
+    <span>Menü</span>
+    <span class="material-symbols-outlined i2g2w-icon">menu</span>
+  </div>
+  <div class="i2g2w-menu">
+        <div class="i2g2w-menu-group">
+          <button type="button" class="i2g2w-top">
+            <div>Dijital Baskı</div>
+            <span class="material-symbols-outlined i2g2w-icon">expand_more</span>
+          </button>
+          <div class="i2g2w-sub">
+            <a class="i2g2w-sub-link" href="/tr/dijital-baski/">Dijital Baskı</a><a class="i2g2w-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="i2g2w-sub-link" href="/tr/uv-baski/">UV Baskı</a><a class="i2g2w-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="i2g2w-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="i2g2w-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          </div>
+        </div>
+        <div class="i2g2w-menu-group">
+          <button type="button" class="i2g2w-top">
+            <div>Tabela</div>
+            <span class="material-symbols-outlined i2g2w-icon">expand_more</span>
+          </button>
+          <div class="i2g2w-sub">
+            <a class="i2g2w-sub-link" href="/tr/tabela/">Tabela</a><a class="i2g2w-sub-link" href="/tr/kutu-harf/">Kutu Harf</a><a class="i2g2w-sub-link" href="/tr/led-tabela/">LED Tabela</a><a class="i2g2w-sub-link" href="/tr/totem-tabela/">Totem Tabela</a><a class="i2g2w-sub-link" href="/tr/isikli-tabela/">Işıklı Tabela</a>
+          </div>
+        </div>
+        <div class="i2g2w-menu-group">
+          <button type="button" class="i2g2w-top">
+            <div>Grafik Tasarım</div>
+            <span class="material-symbols-outlined i2g2w-icon">expand_more</span>
+          </button>
+          <div class="i2g2w-sub">
+            <a class="i2g2w-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="i2g2w-sub-link" href="/tr/logo-tasarimi/">Logo Tasarımı</a><a class="i2g2w-sub-link" href="/tr/kurumsal-kimlik/">Kurumsal Kimlik</a><a class="i2g2w-sub-link" href="/tr/brosur-tasarimi/">Broşür Tasarımı</a><a class="i2g2w-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          </div>
+        </div>
+        <div class="i2g2w-menu-group">
+          <button type="button" class="i2g2w-top">
+            <div>Araç Kaplama</div>
+            <span class="material-symbols-outlined i2g2w-icon">expand_more</span>
+          </button>
+          <div class="i2g2w-sub">
+            <a class="i2g2w-sub-link" href="/tr/arac-kaplama/">Araç Kaplama</a><a class="i2g2w-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="i2g2w-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="i2g2w-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="i2g2w-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          </div>
+        </div>
+        <div class="i2g2w-menu-group">
+          <button type="button" class="i2g2w-top">
+            <div>Promosyon Ürünleri</div>
+            <span class="material-symbols-outlined i2g2w-icon">expand_more</span>
+          </button>
+          <div class="i2g2w-sub">
+            <a class="i2g2w-sub-link" href="/tr/promosyon-urunleri/">Promosyon Ürünleri</a><a class="i2g2w-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="i2g2w-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="i2g2w-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="i2g2w-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          </div>
+        </div>
+        <div class="i2g2w-menu-group">
+          <button type="button" class="i2g2w-top">
+            <div>Stand ve Fuar Sistemleri</div>
+            <span class="material-symbols-outlined i2g2w-icon">expand_more</span>
+          </button>
+          <div class="i2g2w-sub">
+            <a class="i2g2w-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="i2g2w-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="i2g2w-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="i2g2w-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="i2g2w-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          </div>
+        </div></div>
+  <div class="i2g2w-desc">
+    
+    <div class="i2g2w-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Dış Mekan Yönlendirme Sistemleri</h2></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel dış mekan yönlendirme sistemleri üretiyoruz. Site, kampüs, park, sanayi bölgesi gibi geniş alanlar için dayanıklı ve etkili yönlendirme çözümleri sunuyoruz. Alüminyum kompozit, paslanmaz çelik, galvaniz sac gibi dış mekan şartlarına dayanıklı malzemelerle üretim yapıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Dış Mekan Yönlendirme Özellikleri</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dış mekan yönlendirme sistemlerimiz, reflektif folyolar, LED aydınlatma sistemleri ve solar enerjili çözümlerle gece-gündüz görünürlük sağlar. Totem yönlendirmeler, yol tabelaları, park işaretleri için standartlara uygun sistemler tasarlıyoruz. UV dayanımlı baskılar, özel kaplama teknikleri ve anti-vandal sistemlerle uzun ömürlü uygulamalar gerçekleştiriyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        3D tasarım, görselleştirme ve teknik çizim hizmetlerimizle projenizi önceden görme imkanı sunuyoruz. Statik hesaplamalar, zemin etüdü ve rüzgar yükü analizleriyle güvenli montaj sağlıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Destek</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dış mekan yönlendirme hizmetlerimizde, ücretsiz keşif, profesyonel montaj ve bakım hizmetleriyle eksiksiz çözümler üretiyoruz. Hava şartlarına dayanıklı, uzun ömürlü ve güvenli çözümler sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle dış mekan yönlendirme sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli üretim ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Dış mekan yönlendirme ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
+<p>    </p>
+<p>    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Dış Mekan Yönlendirme konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kalite ve Güven</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dış Mekan Yönlendirme hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Dış Mekan Yönlendirme konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dış Mekan Yönlendirme ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.</p>
+<p>    </p></p></p>
+<p>    <h3 style="font-size: 20px;">Hizmet Sürecimiz</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dış Mekan Yönlendirme hizmetlerimizde, proje başlangıcından teslimata kadar tüm süreçte müşterilerimizle yakın iletişim halinde çalışıyoruz. Ücretsiz keşif ve ölçüm hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Profesyonel montaj ekibimizle, işlerinizi güvenli şekilde uyguluyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Gaziantep'te Dış Mekan Yönlendirme konusunda 15 yıllık deneyimimizle, binlerce başarılı projeye imza attık. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz. Kalite standartlarımızdan asla taviz vermeden, sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz.</p>
+<p>    </p></p></div>
   </div>
 </div>
+
+<script>
+  const menuToggleBtn = document.querySelector(".i2g2w-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".i2g2w-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".i2g2w-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
+    });
+  }
+
+  document.querySelectorAll(".i2g2w-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".i2g2w-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".i2g2w-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".i2g2w-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
+</script>
 
 </div>
   <div id="footer"><a
@@ -103,6 +262,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -127,13 +295,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -144,7 +316,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=o1mpc"></script>
-<script src="/src/cookie.js?v=o1mpc"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=v4gex"></script>
+<script defer src="/src/cookie.js?v=v4gex"></script>
 
 </html>
