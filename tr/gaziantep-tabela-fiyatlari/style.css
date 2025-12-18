@@ -1,7 +1,7 @@
 
  
 
-  .jfram {
+  .gyved {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  .jframtitle {
+  .gyvedtitle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     z-index: 1;
   }
 
-  .jframtitle:has(.jframtitlebodylang:empty),
-  .jframtitle:has(.jframtitlebodylang ul:empty) {
+  .gyvedtitle:has(.gyvedtitlebodylang:empty),
+  .gyvedtitle:has(.gyvedtitlebodylang ul:empty) {
     display: none;
   }
 
-  .jframtitlebody {
+  .gyvedtitlebody {
     color: #f3f6f7;
     width: var(--max);
     display: flex;
@@ -31,29 +31,29 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .jframtitlebodytitle {
+  .gyvedtitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .jframtitlebodylang {
+  .gyvedtitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .jframtitlebodylang:empty,
-  .jframtitlebodylang ul:empty {
+  .gyvedtitlebodylang:empty,
+  .gyvedtitlebodylang ul:empty {
     display: none;
   }
 
-  .jframtitlebodylang ul {
+  .gyvedtitlebodylang ul {
     display: flex;
     gap: 5px;
   }
 
-  .jframbody {
+  .gyvedbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@
     position: relative;
   }
 
-  .jfram-mobile-toggle {
+  .gyved-mobile-toggle {
     display: none;
     background: #183656;
     color: #f3f6f7;
@@ -76,18 +76,18 @@
     right: 0;
   }
 
-  .jfram-mobile-toggle span {
+  .gyved-mobile-toggle span {
     font-size: 24px;
   }
 
-  .jframmenu {
+  .gyvedmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .jframmenulist {
+  .gyvedmenulist {
     width: calc(100% - 20px);
     background-color: #183656;
     padding: 10px;
@@ -96,7 +96,7 @@
     display: flex;
   }
 
-  .jframmenubody {
+  .gyvedmenubody {
     width: 100%;
     background-color: #183656;
     display: flex;
@@ -104,7 +104,7 @@
     justify-content: center;
   }
 
-  .jframmenulist ul {
+  .gyvedmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -113,7 +113,7 @@
     padding: 0;
   }
 
-  .jframmenulist ul a {
+  .gyvedmenulist ul a {
     padding: 10px;
     font-size: 16px;
     color: #f3f6f7 !important;
@@ -125,40 +125,40 @@
     white-space: nowrap;
   }
 
-  .jframmenulist ul a:hover {
+  .gyvedmenulist ul a:hover {
     background-color: #3b85bb;
     border-radius: 5px;
     color: #f3f6f7 !important;
     cursor: pointer;
   }
 
-  .jframmenulist ul a.jfram-menu-list-active {
+  .gyvedmenulist ul a.gyved-menu-list-active {
     color: #f3f6f7 !important;
   }
 
-  .jfram-menu-list-active {
+  .gyved-menu-list-active {
     background-color: #3b85bb;
     border-radius: 5px;
     color: #f3f6f7 !important;
     cursor: pointer;
   }
 
-  .jframmenulistbody {
+  .gyvedmenulistbody {
     width: 100%;
   }
 
-  .jframlanguages-mobile {
+  .gyvedlanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .jframlanguages-mobile:empty,
-  .jframlanguages-mobile ul:empty {
+  .gyvedlanguages-mobile:empty,
+  .gyvedlanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .jframlanguages-mobile ul {
+  .gyvedlanguages-mobile ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -167,7 +167,7 @@
     justify-content: center;
   }
 
-  .jframlanguages-mobile li {
+  .gyvedlanguages-mobile li {
     list-style: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px;
@@ -182,25 +182,25 @@
     transition: all 0.3s ease;
   }
 
-  .jframlanguages-mobile li a {
+  .gyvedlanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .jframlanguages-mobile li:hover {
+  .gyvedlanguages-mobile li:hover {
     background-color: #3b85bb;
     border-color: #f3f6f7;
   }
 
   @media screen and (min-width: 1024px) {
-    .jframbodylogo {
+    .gyvedbodylogo {
       height: 100px;
       max-width: 90vw;
       max-height: 100px;
     }
 
-    .jframtitle {
+    .gyvedtitle {
     margin-bottom: -30px;
   }
 
@@ -208,77 +208,77 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .jframbody {
+    .gyvedbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: center;
     }
 
-    .jframmenulist ul {
+    .gyvedmenulist ul {
       flex-direction: row;
     }
 
-    .jframbodylogo {
+    .gyvedbodylogo {
       width: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
 
-    .jframtitlebody {
+    .gyvedtitlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .jframtitlebodytitle {
+    .gyvedtitlebodytitle {
       text-align: center;
       font-size: 14px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .jframtitlebodylang {
+    .gyvedtitlebodylang {
       display: none;
     }
 
-    .jframbody {
+    .gyvedbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .jfram-mobile-toggle {
+    .gyved-mobile-toggle {
       display: inline-flex;
     }
 
-    .jframbodylogo {
+    .gyvedbodylogo {
       width: 40vw;
       max-width: 40vw;
       max-height: 80px;
     }
 
-    .jframmenulist {
+    .gyvedmenulist {
       display: none;
       flex-direction: column;
       width: calc(100% - 24px);
       padding: 12px;
     }
 
-    .jframmenu.jframmenu-open .jframmenulist {
+    .gyvedmenu.gyvedmenu-open .gyvedmenulist {
       display: flex;
     }
 
-    .jframmenu.jframmenu-open .jframlanguages-mobile {
+    .gyvedmenu.gyvedmenu-open .gyvedlanguages-mobile {
       display: block;
     }
 
-    .jframmenulist ul {
+    .gyvedmenulist ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .jframmenulist ul a {
+    .gyvedmenulist ul a {
       font-size: 14px;
       width: 100%;
       padding: 12px;
@@ -287,22 +287,22 @@
       border-radius: 0;
     }
 
-    .jframmenulist ul a:last-child {
+    .gyvedmenulist ul a:last-child {
       border-bottom: none;
     }
 
-    .jframmenulist ul a:hover {
+    .gyvedmenulist ul a:hover {
       background-color: #3b85bb;
       border-radius: 0;
     }
 
-    .jframtitlebodytitle {
+    .gyvedtitlebodytitle {
       font-size: 12px;
     }
   }
 
 
-  .i3m7i {
+  .fig6z {
     width: var(--max);
     display: flex;
     flex-direction: column;
@@ -310,7 +310,7 @@
     margin-top: 20px;
   }
   @media screen and (max-width: 1024px) {
-    .i3m7i {
+    .fig6z {
       width: calc(100% - 20px);
       padding: 10px;
       margin-top: 10px;
@@ -318,7 +318,7 @@
   }
 
 
-  .xsfvc {
+  .j58ix {
     width: 100%;
     margin: 30px 0px 30px 0px;
     display: flex;
@@ -327,14 +327,14 @@
     position: relative;
   }
 
-  .xsfvccontainertitle {
+  .j58ixcontainertitle {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
   }
 
-  .xsfvccontainerlist {
+  .j58ixcontainerlist {
     padding: 10px;
     display: flex;
     border-radius: 8px;
@@ -343,26 +343,26 @@
     transition: background-color 0.3s ease;
   }
 
-  .xsfvccontainerlist>div {
+  .j58ixcontainerlist>div {
     display: flex;
     align-items: center;
     font-size: 20px;
     color: #444;
   }
 
-  .xsfvccontainerlist:hover {
+  .j58ixcontainerlist:hover {
     background-color: #f9f9f9;
     border-bottom-color: #183656;
   }
 
-  .xsfvccontainer {
+  .j58ixcontainer {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
   }
 
-  .xsfvccontainerbody {
+  .j58ixcontainerbody {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -372,7 +372,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .xsfvcbody {
+  .j58ixbody {
     width: calc(var(--max) - 40px);
     background-color: #ebebeb;
     border: 1px solid #dedede;
@@ -380,19 +380,19 @@
     padding: 20px;
   }
 
-  .xsfvccontainerlist>span {
+  .j58ixcontainerlist>span {
     font-size: 24px;
     color: #183656;
   }
 
   @media screen and (max-width: 1024px) {
-    .xsfvcbody {
+    .j58ixbody {
       width: 100%;
       padding: 20px;
       flex-direction: column;
     }
 
-    .xsfvccontainerbody {
+    .j58ixcontainerbody {
       padding: 15px;
     }
   }
