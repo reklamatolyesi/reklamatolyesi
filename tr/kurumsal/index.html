@@ -3,107 +3,178 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>Kurumsal</title>
-  <meta name="description" content="Reklam Atölyesi, 15 yıllık deneyimiyle butik reklam çözümleri sunan profesyonel bir ajans. Web tasarım, grafik tasarım, tabela ve promosyon ürünleri konusunda uzman ekibimizle yanınızdayız." />
-  <meta name="keywords" content="reklam ajansı, web tasarım, grafik tasarım, tabela, promosyon ürünleri, butik reklam ajansı, kurumsal reklam çözümleri, istanbul reklam ajansı" />
+  <meta name="description" content="Reklam Atölyesi, 15 yıllık deneyimiyle butik reklam çözümleri sunan profesyonel bir ajans. Web tasarım, grafik tasarım, tabela ve promosyon ürünleri konusund..." />
+  <meta name="keywords" content="reklam atölyesi, gaziantep reklam ajansı, butik reklam ajansı, kurumsal reklam firması, reklam şirketi, tanıtım ajansı, marka danışmanlığı, reklam çözüm ortağı" />
   <meta property="og:title" content="Kurumsal" />
-  <meta property="og:description" content="Reklam Atölyesi, 15 yıllık deneyimiyle butik reklam çözümleri sunan profesyonel bir ajans. Web tasarım, grafik tasarım, tabela ve promosyon ürünleri konusunda uzman ekibimizle yanınızdayız." />
+  <meta property="og:description" content="Reklam Atölyesi, 15 yıllık deneyimiyle butik reklam çözümleri sunan profesyonel bir ajans. Web tasarım, grafik tasarım, tabela ve promosyon ürünleri konusund..." />
   <meta property="og:image" content="https://reklamatolyesi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=jrjme" />
-  <link rel="shortcut icon" href="/img/icon.png?v=jrjme" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=yefbf" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=yefbf" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=yefbf" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=jrjme">
+  
+  
+<link rel="stylesheet" href="style.css?v=yefbf">
 </head>
 
 <body>
-  <div id="header"><div class="yk877">
-  <div class="yk877title">
-    <div class="yk877titlebody">
-      <div class="yk877titlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="yk877titlebodylang">
+  <div id="header"><div class="nevjo">
+  <div class="nevjotitle">
+    <div class="nevjotitlebody">
+      <div class="nevjotitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="yk877body">
-    <a href="/tr"><img src="/img/logo.svg" class="yk877bodylogo" /></a>
+  <div class="nevjobody">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=yefbf"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="nevjobodylogo"
+    /></a>
+    <button type="button" class="nevjo-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="yk877menubody">
-    <div class="yk877menu">
-      <div class="yk877menulistbody">
-        <div class="yk877menulist">
+  <div class="nevjomenubody">
+    <div class="nevjomenu" id="menu-2-root">
+      <div class="nevjomenulistbody">
+        <div class="nevjomenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a class="yk877menulistactive" href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a class="nevjo-menu-list-active" href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="nevjolanguages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("nevjomenu-open")) {
+        root.classList.remove("nevjomenu-open");
+      } else {
+        root.classList.add("nevjomenu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="ne727-title f36">
+  <div id="content"><div class="jrn1z-title f36">
   <span>Kurumsal</span>
 </div>
-<div class="ne727">
-  <div class="ne727-menu-btn">
+<div class="jrn1z">
+  <div class="jrn1z-menu-btn">
     <span>Menü</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined jrn1z-icon">menu</span>
   </div>
-  <div class="ne727-menu"><a   href="/tr/hakkimizda" >Hakkımızda</a><a   href="/tr/misyon" >Misyon</a><a   href="/tr/vizyon" >Vizyon</a><a   href="/tr/kalite-politikamiz" >Kalite Politikamız</a><a   href="/tr/gizlilik-politikasi" >Gizlilik Politikası</a><a   href="/tr/kisisel-veriler" >Kişisel Veriler</a><a   href="/tr/kullanici-haklari" >Kullanıcı Hakları</a><a   href="/tr/yasal-uyari" >Yasal Uyarı</a></div>
-  <div class="ne727-desc">
-    <div class="ne727-desc-body">
-      <div class="ne727-img">
-        <img src="" width="100%" />
-      </div>
-      
-    </div>
-    <div class="ne727-body"><h1>Reklam Atölyesi: 15 Yıllık Deneyimle Butik Reklam Çözümleri</h1>
-<li>Reklam Atölyesi, 15 yıldır reklam ve tanıtım sektöründe faaliyet gösteren butik bir ajansız. Müşterilerimizin ihtiyaçlarına özel, yaratıcı ve etkili çözümler sunmak için çalışıyoruz.</li>
-<br>
-<h2>Hizmetlerimiz:</h2>
-<ul>
-<li>Web sitesi tasarımı ve geliştirme</li>
-<li>Grafik tasarım</li>
-<li>Reklam tabelaları</li>
-<li>Promosyon ürünleri</li>
-<li>Ve daha fazlası...</li>
-<br>
-<p>Küçük ölçekli bir firma olmamız, her müşterimize kişiselleştirilmiş hizmet sunmamızı sağlıyor. Projelerinizi büyük özenle ele alıyor, markanızın benzersiz kimliğini yansıtan çözümler üretiyoruz.</p>
-<p>15 yıllık tecrübemizle, sektördeki en son trendleri ve teknolojileri yakından takip ediyor, müşterilerimize her zaman en güncel ve etkili reklam çözümlerini sunuyoruz.</p>
-<li>Reklam Atölyesi olarak, işinizi büyütmenize ve markanızı güçlendirmenize yardımcı olmak için buradayız. Yaratıcılığımız, uzmanlığımız ve kişiselleştirilmiş yaklaşımımızla, reklam ihtiyaçlarınız için doğru adres olmaya devam ediyoruz.</li>
-<p>Bu yazıyı daha da geliştirmek veya farklı yönlerini vurgulamak isterseniz, lütfen bana bildirin. Size özel bir tanıtım metni oluşturmaktan memnuniyet duyarım.</p></div>
+  <div class="jrn1z-menu"><a class="jrn1z-menu-link active" href="/tr/kurumsal/">Kurumsal</a><a class="jrn1z-menu-link" href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a class="jrn1z-menu-link" href="/tr/iletisim/">İletişim</a></div>
+  <div class="jrn1z-desc">
+    
+    <div class="jrn1z-body"><p><h2 style="font-size: 24px;">Reklam Atölyesi: 15 Yıllık Deneyimle Butik Reklam Çözümleri</h2></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, 15 yıldır reklam ve tanıtım sektöründe faaliyet gösteren butik bir ajansız. Müşterilerimizin ihtiyaçlarına özel, yaratıcı ve etkili çözümler sunmak için çalışıyoruz. Gaziantep ve çevre illerdeki işletmelere kaliteli hizmet sunarak, bölge ekonomisine katkı sağlamayı amaçlıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Hizmet Yelpazemiz</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, geniş bir hizmet yelpazesi sunuyoruz. Dijital baskı, tabela sistemleri, araç kaplama, grafik tasarım, promosyon ürünleri, fuar stand sistemleri ve kurumsal kimlik çalışmaları konusunda uzman ekibimizle hizmet veriyoruz. Her hizmet alanında kaliteli malzemeler, modern teknoloji ve profesyonel yaklaşım ile müşterilerimize değer katıyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dijital baskı hizmetlerimiz kapsamında poster, afiş, branda, mesh, folyo ve özel ebat baskılar yapıyoruz. Tabela sistemlerinde kutu harf, LED tabela, totem tabela ve yönlendirme sistemleri üretiyoruz. Araç kaplama konusunda tam araç kaplama, kısmi kaplama ve kurumsal filo giydirme hizmetleri sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kişiselleştirilmiş Hizmet Anlayışı</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Küçük ölçekli bir firma olmamız, her müşterimize kişiselleştirilmiş hizmet sunmamızı sağlıyor. Projelerinizi büyük özenle ele alıyor, markanızın benzersiz kimliğini yansıtan çözümler üretiyoruz. Müşterilerimizle yakın iletişim halinde çalışıyor, beklentilerini anlayarak özel çözümler sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Her projede detaylı planlama yapıyor, müşterilerimizle birlikte karar alarak ilerliyoruz. Revizyon hakkı ve müşteri memnuniyeti garantisi ile hizmet veriyoruz. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Teknoloji ve Yenilik</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        15 yıllık tecrübemizle, sektördeki en son trendleri ve teknolojileri yakından takip ediyor, müşterilerimize her zaman en güncel ve etkili reklam çözümlerini sunuyoruz. Üretim tesisimizdeki makine parkurumuzu sürekli yeniliyor, en son dijital baskı teknolojilerini kullanıyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        LED tabela sistemleri, modern araç kaplama teknikleri, yaratıcı grafik tasarım çözümleri ve çevre dostu baskı teknolojileri ile müşterilerimize yenilikçi çözümler sunuyoruz. Sektördeki gelişmeleri takip ediyor, bu gelişmeleri müşterilerimizin faydasına sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kalite ve Müşteri Memnuniyeti</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, kaliteden ödün vermeden, müşteri memnuniyetini ön planda tutuyoruz. Her projede en kaliteli malzemeleri kullanıyor, profesyonel işçilik standartlarını uyguluyoruz. Zamanında teslimat garantimiz ve kalite kontrol sistemimizle müşterilerimize güven veriyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Müşterilerimizden gelen geri bildirimleri değerlendiriyor, hizmet kalitemizi sürekli iyileştiriyoruz. Kalite standartlarımızdan asla taviz vermeden, sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Bölgesel Hizmet ve Destek</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz. Ücretsiz keşif, ölçüm ve danışmanlık hizmetleri veriyoruz. Büyük projeler için anahtar teslim çözümler, proje yönetimi ve montaj hizmetlerimizle yanınızdayız.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, işinizi büyütmenize ve markanızı güçlendirmenize yardımcı olmak için buradayız. Yaratıcılığımız, uzmanlığımız ve kişiselleştirilmiş yaklaşımımızla, reklam ihtiyaçlarınız için doğru adres olmaya devam ediyoruz. Detaylı bilgi ve teklif almak için hemen bizimle iletişime geçin!</p>
+<p>    </p></p></div>
   </div>
 </div>
 
 <script>
-  document.querySelector('.ne727-menu-btn').addEventListener('click', function () {
-    document.querySelector('.ne727-menu').classList.toggle('active');
-    const icon = this.querySelector('i');
-    icon.classList.toggle('fa-bars');
-    icon.classList.toggle('fa-times');
+  const menuToggleBtn = document.querySelector(".jrn1z-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".jrn1z-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".jrn1z-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
+    });
+  }
+
+  document.querySelectorAll(".jrn1z-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".jrn1z-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".jrn1z-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".jrn1z-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
   });
 </script>
 
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
 </div>
   <div id="footer"><a
   href="https://api.whatsapp.com/send/?phone=905316791014&text=&app_absent=0"
@@ -136,6 +207,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -160,13 +240,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -177,7 +261,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=jrjme"></script>
-<script src="/src/cookie.js?v=jrjme"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=yefbf"></script>
+<script defer src="/src/cookie.js?v=yefbf"></script>
 
 </html>

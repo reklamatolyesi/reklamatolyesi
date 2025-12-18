@@ -3,73 +3,234 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>Araç Kaplama</title>
   <meta name="description" content="Gaziantep'te profesyonel araç kaplama ve reklam giydirme hizmetleri. Kurumsal filo ve ticari araç çözümleri." />
-  <meta name="keywords" content="gaziantep araç kaplama, gaziantep araç giydirme, gaziantep filo giydirme, gaziantep araç reklam, gaziantep ticari araç kaplama" />
+  <meta name="keywords" content="araç kaplama gaziantep, araç reklam, filo giydirme, ticari araç kaplama, araç folyo, 3M folyo, araç renk değişimi, araç reklam tasarımı" />
   <meta property="og:title" content="Araç Kaplama" />
   <meta property="og:description" content="Gaziantep'te profesyonel araç kaplama ve reklam giydirme hizmetleri. Kurumsal filo ve ticari araç çözümleri." />
-  <meta property="og:image" content="https://reklamatolyesi.org/page/arac001/x5w1c.jpg" />
+  <meta property="og:image" content="https://reklamatolyesi.org/page/arac001/juucl.jpg" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=tqhr5" />
-  <link rel="shortcut icon" href="/img/icon.png?v=tqhr5" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=chykw" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=chykw" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=chykw" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=tqhr5">
+  
+  
+<link rel="stylesheet" href="style.css?v=chykw">
 </head>
 
 <body>
-  <div id="header"><div class="fwvj7">
-  <div class="fwvj7title">
-    <div class="fwvj7titlebody">
-      <div class="fwvj7titlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="fwvj7titlebodylang">
+  <div id="header"><div class="ogvgr">
+  <div class="ogvgrtitle">
+    <div class="ogvgrtitlebody">
+      <div class="ogvgrtitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="fwvj7body">
-    <a href="/tr"><img src="/img/logo.svg" class="fwvj7bodylogo" /></a>
+  <div class="ogvgrbody">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=chykw"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="ogvgrbodylogo"
+    /></a>
+    <button type="button" class="ogvgr-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="fwvj7menubody">
-    <div class="fwvj7menu">
-      <div class="fwvj7menulistbody">
-        <div class="fwvj7menulist">
+  <div class="ogvgrmenubody">
+    <div class="ogvgrmenu" id="menu-2-root">
+      <div class="ogvgrmenulistbody">
+        <div class="ogvgrmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="ogvgrlanguages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("ogvgrmenu-open")) {
+        root.classList.remove("ogvgrmenu-open");
+      } else {
+        root.classList.add("ogvgrmenu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="uidcn-title f36">
+  <div id="content"><div class="bhiot-title f36">
   <span>Araç Kaplama</span>
 </div>
-<div class="uidcn">
-  <div class="uidcn-menu"><a   href="/tr/dijital-baski" >Dijital Baskı</a><a   href="/tr/tabela" >Tabela</a><a   href="/tr/grafik-tasarim" >Grafik Tasarım</a><a class="active"  href="/tr/arac-kaplama" >Araç Kaplama</a><a   href="/tr/promosyon-urunleri" >Promosyon Ürünleri</a><a   href="/tr/stand-sistemleri" >Stand ve Fuar Sistemleri</a><a   href="/tr/kurumsal-filo-giydirme" >Kurumsal Filo Giydirme</a><a   href="/tr/ticari-arac-reklamlari" >Ticari Araç Reklamları</a><a   href="/tr/arac-reklam-tasarimi" >Araç Reklam Tasarımı</a><a   href="/tr/tam-arac-kaplama" >Tam Araç Kaplama</a><a   href="/tr/kurumsal-promosyon" >Kurumsal Promosyon</a><a   href="/tr/ofis-promosyonlari" >Ofis Promosyonları</a><a   href="/tr/teknolojik-promosyonlar" >Teknolojik Promosyonlar</a><a   href="/tr/tekstil-promosyonlari" >Tekstil Promosyonları</a><a   href="/tr/vinil-baski" >Vinil Baskı</a><a   href="/tr/uv-baski" >UV Baskı</a><a   href="/tr/solvent-baski" >Solvent Baskı</a><a   href="/tr/tekstil-baski" >Tekstil Baskı</a><a   href="/tr/promosyon-baski" >Promosyon Baskı</a><a   href="/tr/fuar-standlari" >Fuar Standları</a><a   href="/tr/roll-up-banner" >Roll Up Banner</a><a   href="/tr/orumcek-stand" >Örümcek Stand</a><a   href="/tr/stand-aksesuarlari" >Stand Aksesuarları</a><a   href="/tr/kutu-harf" >Kutu Harf</a><a   href="/tr/led-tabela" >LED Tabela</a><a   href="/tr/totem-tabela" >Totem Tabela</a><a   href="/tr/isikli-tabela" >Işıklı Tabela</a><a   href="/tr/ic-mekan-yonlendirme" >İç Mekan Yönlendirme</a><a   href="/tr/kapi-isimlikleri" >Kapı İsimlikleri</a><a   href="/tr/kat-planlari" >Kat Planları</a><a   href="/tr/dis-mekan-yonlendirme" >Dış Mekan Yönlendirme</a><a   href="/tr/logo-tasarimi" >Logo Tasarımı</a><a   href="/tr/kurumsal-kimlik" >Kurumsal Kimlik</a><a   href="/tr/brosur-tasarimi" >Broşür Tasarımı</a><a   href="/tr/sosyal-medya-tasarimi" >Sosyal Medya Tasarımı</a></div>
-  <div class="uidcn-desc">
-    <div class="uidcn-img">
-      <img src="/page/arac001/x5w1c.jpg" width="100%" />
+<div class="bhiot">
+  <div class="bhiot-menu-btn">
+    <span>Menü</span>
+    <span class="material-symbols-outlined bhiot-icon">menu</span>
+  </div>
+  <div class="bhiot-menu">
+        <div class="bhiot-menu-group">
+          <button type="button" class="bhiot-top">
+            <div>Dijital Baskı</div>
+            <span class="material-symbols-outlined bhiot-icon">expand_more</span>
+          </button>
+          <div class="bhiot-sub">
+            <a class="bhiot-sub-link" href="/tr/dijital-baski/">Dijital Baskı</a><a class="bhiot-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="bhiot-sub-link" href="/tr/uv-baski/">UV Baskı</a><a class="bhiot-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="bhiot-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="bhiot-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          </div>
+        </div>
+        <div class="bhiot-menu-group">
+          <button type="button" class="bhiot-top">
+            <div>Tabela</div>
+            <span class="material-symbols-outlined bhiot-icon">expand_more</span>
+          </button>
+          <div class="bhiot-sub">
+            <a class="bhiot-sub-link" href="/tr/tabela/">Tabela</a><a class="bhiot-sub-link" href="/tr/kutu-harf/">Kutu Harf</a><a class="bhiot-sub-link" href="/tr/led-tabela/">LED Tabela</a><a class="bhiot-sub-link" href="/tr/totem-tabela/">Totem Tabela</a><a class="bhiot-sub-link" href="/tr/isikli-tabela/">Işıklı Tabela</a>
+          </div>
+        </div>
+        <div class="bhiot-menu-group">
+          <button type="button" class="bhiot-top">
+            <div>Grafik Tasarım</div>
+            <span class="material-symbols-outlined bhiot-icon">expand_more</span>
+          </button>
+          <div class="bhiot-sub">
+            <a class="bhiot-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="bhiot-sub-link" href="/tr/logo-tasarimi/">Logo Tasarımı</a><a class="bhiot-sub-link" href="/tr/kurumsal-kimlik/">Kurumsal Kimlik</a><a class="bhiot-sub-link" href="/tr/brosur-tasarimi/">Broşür Tasarımı</a><a class="bhiot-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          </div>
+        </div>
+        <div class="bhiot-menu-group open">
+          <button type="button" class="bhiot-top active">
+            <div>Araç Kaplama</div>
+            <span class="material-symbols-outlined bhiot-icon">expand_more</span>
+          </button>
+          <div class="bhiot-sub show">
+            <a class="bhiot-sub-link active" href="/tr/arac-kaplama/">Araç Kaplama</a><a class="bhiot-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="bhiot-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="bhiot-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="bhiot-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          </div>
+        </div>
+        <div class="bhiot-menu-group">
+          <button type="button" class="bhiot-top">
+            <div>Promosyon Ürünleri</div>
+            <span class="material-symbols-outlined bhiot-icon">expand_more</span>
+          </button>
+          <div class="bhiot-sub">
+            <a class="bhiot-sub-link" href="/tr/promosyon-urunleri/">Promosyon Ürünleri</a><a class="bhiot-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="bhiot-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="bhiot-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="bhiot-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          </div>
+        </div>
+        <div class="bhiot-menu-group">
+          <button type="button" class="bhiot-top">
+            <div>Stand ve Fuar Sistemleri</div>
+            <span class="material-symbols-outlined bhiot-icon">expand_more</span>
+          </button>
+          <div class="bhiot-sub">
+            <a class="bhiot-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="bhiot-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="bhiot-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="bhiot-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="bhiot-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          </div>
+        </div></div>
+  <div class="bhiot-desc">
+    
+    <div class="bhiot-desc-body">
+            <img src="/page/arac001/juucl.jpg?v=chykw" width="100%" alt="{{title}}" />
     </div>
-    <div class="uidcn-body"><h1>Gaziantep'te kurumsal araç filolarınız için profesyonel giydirme hizmetleri sunuyoruz. Premium cast folyolar, 3M garantili malzemeler ve uzman uygulama ekibimizle filonuzun tamamında standart kaliteyi sağlıyoruz. Şirket araçlarınızın kurumsal kimliğe uygun tasarımı, folyo seçimi ve uygulama planlamasını tek bir merkezden yönetiyoruz. Kapalı ve ısı kontrollü uygulama alanımız, özel kesim plotter sistemlerimiz ve deneyimli montaj ekibimizle filo projelerinizi sorunsuz tamamlıyoruz. Araç tipi ve kullanım amacına göre özel folyo seçenekleri, dayanıklı baskı teknolojileri ve detaylı yüzey hazırlığı ile uzun ömürlü uygulamalar yapıyoruz. Filo projeleri için özel fiyatlandırma, esnek zamanlama ve yerinde uygulama seçenekleri sunuyoruz. 3 yıl folyo garantisi, uygulama garantisi ve montaj sonrası teknik destek hizmetlerimizle kurumsal müşterilerimize güven veriyoruz. Gaziantep ve çevre illerde büyük kurumsal firmaların tercih ettiği filo giydirme merkezi olarak, kaliteli işçilik ve rekabetçi fiyatlarla hizmet veriyoruz.</h1></div>
+    <div class="bhiot-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Araç Kaplama Hizmetleri</h2></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel araç kaplama ve reklam giydirme hizmetleri sunuyoruz. Kurumsal filo ve ticari araçlarınızı mobil reklam aracına dönüştürüyoruz. 3M ve Oracal premium folyo malzemelerimizle tam araç kaplama, kısmi kaplama ve kurumsal filo giydirme hizmetleri veriyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Tam ve Kısmi Araç Kaplama</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Tam araç kaplama, aracınızın tüm yüzeyini folyo ile kaplayarak, tamamen yeni bir görünüm kazandırır. Kurumsal renkler, özel tasarımlar ve marka logoları ile aracınızı mobil reklam aracına dönüştürüyoruz. Kısmi araç kaplama ise, aracınızın belirli bölgelerini kaplayarak, daha ekonomik bir çözüm sunar.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Araç kaplama hizmetlerimizde 3M ve Oracal premium folyo malzemeler kullanıyoruz. Bu malzemeler, hava şartlarına dayanıklı, UV korumalı ve uzun ömürlüdür. Özel kesim teknolojimiz, kapalı uygulama alanımız ve uzman montaj ekibimizle hatasız sonuçlar garanti ediyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kurumsal Filo Giydirme</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Kurumsal filo giydirme hizmetlerimiz, işletmenizin tüm araçlarını tutarlı bir görsel kimlikle donatır. Marka logonuz, iletişim bilgileriniz ve kurumsal renklerinizle tüm filonuzu giydiriyoruz. Büyük filolar için özel fiyatlandırma ve toplu iş avantajları sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Filo giydirme projelerinde, tüm araçların ölçümlerini alıyor, tutarlı tasarımlar oluşturuyoruz. Uygulama sürecini planlıyor, tüm araçları aynı kalite standartlarında giydiriyoruz. Zamanında teslimat garantimiz ve kalite kontrol sistemimizle müşterilerimize güven veriyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Araç Reklam Tasarımı ve Uygulama</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Araç reklam tasarımı, markanızın mobil reklam aracı olarak kullanılması için önemlidir. Profesyonel grafik tasarımcılarımız, aracınızın özelliklerini dikkate alarak, dikkat çekici ve etkili araç reklam tasarımları oluşturuyor. Marka logonuz, iletişim bilgileriniz ve ürün/hizmet bilgilerinizle profesyonel tasarımlar yapıyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Araç kaplama uygulaması, uzman montaj ekibimiz tarafından kapalı alanımızda yapılmaktadır. Hava şartlarından etkilenmeyen, kontrollü ortamda, hatasız uygulama yapıyoruz. Folyo uygulaması sonrasında, kalite kontrolü yapıyor ve müşteri onayı alıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Araç Renk Değişimi ve Koruyucu Film</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Araç renk değişimi, aracınızın orijinal rengini değiştirmeden, folyo ile yeni bir renk kazandırır. Geniş renk paleti ile istediğiniz rengi seçebilir, aracınızı kişiselleştirebilirsiniz. Renk değişimi, aracın değerini korur ve ileride kolayca çıkarılabilir.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Koruyucu film uygulamaları, aracınızın boyasını çiziklerden ve darbelerden korur. Ön tampon, kaput, yan kapılar ve diğer hassas bölgelere koruyucu film uyguluyoruz. Şeffaf veya renkli koruyucu film seçenekleri ile aracınızı koruyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kalite ve Garanti</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Araç kaplama hizmetlerimizde kaliteden ödün vermeden, müşteri memnuniyetini ön planda tutuyoruz. Premium folyo malzemeler, uzman montaj ekibi ve kalite kontrol sistemi ile hatasız sonuçlar garanti ediyoruz. Uygulama sonrası garanti hizmeti sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle araç kaplama sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli malzemeler ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Araç kaplama ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
+<p>    </p></p></div>
   </div>
 </div>
+
+<script>
+  const menuToggleBtn = document.querySelector(".bhiot-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".bhiot-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".bhiot-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
+    });
+  }
+
+  document.querySelectorAll(".bhiot-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".bhiot-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".bhiot-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".bhiot-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
+</script>
 
 </div>
   <div id="footer"><a
@@ -103,6 +264,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -127,13 +297,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -144,7 +318,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=tqhr5"></script>
-<script src="/src/cookie.js?v=tqhr5"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=chykw"></script>
+<script defer src="/src/cookie.js?v=chykw"></script>
 
 </html>

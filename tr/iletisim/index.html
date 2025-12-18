@@ -3,75 +3,107 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>İletişim</title>
-  <meta name="description" content="Reklam Atölyesi iletişim bilgileri. Reklam ve tanıtım ihtiyaçlarınız için bize ulaşın. Web tasarım, grafik tasarım ve reklam çözümleri için profesyonel destek alın." />
+  <meta name="description" content="Reklam Atölyesi iletişim bilgileri. Reklam ve tanıtım ihtiyaçlarınız için bize ulaşın. Web tasarım, grafik tasarım ve reklam çözümleri için profesyonel deste..." />
   <meta name="keywords" content="reklam ajansı iletişim, reklam atölyesi telefon, reklam ajansı adres, istanbul reklam ajansı iletişim, reklam firması iletişim" />
   <meta property="og:title" content="İletişim" />
-  <meta property="og:description" content="Reklam Atölyesi iletişim bilgileri. Reklam ve tanıtım ihtiyaçlarınız için bize ulaşın. Web tasarım, grafik tasarım ve reklam çözümleri için profesyonel destek alın." />
+  <meta property="og:description" content="Reklam Atölyesi iletişim bilgileri. Reklam ve tanıtım ihtiyaçlarınız için bize ulaşın. Web tasarım, grafik tasarım ve reklam çözümleri için profesyonel deste..." />
   <meta property="og:image" content="https://reklamatolyesi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=ecwl3" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ecwl3" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=moifx" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=moifx" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=moifx" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=ecwl3">
+  
+  
+<link rel="stylesheet" href="style.css?v=moifx">
 </head>
 
 <body>
-  <div id="header"><div class="dkdyz">
-  <div class="dkdyztitle">
-    <div class="dkdyztitlebody">
-      <div class="dkdyztitlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="dkdyztitlebodylang">
+  <div id="header"><div class="ttwuo">
+  <div class="ttwuotitle">
+    <div class="ttwuotitlebody">
+      <div class="ttwuotitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="dkdyzbody">
-    <a href="/tr"><img src="/img/logo.svg" class="dkdyzbodylogo" /></a>
+  <div class="ttwuobody">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=moifx"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="ttwuobodylogo"
+    /></a>
+    <button type="button" class="ttwuo-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="dkdyzmenubody">
-    <div class="dkdyzmenu">
-      <div class="dkdyzmenulistbody">
-        <div class="dkdyzmenulist">
+  <div class="ttwuomenubody">
+    <div class="ttwuomenu" id="menu-2-root">
+      <div class="ttwuomenulistbody">
+        <div class="ttwuomenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a class="dkdyzmenulistactive" href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a class="ttwuo-menu-list-active" href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="ttwuolanguages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("ttwuomenu-open")) {
+        root.classList.remove("ttwuomenu-open");
+      } else {
+        root.classList.add("ttwuomenu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="vje0n">
-  <div class="vje0nbody">
-    <div class="vje0ncontainer">
-      <div class="vje0ncontainerbody">
-        <div class="vje0ncontainertitle">Bize Ulaşın</div>
-        <a href="tel:05316791014" target="_blank" class="vje0ncontainerlist">
+  <div id="content"><div class="ns05y">
+  <div class="ns05ybody">
+    <div class="ns05ycontainer">
+      <div class="ns05ycontainerbody">
+        <div class="ns05ycontainertitle">Bize Ulaşın</div>
+        <a href="tel:05316791014" target="_blank" class="ns05ycontainerlist">
                   <span class="material-symbols-outlined">
                    phone
-                  </span> 
+                  </span>
                   <div>0531 679 10 14</div>
-                </a><a href="undefined" target="_blank" class="vje0ncontainerlist">
+                </a><a href="undefined" target="_blank" class="ns05ycontainerlist">
                   <span class="material-symbols-outlined">
                    map
-                  </span> 
+                  </span>
                   <div> Mücahitler, 52076. Sk. No:5F., 27090 Şehitkamil/Gaziantep</div>
                 </a>
       </div>
@@ -111,6 +143,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -135,13 +176,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -152,7 +197,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=ecwl3"></script>
-<script src="/src/cookie.js?v=ecwl3"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=moifx"></script>
+<script defer src="/src/cookie.js?v=moifx"></script>
 
 </html>

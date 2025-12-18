@@ -3,11 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>Vinil Baskı</title>
   <meta name="description" content="Gaziantep'te profesyonel vinil baskı, araç kaplama ve folyo baskı hizmetleri. Yüksek kalite ve uygun fiyatlarla kurumsal reklam çözümleri." />
   <meta name="keywords" content="gaziantep vinil baskı, gaziantep araç kaplama, gaziantep folyo baskı, one way vision gaziantep, cam giydirme gaziantep, araç reklam gaziantep" />
@@ -15,61 +18,209 @@
   <meta property="og:description" content="Gaziantep'te profesyonel vinil baskı, araç kaplama ve folyo baskı hizmetleri. Yüksek kalite ve uygun fiyatlarla kurumsal reklam çözümleri." />
   <meta property="og:image" content="https://reklamatolyesi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=gv538" />
-  <link rel="shortcut icon" href="/img/icon.png?v=gv538" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=yzy0r" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=yzy0r" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=yzy0r" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=gv538">
+  
+  
+<link rel="stylesheet" href="style.css?v=yzy0r">
 </head>
 
 <body>
-  <div id="header"><div class="oblxi">
-  <div class="oblxititle">
-    <div class="oblxititlebody">
-      <div class="oblxititlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="oblxititlebodylang">
+  <div id="header"><div class="p4gij">
+  <div class="p4gijtitle">
+    <div class="p4gijtitlebody">
+      <div class="p4gijtitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="oblxibody">
-    <a href="/tr"><img src="/img/logo.svg" class="oblxibodylogo" /></a>
+  <div class="p4gijbody">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=yzy0r"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="p4gijbodylogo"
+    /></a>
+    <button type="button" class="p4gij-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="oblximenubody">
-    <div class="oblximenu">
-      <div class="oblximenulistbody">
-        <div class="oblximenulist">
+  <div class="p4gijmenubody">
+    <div class="p4gijmenu" id="menu-2-root">
+      <div class="p4gijmenulistbody">
+        <div class="p4gijmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="p4gijlanguages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("p4gijmenu-open")) {
+        root.classList.remove("p4gijmenu-open");
+      } else {
+        root.classList.add("p4gijmenu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="ho6im-title f36">
+  <div id="content"><div class="oyuoe-title f36">
   <span>Vinil Baskı</span>
 </div>
-<div class="ho6im">
-  <div class="ho6im-menu"><a   href="/tr/dijital-baski" >Dijital Baskı</a><a   href="/tr/tabela" >Tabela</a><a   href="/tr/grafik-tasarim" >Grafik Tasarım</a><a   href="/tr/arac-kaplama" >Araç Kaplama</a><a   href="/tr/promosyon-urunleri" >Promosyon Ürünleri</a><a   href="/tr/stand-sistemleri" >Stand ve Fuar Sistemleri</a><a   href="/tr/kurumsal-filo-giydirme" >Kurumsal Filo Giydirme</a><a   href="/tr/ticari-arac-reklamlari" >Ticari Araç Reklamları</a><a   href="/tr/arac-reklam-tasarimi" >Araç Reklam Tasarımı</a><a   href="/tr/tam-arac-kaplama" >Tam Araç Kaplama</a><a   href="/tr/kurumsal-promosyon" >Kurumsal Promosyon</a><a   href="/tr/ofis-promosyonlari" >Ofis Promosyonları</a><a   href="/tr/teknolojik-promosyonlar" >Teknolojik Promosyonlar</a><a   href="/tr/tekstil-promosyonlari" >Tekstil Promosyonları</a><a class="active"  href="/tr/vinil-baski" >Vinil Baskı</a><a   href="/tr/uv-baski" >UV Baskı</a><a   href="/tr/solvent-baski" >Solvent Baskı</a><a   href="/tr/tekstil-baski" >Tekstil Baskı</a><a   href="/tr/promosyon-baski" >Promosyon Baskı</a><a   href="/tr/fuar-standlari" >Fuar Standları</a><a   href="/tr/roll-up-banner" >Roll Up Banner</a><a   href="/tr/orumcek-stand" >Örümcek Stand</a><a   href="/tr/stand-aksesuarlari" >Stand Aksesuarları</a><a   href="/tr/kutu-harf" >Kutu Harf</a><a   href="/tr/led-tabela" >LED Tabela</a><a   href="/tr/totem-tabela" >Totem Tabela</a><a   href="/tr/isikli-tabela" >Işıklı Tabela</a><a   href="/tr/ic-mekan-yonlendirme" >İç Mekan Yönlendirme</a><a   href="/tr/kapi-isimlikleri" >Kapı İsimlikleri</a><a   href="/tr/kat-planlari" >Kat Planları</a><a   href="/tr/dis-mekan-yonlendirme" >Dış Mekan Yönlendirme</a><a   href="/tr/logo-tasarimi" >Logo Tasarımı</a><a   href="/tr/kurumsal-kimlik" >Kurumsal Kimlik</a><a   href="/tr/brosur-tasarimi" >Broşür Tasarımı</a><a   href="/tr/sosyal-medya-tasarimi" >Sosyal Medya Tasarımı</a></div>
-  <div class="ho6im-desc">
-    <div class="ho6im-img">
-      <img src="" width="100%" />
-    </div>
-    <div class="ho6im-body"><h1>Gaziantep'te profesyonel vinil baskı hizmetleri sunuyoruz. En son teknoloji geniş format dijital baskı makinelerimiz ve kaliteli vinil malzemelerimizle araç kaplama, vitrin giydirme, duvar kaplama ve reklam uygulamaları yapıyoruz. One way vision, reflektif folyo, şeffaf folyo ve cast vinil gibi farklı malzeme seçenekleriyle her türlü yüzeye uygun çözümler üretiyoruz. Yüksek çözünürlüklü baskı teknolojimiz, geniş renk skalası ve UV mürekkep sistemimizle canlı ve uzun ömürlü baskılar elde ediyoruz. Laminasyon uygulamaları, özel kesim hizmetleri ve profesyonel montaj ekibimizle komple vinil baskı çözümleri sunuyoruz. Küçük ebatlı işlerden geniş yüzey uygulamalarına kadar her ölçekte projeye uygun fiyat avantajı sağlıyoruz. Hızlı üretim kapasitemiz, zamanında teslimat garantimiz ve montaj sonrası teknik desteğimizle müşterilerimize güven veriyoruz. Gaziantep'te vinil baskı konusunda uzmanlaşmış ekibimiz ve rekabetçi fiyatlarımızla kurumsal müşterilerimize hizmet veriyoruz.</h1></div>
+<div class="oyuoe">
+  <div class="oyuoe-menu-btn">
+    <span>Menü</span>
+    <span class="material-symbols-outlined oyuoe-icon">menu</span>
+  </div>
+  <div class="oyuoe-menu">
+        <div class="oyuoe-menu-group open">
+          <button type="button" class="oyuoe-top active">
+            <div>Dijital Baskı</div>
+            <span class="material-symbols-outlined oyuoe-icon">expand_more</span>
+          </button>
+          <div class="oyuoe-sub show">
+            <a class="oyuoe-sub-link" href="/tr/dijital-baski/">Dijital Baskı</a><a class="oyuoe-sub-link active" href="/tr/vinil-baski/">Vinil Baskı</a><a class="oyuoe-sub-link" href="/tr/uv-baski/">UV Baskı</a><a class="oyuoe-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="oyuoe-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="oyuoe-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          </div>
+        </div>
+        <div class="oyuoe-menu-group">
+          <button type="button" class="oyuoe-top">
+            <div>Tabela</div>
+            <span class="material-symbols-outlined oyuoe-icon">expand_more</span>
+          </button>
+          <div class="oyuoe-sub">
+            <a class="oyuoe-sub-link" href="/tr/tabela/">Tabela</a><a class="oyuoe-sub-link" href="/tr/kutu-harf/">Kutu Harf</a><a class="oyuoe-sub-link" href="/tr/led-tabela/">LED Tabela</a><a class="oyuoe-sub-link" href="/tr/totem-tabela/">Totem Tabela</a><a class="oyuoe-sub-link" href="/tr/isikli-tabela/">Işıklı Tabela</a>
+          </div>
+        </div>
+        <div class="oyuoe-menu-group">
+          <button type="button" class="oyuoe-top">
+            <div>Grafik Tasarım</div>
+            <span class="material-symbols-outlined oyuoe-icon">expand_more</span>
+          </button>
+          <div class="oyuoe-sub">
+            <a class="oyuoe-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="oyuoe-sub-link" href="/tr/logo-tasarimi/">Logo Tasarımı</a><a class="oyuoe-sub-link" href="/tr/kurumsal-kimlik/">Kurumsal Kimlik</a><a class="oyuoe-sub-link" href="/tr/brosur-tasarimi/">Broşür Tasarımı</a><a class="oyuoe-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          </div>
+        </div>
+        <div class="oyuoe-menu-group">
+          <button type="button" class="oyuoe-top">
+            <div>Araç Kaplama</div>
+            <span class="material-symbols-outlined oyuoe-icon">expand_more</span>
+          </button>
+          <div class="oyuoe-sub">
+            <a class="oyuoe-sub-link" href="/tr/arac-kaplama/">Araç Kaplama</a><a class="oyuoe-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="oyuoe-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="oyuoe-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="oyuoe-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          </div>
+        </div>
+        <div class="oyuoe-menu-group">
+          <button type="button" class="oyuoe-top">
+            <div>Promosyon Ürünleri</div>
+            <span class="material-symbols-outlined oyuoe-icon">expand_more</span>
+          </button>
+          <div class="oyuoe-sub">
+            <a class="oyuoe-sub-link" href="/tr/promosyon-urunleri/">Promosyon Ürünleri</a><a class="oyuoe-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="oyuoe-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="oyuoe-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="oyuoe-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          </div>
+        </div>
+        <div class="oyuoe-menu-group">
+          <button type="button" class="oyuoe-top">
+            <div>Stand ve Fuar Sistemleri</div>
+            <span class="material-symbols-outlined oyuoe-icon">expand_more</span>
+          </button>
+          <div class="oyuoe-sub">
+            <a class="oyuoe-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="oyuoe-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="oyuoe-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="oyuoe-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="oyuoe-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          </div>
+        </div></div>
+  <div class="oyuoe-desc">
+    
+    <div class="oyuoe-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Vinil Baskı Hizmetleri</h2></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel vinil baskı hizmetleri sunuyoruz. En son teknoloji geniş format dijital baskı makinelerimiz ve kaliteli vinil malzemelerimizle araç kaplama, vitrin giydirme, duvar kaplama ve reklam uygulamaları yapıyoruz. One way vision, reflektif folyo, şeffaf folyo ve cast vinil gibi farklı malzeme seçenekleriyle her türlü yüzeye uygun çözümler üretiyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Vinil Baskı Teknolojileri ve Malzemeler</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Vinil baskı hizmetlerimizde, yüksek kaliteli vinil malzemeler kullanıyoruz. One way vision folyo, içeriden dışarıyı görmeyi engellemeden dışarıdan reklam görünümü sağlar. Reflektif folyo, gece görünürlüğü için idealdir. Şeffaf folyo, cam yüzeylerde kullanılır. Cast vinil ise, araç kaplama için premium çözümdür.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Yüksek çözünürlüklü baskı teknolojimiz, geniş renk skalası ve UV mürekkep sistemimizle canlı ve uzun ömürlü baskılar elde ediyoruz. Laminasyon uygulamaları ile baskılarımızı koruyor, özel kesim hizmetleri ile hassas uygulamalar yapıyoruz. Profesyonel montaj ekibimizle komple vinil baskı çözümleri sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Araç Kaplama ve Vitrin Giydirme</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Araç kaplama hizmetlerimizde, 3M ve Oracal premium folyo malzemeler kullanıyoruz. Tam araç kaplama, kısmi kaplama ve kurumsal filo giydirme hizmetleri veriyoruz. Özel kesim teknolojimiz, kapalı uygulama alanımız ve uzman montaj ekibimizle hatasız sonuçlar garanti ediyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Vitrin giydirme hizmetlerimizde, one way vision folyo kullanarak mağaza vitrinlerinizi reklam alanına dönüştürüyoruz. İçeriden dışarıyı görmeyi engellemeden, dışarıdan dikkat çekici reklam görünümü sağlıyoruz. Özel tasarım ve baskı seçenekleri ile marka kimliğinizi yansıtan vitrin giydirmeler yapıyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Duvar Kaplama ve Reklam Uygulamaları</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Duvar kaplama hizmetlerimizde, geniş format vinil baskılar yapıyoruz. İç ve dış mekan duvar kaplamaları için farklı malzeme seçenekleri sunuyoruz. Dekoratif duvar kaplamaları, kurumsal duvar uygulamaları ve özel tasarım duvar kaplamaları yapıyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam uygulamalarımızda, dış mekan dayanıklılığı yüksek vinil malzemeler kullanıyoruz. Billboard, cephe reklamları, yönlendirme tabelaları ve özel reklam uygulamaları yapıyoruz. Hava şartlarına dayanıklı, UV korumalı ve uzun ömürlü reklam çözümleri sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Hızlı Üretim ve Profesyonel Hizmet</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Vinil baskı hizmetlerimizde, hızlı üretim kapasitemiz ile acil işlerinizi karşılıyoruz. Küçük ebatlı işlerden geniş yüzey uygulamalarına kadar her ölçekte projeye uygun fiyat avantajı sağlıyoruz. Zamanında teslimat garantimiz ve montaj sonrası teknik desteğimizle müşterilerimize güven veriyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle vinil baskı sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli malzemeler ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Vinil baskı ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
+<p>    </p></p></div>
   </div>
 </div>
+
+<script>
+  const menuToggleBtn = document.querySelector(".oyuoe-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".oyuoe-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".oyuoe-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
+    });
+  }
+
+  document.querySelectorAll(".oyuoe-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".oyuoe-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".oyuoe-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".oyuoe-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
+</script>
 
 </div>
   <div id="footer"><a
@@ -103,6 +254,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -127,13 +287,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -144,7 +308,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=gv538"></script>
-<script src="/src/cookie.js?v=gv538"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=yzy0r"></script>
+<script defer src="/src/cookie.js?v=yzy0r"></script>
 
 </html>

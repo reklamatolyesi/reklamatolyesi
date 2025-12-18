@@ -3,73 +3,234 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>Promosyon Ürünleri</title>
   <meta name="description" content="Gaziantep'te kurumsal promosyon ürünleri ve baskı hizmetleri. Ajanda, kalem, takvim ve özel tasarım promosyon çözümleri." />
-  <meta name="keywords" content="gaziantep promosyon ürünleri, gaziantep kurumsal hediye, gaziantep promosyon baskı, gaziantep ajanda, gaziantep takvim, gaziantep kalem" />
+  <meta name="keywords" content="promosyon ürünleri gaziantep, kurumsal hediye, ajanda baskı, takvim baskı, kalem baskı, USB bellek, power bank, kurumsal promosyon" />
   <meta property="og:title" content="Promosyon Ürünleri" />
   <meta property="og:description" content="Gaziantep'te kurumsal promosyon ürünleri ve baskı hizmetleri. Ajanda, kalem, takvim ve özel tasarım promosyon çözümleri." />
-  <meta property="og:image" content="https://reklamatolyesi.org/page/promo002/ykrn6.jpg" />
+  <meta property="og:image" content="https://reklamatolyesi.org/page/promo002/yilr6.jpg" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=f814v" />
-  <link rel="shortcut icon" href="/img/icon.png?v=f814v" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=pdrog" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=pdrog" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=pdrog" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=f814v">
+  
+  
+<link rel="stylesheet" href="style.css?v=pdrog">
 </head>
 
 <body>
-  <div id="header"><div class="oswe0">
-  <div class="oswe0title">
-    <div class="oswe0titlebody">
-      <div class="oswe0titlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="oswe0titlebodylang">
+  <div id="header"><div class="jaovd">
+  <div class="jaovdtitle">
+    <div class="jaovdtitlebody">
+      <div class="jaovdtitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="oswe0body">
-    <a href="/tr"><img src="/img/logo.svg" class="oswe0bodylogo" /></a>
+  <div class="jaovdbody">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=pdrog"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="jaovdbodylogo"
+    /></a>
+    <button type="button" class="jaovd-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="oswe0menubody">
-    <div class="oswe0menu">
-      <div class="oswe0menulistbody">
-        <div class="oswe0menulist">
+  <div class="jaovdmenubody">
+    <div class="jaovdmenu" id="menu-2-root">
+      <div class="jaovdmenulistbody">
+        <div class="jaovdmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="jaovdlanguages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("jaovdmenu-open")) {
+        root.classList.remove("jaovdmenu-open");
+      } else {
+        root.classList.add("jaovdmenu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="fca6r-title f36">
+  <div id="content"><div class="eiqtw-title f36">
   <span>Promosyon Ürünleri</span>
 </div>
-<div class="fca6r">
-  <div class="fca6r-menu"><a   href="/tr/dijital-baski" >Dijital Baskı</a><a   href="/tr/tabela" >Tabela</a><a   href="/tr/grafik-tasarim" >Grafik Tasarım</a><a   href="/tr/arac-kaplama" >Araç Kaplama</a><a class="active"  href="/tr/promosyon-urunleri" >Promosyon Ürünleri</a><a   href="/tr/stand-sistemleri" >Stand ve Fuar Sistemleri</a><a   href="/tr/kurumsal-filo-giydirme" >Kurumsal Filo Giydirme</a><a   href="/tr/ticari-arac-reklamlari" >Ticari Araç Reklamları</a><a   href="/tr/arac-reklam-tasarimi" >Araç Reklam Tasarımı</a><a   href="/tr/tam-arac-kaplama" >Tam Araç Kaplama</a><a   href="/tr/kurumsal-promosyon" >Kurumsal Promosyon</a><a   href="/tr/ofis-promosyonlari" >Ofis Promosyonları</a><a   href="/tr/teknolojik-promosyonlar" >Teknolojik Promosyonlar</a><a   href="/tr/tekstil-promosyonlari" >Tekstil Promosyonları</a><a   href="/tr/vinil-baski" >Vinil Baskı</a><a   href="/tr/uv-baski" >UV Baskı</a><a   href="/tr/solvent-baski" >Solvent Baskı</a><a   href="/tr/tekstil-baski" >Tekstil Baskı</a><a   href="/tr/promosyon-baski" >Promosyon Baskı</a><a   href="/tr/fuar-standlari" >Fuar Standları</a><a   href="/tr/roll-up-banner" >Roll Up Banner</a><a   href="/tr/orumcek-stand" >Örümcek Stand</a><a   href="/tr/stand-aksesuarlari" >Stand Aksesuarları</a><a   href="/tr/kutu-harf" >Kutu Harf</a><a   href="/tr/led-tabela" >LED Tabela</a><a   href="/tr/totem-tabela" >Totem Tabela</a><a   href="/tr/isikli-tabela" >Işıklı Tabela</a><a   href="/tr/ic-mekan-yonlendirme" >İç Mekan Yönlendirme</a><a   href="/tr/kapi-isimlikleri" >Kapı İsimlikleri</a><a   href="/tr/kat-planlari" >Kat Planları</a><a   href="/tr/dis-mekan-yonlendirme" >Dış Mekan Yönlendirme</a><a   href="/tr/logo-tasarimi" >Logo Tasarımı</a><a   href="/tr/kurumsal-kimlik" >Kurumsal Kimlik</a><a   href="/tr/brosur-tasarimi" >Broşür Tasarımı</a><a   href="/tr/sosyal-medya-tasarimi" >Sosyal Medya Tasarımı</a></div>
-  <div class="fca6r-desc">
-    <div class="fca6r-img">
-      <img src="/page/promo002/ykrn6.jpg" width="100%" />
+<div class="eiqtw">
+  <div class="eiqtw-menu-btn">
+    <span>Menü</span>
+    <span class="material-symbols-outlined eiqtw-icon">menu</span>
+  </div>
+  <div class="eiqtw-menu">
+        <div class="eiqtw-menu-group">
+          <button type="button" class="eiqtw-top">
+            <div>Dijital Baskı</div>
+            <span class="material-symbols-outlined eiqtw-icon">expand_more</span>
+          </button>
+          <div class="eiqtw-sub">
+            <a class="eiqtw-sub-link" href="/tr/dijital-baski/">Dijital Baskı</a><a class="eiqtw-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="eiqtw-sub-link" href="/tr/uv-baski/">UV Baskı</a><a class="eiqtw-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="eiqtw-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="eiqtw-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          </div>
+        </div>
+        <div class="eiqtw-menu-group">
+          <button type="button" class="eiqtw-top">
+            <div>Tabela</div>
+            <span class="material-symbols-outlined eiqtw-icon">expand_more</span>
+          </button>
+          <div class="eiqtw-sub">
+            <a class="eiqtw-sub-link" href="/tr/tabela/">Tabela</a><a class="eiqtw-sub-link" href="/tr/kutu-harf/">Kutu Harf</a><a class="eiqtw-sub-link" href="/tr/led-tabela/">LED Tabela</a><a class="eiqtw-sub-link" href="/tr/totem-tabela/">Totem Tabela</a><a class="eiqtw-sub-link" href="/tr/isikli-tabela/">Işıklı Tabela</a>
+          </div>
+        </div>
+        <div class="eiqtw-menu-group">
+          <button type="button" class="eiqtw-top">
+            <div>Grafik Tasarım</div>
+            <span class="material-symbols-outlined eiqtw-icon">expand_more</span>
+          </button>
+          <div class="eiqtw-sub">
+            <a class="eiqtw-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="eiqtw-sub-link" href="/tr/logo-tasarimi/">Logo Tasarımı</a><a class="eiqtw-sub-link" href="/tr/kurumsal-kimlik/">Kurumsal Kimlik</a><a class="eiqtw-sub-link" href="/tr/brosur-tasarimi/">Broşür Tasarımı</a><a class="eiqtw-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          </div>
+        </div>
+        <div class="eiqtw-menu-group">
+          <button type="button" class="eiqtw-top">
+            <div>Araç Kaplama</div>
+            <span class="material-symbols-outlined eiqtw-icon">expand_more</span>
+          </button>
+          <div class="eiqtw-sub">
+            <a class="eiqtw-sub-link" href="/tr/arac-kaplama/">Araç Kaplama</a><a class="eiqtw-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="eiqtw-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="eiqtw-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="eiqtw-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          </div>
+        </div>
+        <div class="eiqtw-menu-group open">
+          <button type="button" class="eiqtw-top active">
+            <div>Promosyon Ürünleri</div>
+            <span class="material-symbols-outlined eiqtw-icon">expand_more</span>
+          </button>
+          <div class="eiqtw-sub show">
+            <a class="eiqtw-sub-link active" href="/tr/promosyon-urunleri/">Promosyon Ürünleri</a><a class="eiqtw-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="eiqtw-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="eiqtw-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="eiqtw-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          </div>
+        </div>
+        <div class="eiqtw-menu-group">
+          <button type="button" class="eiqtw-top">
+            <div>Stand ve Fuar Sistemleri</div>
+            <span class="material-symbols-outlined eiqtw-icon">expand_more</span>
+          </button>
+          <div class="eiqtw-sub">
+            <a class="eiqtw-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="eiqtw-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="eiqtw-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="eiqtw-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="eiqtw-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          </div>
+        </div></div>
+  <div class="eiqtw-desc">
+    
+    <div class="eiqtw-desc-body">
+            <img src="/page/promo002/yilr6.jpg?v=pdrog" width="100%" alt="{{title}}" />
     </div>
-    <div class="fca6r-body"><h1>Gaziantep'te kurumsal müşterilerimiz için özel tasarım promosyon ürünleri üretiyoruz. VIP müşterileriniz ve iş ortaklarınız için prestijli, kaliteli ve uzun ömürlü kurumsal hediyeler tasarlıyoruz. Deri ürünler, özel üretim kalemler, kristal plaketler ve limitli üretim setler gibi prestijli promosyon alternatifleri sunuyoruz. Kurumsal kimliğinize özel tasarım, kaliteli malzeme seçimi ve profesyonel üretim teknikleriyle markanızın değerini yansıtıyoruz. Özel kutulama, şık ambalaj tasarımı ve kurumsal etiketleme ile hediyelerinizi değerli kılıyoruz. Minimum adet sınırı olmadan, hızlı üretim ve özel paketleme seçenekleriyle kurumsal promosyon ihtiyaçlarınızı karşılıyoruz. Ücretsiz numune, fiyat avantajı ve profesyonel danışmanlık hizmetlerimizle kurumsal hediye sürecinizi kolaylaştırıyoruz. Gaziantep'te kurumsal promosyon konusunda uzmanlaşmış ekibimiz ve rekabetçi fiyatlarımızla hizmetinizdeyiz.</h1></div>
+    <div class="eiqtw-body"><p><h2 style="font-size: 24px;">Gaziantep'te Kurumsal Promosyon Ürünleri</h2></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te kurumsal promosyon ürünleri ve baskı hizmetleri sunuyoruz. Ajanda, kalem, takvim, USB bellek, power bank, termos, çanta ve daha birçok promosyon ürününe özel tasarım ve baskı hizmetleri veriyoruz. Kurumsal hediye ihtiyaçlarınız için geniş ürün yelpazesi ve kaliteli hizmet sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Ofis Promosyon Ürünleri</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Ofis promosyon ürünleri, iş dünyasında yaygın olarak kullanılan kurumsal hediye çözümleridir. Ajanda, takvim, kalem, not defteri, dosya, klasör ve diğer ofis malzemelerine marka logonuz ve kurumsal renklerinizle baskı yapıyoruz. Yüksek kaliteli malzemeler kullanarak, uzun ömürlü ve profesyonel promosyon ürünleri üretiyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Ajanda ve takvim tasarımlarımız, kurumsal kimliğinizle uyumlu, özel tasarım ve baskı seçenekleri sunar. Deri, kumaş ve özel malzeme seçenekleri ile prestijli ajanda ve takvimler üretiyoruz. Toplu sipariş avantajları ve özel fiyatlandırma ile kurumsal müşterilerimize ekonomik çözümler sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Teknolojik Promosyon Ürünleri</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Teknolojik promosyon ürünleri, modern iş dünyasında tercih edilen kurumsal hediye çözümleridir. USB bellek, power bank, kablosuz şarj cihazı, Bluetooth hoparlör ve diğer teknolojik ürünlere marka logonuz ve özel tasarımlarınızla baskı yapıyoruz. Yüksek kaliteli teknolojik ürünler kullanarak, değerli ve kullanışlı promosyon ürünleri sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Teknolojik promosyon ürünlerimiz, güncel teknoloji trendlerini takip ederek, müşterilerinize değer katacak ürünler seçiyoruz. Özel ambalaj ve tasarım seçenekleri ile prestijli teknolojik promosyon ürünleri üretiyoruz. Toplu sipariş avantajları ve hızlı teslimat ile kurumsal müşterilerimize hizmet veriyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Tekstil Promosyon Ürünleri</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Tekstil promosyon ürünleri, günlük kullanımda tercih edilen kurumsal hediye çözümleridir. Tişört, polo yaka, şapka, çanta, termos, matara ve diğer tekstil ürünlerine marka logonuz ve özel tasarımlarınızla baskı yapıyoruz. Yüksek kaliteli tekstil malzemeleri kullanarak, uzun ömürlü ve kullanışlı promosyon ürünleri üretiyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Tekstil promosyon ürünlerimiz, farklı beden ve renk seçenekleri ile geniş bir ürün yelpazesi sunar. Özel kesim ve dikim seçenekleri ile müşterilerinizin ihtiyaçlarına özel çözümler üretiyoruz. Toplu sipariş avantajları ve özel fiyatlandırma ile kurumsal müşterilerimize ekonomik çözümler sunuyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Özel Tasarım ve Baskı Hizmetleri</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Promosyon ürünlerinize özel tasarım ve baskı hizmetleri sunuyoruz. Profesyonel grafik tasarımcılarımız, marka kimliğinizle uyumlu, dikkat çekici ve etkili tasarımlar oluşturuyor. Serigrafi, dijital baskı, lazer kazıma ve özel kesim teknikleri ile farklı baskı seçenekleri sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Özel tasarım ve baskı hizmetlerimizde, ürün özelliklerini dikkate alarak, en uygun baskı tekniğini seçiyoruz. Renk doğruluğu ve kalite kontrolü konusunda sıkı kontroller yapıyoruz. Müşteri onayı alarak, üretim sürecine geçiyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Toplu Sipariş ve Kurumsal Çözümler</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Kurumsal müşterilerimiz için toplu sipariş avantajları, özel fiyatlandırma ve uzun vadeli iş birliği imkanları sunuyoruz. Büyük siparişler için özel planlama yaparak, zamanında teslimat garantisi veriyoruz. Kurumsal hediye setleri ve özel ambalaj seçenekleri ile prestijli promosyon çözümleri sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle promosyon ürünleri sektöründe güvenilir bir çözüm ortağıdır. Kaliteli ürünler, özel tasarımlar ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Promosyon ürünleri ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
+<p>    </p></p></div>
   </div>
 </div>
+
+<script>
+  const menuToggleBtn = document.querySelector(".eiqtw-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".eiqtw-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".eiqtw-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
+    });
+  }
+
+  document.querySelectorAll(".eiqtw-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".eiqtw-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".eiqtw-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".eiqtw-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
+</script>
 
 </div>
   <div id="footer"><a
@@ -103,6 +264,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -127,13 +297,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -144,7 +318,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=f814v"></script>
-<script src="/src/cookie.js?v=f814v"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=pdrog"></script>
+<script defer src="/src/cookie.js?v=pdrog"></script>
 
 </html>

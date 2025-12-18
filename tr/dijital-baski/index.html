@@ -3,73 +3,227 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, public" />
+  <meta http-equiv="Pragma" content="cache" />
+  <meta http-equiv="Expires" content="3600" />
   <title>Dijital Baskı</title>
   <meta name="description" content="Gaziantep'te her boyutta dijital baskı çözümleri. Poster, afiş, branda ve mesh baskı hizmetleri uygun fiyatlarla." />
-  <meta name="keywords" content="gaziantep dijital baskı, gaziantep büyük boy baskı, gaziantep poster baskı, gaziantep branda baskı, gaziantep mesh baskı, gaziantep afiş baskı" />
+  <meta name="keywords" content="dijital baskı gaziantep, poster baskı, afiş baskı, branda baskı, mesh baskı, solvent baskı, UV baskı, latex baskı, reklam baskı" />
   <meta property="og:title" content="Dijital Baskı" />
   <meta property="og:description" content="Gaziantep'te her boyutta dijital baskı çözümleri. Poster, afiş, branda ve mesh baskı hizmetleri uygun fiyatlarla." />
-  <meta property="og:image" content="https://reklamatolyesi.org/page/sss0kjs1ka/uwsqx.png" />
+  <meta property="og:image" content="https://reklamatolyesi.org/page/sss0kjs1ka/y1xbq.jpg" />
   <meta name="robots" content="index, follow" />
-  <link rel="stylesheet" href="/src/css.css?v=mdddq" />
-  <link rel="shortcut icon" href="/img/icon.png?v=mdddq" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
+
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ebf24" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ebf24" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ebf24" type="image/png" />
   
-<link rel="stylesheet" href="style.css?v=mdddq">
+  
+  
+<link rel="stylesheet" href="style.css?v=ebf24">
 </head>
 
 <body>
-  <div id="header"><div class="zd2x6">
-  <div class="zd2x6title">
-    <div class="zd2x6titlebody">
-      <div class="zd2x6titlebodytitle">
-        Reklam Atölyesi Gaziantep Web Sitemize Hoşgeldiniz
-      </div>
-      <div class="zd2x6titlebodylang">
+  <div id="header"><div class="idzdb">
+  <div class="idzdbtitle">
+    <div class="idzdbtitlebody">
+      <div class="idzdbtitlebodylang">
         <ul>
-          <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
+          
         </ul>
       </div>
     </div>
   </div>
-  <div class="zd2x6body">
-    <a href="/tr"><img src="/img/logo.svg" class="zd2x6bodylogo" /></a>
+  <div class="idzdbbody">
+    <a href="/tr/"
+      ><img
+        src="/img/logo.svg?v=ebf24"
+        alt="Reklam Atölyesi Gaziantep Logo"
+        class="idzdbbodylogo"
+    /></a>
+    <button type="button" class="idzdb-mobile-toggle" onclick="menu2_toggle()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
   </div>
-  <div class="zd2x6menubody">
-    <div class="zd2x6menu">
-      <div class="zd2x6menulistbody">
-        <div class="zd2x6menulist">
+  <div class="idzdbmenubody">
+    <div class="idzdbmenu" id="menu-2-root">
+      <div class="idzdbmenulistbody">
+        <div class="idzdbmenulist">
           <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
+            <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
+          <div class="idzdblanguages-mobile">
+            <ul>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("idzdbmenu-open")) {
+        root.classList.remove("idzdbmenu-open");
+      } else {
+        root.classList.add("idzdbmenu-open");
+      }
+    }
+  }
+</script>
 </div>
-  <div id="content"><div class="k9spw-title f36">
+  <div id="content"><div class="dlr7x-title f36">
   <span>Dijital Baskı</span>
 </div>
-<div class="k9spw">
-  <div class="k9spw-menu"><a class="active"  href="/tr/dijital-baski" >Dijital Baskı</a><a   href="/tr/tabela" >Tabela</a><a   href="/tr/grafik-tasarim" >Grafik Tasarım</a><a   href="/tr/arac-kaplama" >Araç Kaplama</a><a   href="/tr/promosyon-urunleri" >Promosyon Ürünleri</a><a   href="/tr/stand-sistemleri" >Stand ve Fuar Sistemleri</a><a   href="/tr/kurumsal-filo-giydirme" >Kurumsal Filo Giydirme</a><a   href="/tr/ticari-arac-reklamlari" >Ticari Araç Reklamları</a><a   href="/tr/arac-reklam-tasarimi" >Araç Reklam Tasarımı</a><a   href="/tr/tam-arac-kaplama" >Tam Araç Kaplama</a><a   href="/tr/kurumsal-promosyon" >Kurumsal Promosyon</a><a   href="/tr/ofis-promosyonlari" >Ofis Promosyonları</a><a   href="/tr/teknolojik-promosyonlar" >Teknolojik Promosyonlar</a><a   href="/tr/tekstil-promosyonlari" >Tekstil Promosyonları</a><a   href="/tr/vinil-baski" >Vinil Baskı</a><a   href="/tr/uv-baski" >UV Baskı</a><a   href="/tr/solvent-baski" >Solvent Baskı</a><a   href="/tr/tekstil-baski" >Tekstil Baskı</a><a   href="/tr/promosyon-baski" >Promosyon Baskı</a><a   href="/tr/fuar-standlari" >Fuar Standları</a><a   href="/tr/roll-up-banner" >Roll Up Banner</a><a   href="/tr/orumcek-stand" >Örümcek Stand</a><a   href="/tr/stand-aksesuarlari" >Stand Aksesuarları</a><a   href="/tr/kutu-harf" >Kutu Harf</a><a   href="/tr/led-tabela" >LED Tabela</a><a   href="/tr/totem-tabela" >Totem Tabela</a><a   href="/tr/isikli-tabela" >Işıklı Tabela</a><a   href="/tr/ic-mekan-yonlendirme" >İç Mekan Yönlendirme</a><a   href="/tr/kapi-isimlikleri" >Kapı İsimlikleri</a><a   href="/tr/kat-planlari" >Kat Planları</a><a   href="/tr/dis-mekan-yonlendirme" >Dış Mekan Yönlendirme</a><a   href="/tr/logo-tasarimi" >Logo Tasarımı</a><a   href="/tr/kurumsal-kimlik" >Kurumsal Kimlik</a><a   href="/tr/brosur-tasarimi" >Broşür Tasarımı</a><a   href="/tr/sosyal-medya-tasarimi" >Sosyal Medya Tasarımı</a></div>
-  <div class="k9spw-desc">
-    <div class="k9spw-img">
-      <img src="/page/sss0kjs1ka/uwsqx.png" width="100%" />
+<div class="dlr7x">
+  <div class="dlr7x-menu-btn">
+    <span>Menü</span>
+    <span class="material-symbols-outlined dlr7x-icon">menu</span>
+  </div>
+  <div class="dlr7x-menu">
+        <div class="dlr7x-menu-group open">
+          <button type="button" class="dlr7x-top active">
+            <div>Dijital Baskı</div>
+            <span class="material-symbols-outlined dlr7x-icon">expand_more</span>
+          </button>
+          <div class="dlr7x-sub show">
+            <a class="dlr7x-sub-link active" href="/tr/dijital-baski/">Dijital Baskı</a><a class="dlr7x-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="dlr7x-sub-link" href="/tr/uv-baski/">UV Baskı</a><a class="dlr7x-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="dlr7x-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="dlr7x-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          </div>
+        </div>
+        <div class="dlr7x-menu-group">
+          <button type="button" class="dlr7x-top">
+            <div>Tabela</div>
+            <span class="material-symbols-outlined dlr7x-icon">expand_more</span>
+          </button>
+          <div class="dlr7x-sub">
+            <a class="dlr7x-sub-link" href="/tr/tabela/">Tabela</a><a class="dlr7x-sub-link" href="/tr/kutu-harf/">Kutu Harf</a><a class="dlr7x-sub-link" href="/tr/led-tabela/">LED Tabela</a><a class="dlr7x-sub-link" href="/tr/totem-tabela/">Totem Tabela</a><a class="dlr7x-sub-link" href="/tr/isikli-tabela/">Işıklı Tabela</a>
+          </div>
+        </div>
+        <div class="dlr7x-menu-group">
+          <button type="button" class="dlr7x-top">
+            <div>Grafik Tasarım</div>
+            <span class="material-symbols-outlined dlr7x-icon">expand_more</span>
+          </button>
+          <div class="dlr7x-sub">
+            <a class="dlr7x-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="dlr7x-sub-link" href="/tr/logo-tasarimi/">Logo Tasarımı</a><a class="dlr7x-sub-link" href="/tr/kurumsal-kimlik/">Kurumsal Kimlik</a><a class="dlr7x-sub-link" href="/tr/brosur-tasarimi/">Broşür Tasarımı</a><a class="dlr7x-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          </div>
+        </div>
+        <div class="dlr7x-menu-group">
+          <button type="button" class="dlr7x-top">
+            <div>Araç Kaplama</div>
+            <span class="material-symbols-outlined dlr7x-icon">expand_more</span>
+          </button>
+          <div class="dlr7x-sub">
+            <a class="dlr7x-sub-link" href="/tr/arac-kaplama/">Araç Kaplama</a><a class="dlr7x-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="dlr7x-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="dlr7x-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="dlr7x-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          </div>
+        </div>
+        <div class="dlr7x-menu-group">
+          <button type="button" class="dlr7x-top">
+            <div>Promosyon Ürünleri</div>
+            <span class="material-symbols-outlined dlr7x-icon">expand_more</span>
+          </button>
+          <div class="dlr7x-sub">
+            <a class="dlr7x-sub-link" href="/tr/promosyon-urunleri/">Promosyon Ürünleri</a><a class="dlr7x-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="dlr7x-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="dlr7x-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="dlr7x-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          </div>
+        </div>
+        <div class="dlr7x-menu-group">
+          <button type="button" class="dlr7x-top">
+            <div>Stand ve Fuar Sistemleri</div>
+            <span class="material-symbols-outlined dlr7x-icon">expand_more</span>
+          </button>
+          <div class="dlr7x-sub">
+            <a class="dlr7x-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="dlr7x-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="dlr7x-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="dlr7x-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="dlr7x-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          </div>
+        </div></div>
+  <div class="dlr7x-desc">
+    
+    <div class="dlr7x-desc-body">
+            <img src="/page/sss0kjs1ka/y1xbq.jpg?v=ebf24" width="100%" alt="{{title}}" />
     </div>
-    <div class="k9spw-body"><h1>Gaziantep'te 15 yıllık sektör deneyimimiz ve modern teknoloji parkurumuzla profesyonel dijital baskı hizmetleri sunuyoruz. Yüksek çözünürlüklü baskı makinelerimiz, geniş renk skalası ve uzman operatör kadromuzla her türlü baskı ihtiyacınıza çözüm üretiyoruz. Küçük ebatlı posterlerden dev boyutlu brandalara, one way vision folyolardan mesh afişlere, iç mekan dekorasyonundan dış mekan reklamlarına kadar tüm dijital baskı ihtiyaçlarınızı karşılıyoruz. En son teknoloji makinelerimiz, deneyimli ekibimiz ve %100 müşteri memnuniyeti garantisiyle çalışıyoruz. UV mürekkep teknolojisi ile solmayan, uzun ömürlü ve canlı renkli baskılar elde ediyoruz. Hızlı üretim kapasitemiz ve zamanında teslimat garantimizle acil baskı ihtiyaçlarınıza da çözüm sunuyoruz. Gaziantep ve çevre illerde kurumsal firmaların tercih ettiği dijital baskı merkezi olarak, kaliteli malzeme ve uygun fiyat avantajıyla hizmet veriyoruz.</h1></div>
+    <div class="dlr7x-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Dijital Baskı Hizmetleri</h2></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi olarak, Gaziantep'te her boyutta dijital baskı çözümleri sunuyoruz. Modern dijital baskı teknolojilerimizle poster, afiş, branda, mesh, folyo, sticker ve özel ebat baskılar yapıyoruz. Solvent, UV ve latex baskı teknolojilerimizle her malzeme üzerine yüksek kaliteli baskı yapabiliyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Dijital Baskı Teknolojilerimiz</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Üretim tesisimizde bulunan son teknoloji dijital baskı makinelerimizle solvent, UV ve latex baskı hizmetleri sunuyoruz. Solvent baskı teknolojimiz, dış mekan dayanıklılığı yüksek, hava şartlarına dayanıklı baskılar için idealdir. UV baskı teknolojimiz, her türlü yüzeye baskı yapabilme özelliği ile öne çıkmaktadır. Latex baskı teknolojimiz ise çevre dostu ve keskin renkler sunmaktadır.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dijital baskı makinelerimiz, geniş format baskı yapabilme özelliği ile büyük ebatlı çalışmalar için idealdir. 3 metre genişliğe kadar kesintisiz baskı yapabilme kapasitemizle, billboard, branda, mesh ve büyük format afiş baskıları yapıyoruz. Yüksek çözünürlüklü baskı kalitemizle, detaylı ve net görüntüler elde ediyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Baskı Malzemeleri ve Uygulama Alanları</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dijital baskı hizmetlerimiz kapsamında branda, mesh, folyo, pleksiglas, alüminyum kompozit, PVC, canvas ve özel malzemeler üzerine baskı yapıyoruz. Cephe brandaları, dış mekan reklamları, iç mekan dekorasyon baskıları, araç kaplama baskıları ve özel tasarım baskılar için geniş bir malzeme yelpazesi sunuyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Hava şartlarına dayanıklı, UV korumalı ve uzun ömürlü malzemeler kullanarak, dış mekan reklamlarınızda fark yaratıyoruz. İç mekan dekorasyon baskıları için yüksek kaliteli canvas ve PVC malzemeler kullanıyoruz. Özel kesim ve montaj hizmetlerimizle, baskılarınızı profesyonel şekilde uyguluyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Hızlı Üretim ve Teslimat</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Acil işleriniz için hızlı üretim ve teslimat hizmeti sunuyoruz. Modern makine parkurumuz ve deneyimli ekibimizle, kısa sürede yüksek kaliteli baskılar üretiyoruz. Büyük ebatlı çalışmalar için özel planlama yaparak, zamanında teslimat garantisi veriyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Kurumsal müşterilerimiz için toplu iş avantajları, özel fiyatlandırma ve uzun vadeli iş birliği imkanları sunuyoruz. Gaziantep ve çevre illerdeki müşterilerimize ücretsiz keşif, ölçüm ve danışmanlık hizmetleri veriyoruz. Profesyonel montaj ekibimizle, baskılarınızı güvenli şekilde uyguluyoruz.</p>
+<p>    </p></p>
+<p>    <h3 style="font-size: 20px;">Kalite ve Müşteri Memnuniyeti</h3></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Dijital baskı hizmetlerimizde kaliteden ödün vermeden, müşteri memnuniyetini ön planda tutuyoruz. Her projede detaylı planlama yapıyor, renk doğruluğu ve baskı kalitesi konusunda sıkı kontroller yapıyoruz. Müşterilerimizin beklentilerini aşmak için sürekli kendimizi geliştiriyoruz.</p>
+<p>    </p></p>
+<p>    <p style="font-size: 16px;"></p>
+<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle dijital baskı sektöründe güvenilir bir çözüm ortağıdır. Kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Dijital baskı ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
+<p>    </p></p></div>
   </div>
 </div>
+
+<script>
+  const menuToggleBtn = document.querySelector(".dlr7x-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".dlr7x-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".dlr7x-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
+    });
+  }
+
+  document.querySelectorAll(".dlr7x-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".dlr7x-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".dlr7x-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".dlr7x-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
+</script>
 
 </div>
   <div id="footer"><a
@@ -103,6 +257,15 @@
     <div class="wave" id="wave4"></div>
   </div>
   <ul class="social-icon">
+
+
+
+    
+    
+
+ 
+
+
     <li class="social-icon__item">
       <a class="social-icon__link" href="#">
         <ion-icon name="logo-facebook"></ion-icon>
@@ -127,13 +290,17 @@
   <ul class="menu">
     <li class="menu__item"><a class="menu__link" href="/tr">Anasayfa</a></li><li class="menu__item"><a class="menu__link" href="/tr/kurumsal">Kurumsal</a></li><li class="menu__item"><a class="menu__link" href="/tr/hizmetlerimiz">Hizmetlerimiz</a></li><li class="menu__item"><a class="menu__link" href="/tr/iletisim">İletişim</a></li>
   </ul>
-  <p>Reklam Atölyesi Gaziantep 2024 cognite. &copy;</p>
+  <p>Reklam Atölyesi Gaziantep 2025 cognite. &copy;</p>
 </footer>
 
 </div>
 </body>
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17010047610">
 </script>
@@ -144,7 +311,9 @@
 
   gtag('config', 'AW-17010047610');
 </script>
-<script type="text/javascript" src="/src/js.js?v=mdddq"></script>
-<script src="/src/cookie.js?v=mdddq"></script>
+
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ebf24"></script>
+<script defer src="/src/cookie.js?v=ebf24"></script>
 
 </html>
