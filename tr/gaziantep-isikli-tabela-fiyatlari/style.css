@@ -1,7 +1,7 @@
 
  
 
-  .tei4i {
+  .ebpgh {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  .tei4ititle {
+  .ebpghtitle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     z-index: 1;
   }
 
-  .tei4ititle:has(.tei4ititlebodylang:empty),
-  .tei4ititle:has(.tei4ititlebodylang ul:empty) {
+  .ebpghtitle:has(.ebpghtitlebodylang:empty),
+  .ebpghtitle:has(.ebpghtitlebodylang ul:empty) {
     display: none;
   }
 
-  .tei4ititlebody {
+  .ebpghtitlebody {
     color: #f3f6f7;
     width: var(--max);
     display: flex;
@@ -31,29 +31,29 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .tei4ititlebodytitle {
+  .ebpghtitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .tei4ititlebodylang {
+  .ebpghtitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .tei4ititlebodylang:empty,
-  .tei4ititlebodylang ul:empty {
+  .ebpghtitlebodylang:empty,
+  .ebpghtitlebodylang ul:empty {
     display: none;
   }
 
-  .tei4ititlebodylang ul {
+  .ebpghtitlebodylang ul {
     display: flex;
     gap: 5px;
   }
 
-  .tei4ibody {
+  .ebpghbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@
     position: relative;
   }
 
-  .tei4i-mobile-toggle {
+  .ebpgh-mobile-toggle {
     display: none;
     background: #183656;
     color: #f3f6f7;
@@ -76,18 +76,18 @@
     right: 0;
   }
 
-  .tei4i-mobile-toggle span {
+  .ebpgh-mobile-toggle span {
     font-size: 24px;
   }
 
-  .tei4imenu {
+  .ebpghmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .tei4imenulist {
+  .ebpghmenulist {
     width: calc(100% - 20px);
     background-color: #183656;
     padding: 10px;
@@ -96,7 +96,7 @@
     display: flex;
   }
 
-  .tei4imenubody {
+  .ebpghmenubody {
     width: 100%;
     background-color: #183656;
     display: flex;
@@ -104,7 +104,7 @@
     justify-content: center;
   }
 
-  .tei4imenulist ul {
+  .ebpghmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -113,7 +113,7 @@
     padding: 0;
   }
 
-  .tei4imenulist ul a {
+  .ebpghmenulist ul a {
     padding: 10px;
     font-size: 16px;
     color: #f3f6f7 !important;
@@ -125,40 +125,40 @@
     white-space: nowrap;
   }
 
-  .tei4imenulist ul a:hover {
+  .ebpghmenulist ul a:hover {
     background-color: #3b85bb;
     border-radius: 5px;
     color: #f3f6f7 !important;
     cursor: pointer;
   }
 
-  .tei4imenulist ul a.tei4i-menu-list-active {
+  .ebpghmenulist ul a.ebpgh-menu-list-active {
     color: #f3f6f7 !important;
   }
 
-  .tei4i-menu-list-active {
+  .ebpgh-menu-list-active {
     background-color: #3b85bb;
     border-radius: 5px;
     color: #f3f6f7 !important;
     cursor: pointer;
   }
 
-  .tei4imenulistbody {
+  .ebpghmenulistbody {
     width: 100%;
   }
 
-  .tei4ilanguages-mobile {
+  .ebpghlanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .tei4ilanguages-mobile:empty,
-  .tei4ilanguages-mobile ul:empty {
+  .ebpghlanguages-mobile:empty,
+  .ebpghlanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .tei4ilanguages-mobile ul {
+  .ebpghlanguages-mobile ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -167,7 +167,7 @@
     justify-content: center;
   }
 
-  .tei4ilanguages-mobile li {
+  .ebpghlanguages-mobile li {
     list-style: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px;
@@ -182,25 +182,25 @@
     transition: all 0.3s ease;
   }
 
-  .tei4ilanguages-mobile li a {
+  .ebpghlanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .tei4ilanguages-mobile li:hover {
+  .ebpghlanguages-mobile li:hover {
     background-color: #3b85bb;
     border-color: #f3f6f7;
   }
 
   @media screen and (min-width: 1024px) {
-    .tei4ibodylogo {
+    .ebpghbodylogo {
       height: 100px;
       max-width: 90vw;
       max-height: 100px;
     }
 
-    .tei4ititle {
+    .ebpghtitle {
     margin-bottom: -30px;
   }
 
@@ -208,77 +208,77 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .tei4ibody {
+    .ebpghbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: center;
     }
 
-    .tei4imenulist ul {
+    .ebpghmenulist ul {
       flex-direction: row;
     }
 
-    .tei4ibodylogo {
+    .ebpghbodylogo {
       width: 50vw;
       max-width: 50vw;
       max-height: 100px;
     }
 
-    .tei4ititlebody {
+    .ebpghtitlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .tei4ititlebodytitle {
+    .ebpghtitlebodytitle {
       text-align: center;
       font-size: 14px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .tei4ititlebodylang {
+    .ebpghtitlebodylang {
       display: none;
     }
 
-    .tei4ibody {
+    .ebpghbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .tei4i-mobile-toggle {
+    .ebpgh-mobile-toggle {
       display: inline-flex;
     }
 
-    .tei4ibodylogo {
+    .ebpghbodylogo {
       width: 40vw;
       max-width: 40vw;
       max-height: 80px;
     }
 
-    .tei4imenulist {
+    .ebpghmenulist {
       display: none;
       flex-direction: column;
       width: calc(100% - 24px);
       padding: 12px;
     }
 
-    .tei4imenu.tei4imenu-open .tei4imenulist {
+    .ebpghmenu.ebpghmenu-open .ebpghmenulist {
       display: flex;
     }
 
-    .tei4imenu.tei4imenu-open .tei4ilanguages-mobile {
+    .ebpghmenu.ebpghmenu-open .ebpghlanguages-mobile {
       display: block;
     }
 
-    .tei4imenulist ul {
+    .ebpghmenulist ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .tei4imenulist ul a {
+    .ebpghmenulist ul a {
       font-size: 14px;
       width: 100%;
       padding: 12px;
@@ -287,22 +287,22 @@
       border-radius: 0;
     }
 
-    .tei4imenulist ul a:last-child {
+    .ebpghmenulist ul a:last-child {
       border-bottom: none;
     }
 
-    .tei4imenulist ul a:hover {
+    .ebpghmenulist ul a:hover {
       background-color: #3b85bb;
       border-radius: 0;
     }
 
-    .tei4ititlebodytitle {
+    .ebpghtitlebodytitle {
       font-size: 12px;
     }
   }
 
 
-  .dslvn {
+  .zb5e7 {
     width: var(--max);
     display: flex;
     flex-direction: column;
@@ -310,7 +310,7 @@
     margin-top: 20px;
   }
   @media screen and (max-width: 1024px) {
-    .dslvn {
+    .zb5e7 {
       width: calc(100% - 20px);
       padding: 10px;
       margin-top: 10px;
@@ -318,7 +318,7 @@
   }
 
 
-  .jj91i {
+  .wz84c {
     width: 100%;
     margin: 30px 0px 30px 0px;
     display: flex;
@@ -327,14 +327,14 @@
     position: relative;
   }
 
-  .jj91icontainertitle {
+  .wz84ccontainertitle {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
   }
 
-  .jj91icontainerlist {
+  .wz84ccontainerlist {
     padding: 10px;
     display: flex;
     border-radius: 8px;
@@ -343,26 +343,26 @@
     transition: background-color 0.3s ease;
   }
 
-  .jj91icontainerlist>div {
+  .wz84ccontainerlist>div {
     display: flex;
     align-items: center;
     font-size: 20px;
     color: #444;
   }
 
-  .jj91icontainerlist:hover {
+  .wz84ccontainerlist:hover {
     background-color: #f9f9f9;
     border-bottom-color: #183656;
   }
 
-  .jj91icontainer {
+  .wz84ccontainer {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
   }
 
-  .jj91icontainerbody {
+  .wz84ccontainerbody {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -372,7 +372,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .jj91ibody {
+  .wz84cbody {
     width: calc(var(--max) - 40px);
     background-color: #ebebeb;
     border: 1px solid #dedede;
@@ -380,19 +380,19 @@
     padding: 20px;
   }
 
-  .jj91icontainerlist>span {
+  .wz84ccontainerlist>span {
     font-size: 24px;
     color: #183656;
   }
 
   @media screen and (max-width: 1024px) {
-    .jj91ibody {
+    .wz84cbody {
       width: 100%;
       padding: 20px;
       flex-direction: column;
     }
 
-    .jj91icontainerbody {
+    .wz84ccontainerbody {
       padding: 15px;
     }
   }
