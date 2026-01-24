@@ -1,7 +1,7 @@
 <nav>
   <div href="/" class="menu">
     <a href="/" class="website_name"
-      ><img src="/img/logo.svg?v=ngl32" width="300" alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
+      ><img src="/img/logo.svg?v=o2omc" width="300" alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
     /></a>
   </div>
 </nav>
@@ -578,6 +578,50 @@
     justify-content: center;
   }
 
+  /* RTL (Right-to-Left) Dil Desteği - Arapça için */
+  [dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+  }
+
+  [dir="rtl"] nav .menu {
+    direction: rtl;
+  }
+
+  [dir="rtl"] .wrapper .container .text article {
+    text-align: right;
+    direction: rtl;
+  }
+
+  [dir="rtl"] .wrapper .container .text article p {
+    text-align: right;
+  }
+
+  [dir="rtl"] nav .menu .menu_links .link {
+    margin-right: 0;
+    margin-left: 50px;
+  }
+
+  [dir="rtl"] nav .menu .menu_links .link:last-child {
+    margin-left: 0;
+  }
+
+  [dir="rtl"] nav .menu .menu_links .link:before {
+    left: auto;
+    right: 100%;
+  }
+
+  [dir="rtl"] nav .menu .menu_links .link:hover:before {
+    left: auto;
+    right: 0;
+  }
+
+  [dir="rtl"] .wrapper .container .text article {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
   .wrapper .container .text article button:hover {
     box-shadow: 0px 10px 10px -10px rgba(54, 24, 79, 0.5);
     transform: translateY(5px);
@@ -772,6 +816,23 @@
   }
 </style>
 <script>
+  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
+  setTimeout(function() {
+    var currentPath = window.location.pathname;
+    var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
+    
+    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+    var langMatch = currentPath.match(/^\/([a-z]{2})\//);
+    var currentLang = langMatch ? langMatch[1] : '';
+    
+    // Eğer RTL dil ise dir="rtl" set et
+    if (rtlLanguages.indexOf(currentLang) !== -1) {
+      document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+    }
+  }, 100);
+
   window.location.href = "/";
   setTimeout(function () {
     window.location.href = "/";
