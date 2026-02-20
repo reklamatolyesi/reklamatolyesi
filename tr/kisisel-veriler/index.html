@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=upj3h" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=upj3h" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=zglnb" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=zglnb" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=upj3h" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=zglnb" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,130 +52,136 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=upj3h">
+<link rel="stylesheet" href="style.css?v=zglnb">
 </head>
 
 <body>
-  <div id="header"><div class="fa5y3">
-  <div class="fa5y3title">
-    <div class="fa5y3titlebody">
-      <div class="fa5y3titlebodylang">
+  <div id="header"><div class="mr2si">
+  <div class="mr2sititle">
+    <div class="mr2sititlebody">
+      <div class="mr2sititlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="fa5y3body">
+  <div class="mr2sibody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=upj3h"
+        src="/img/logo.svg?v=zglnb"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="fa5y3bodylogo"
+        class="mr2sibodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="fa5y3-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="mr2si-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="fa5y3menubody">
-    <div class="fa5y3menu" id="menu-2-root">
-      <div class="fa5y3menulistbody">
-        <div class="fa5y3menulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="mr2si-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="mr2simenubody">
+    <div class="mr2simenu" id="menu-2-root">
+      <div class="mr2simenulistbody">
+        <div class="mr2simenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="fa5y3languages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="mr2silanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.mr2si) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("fa5y3menu-open")) {
-        root.classList.remove("fa5y3menu-open");
+      var wrapper = root.closest ? root.closest(".mr2si") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("mr2simenu-open")) {
+        target.classList.remove("mr2simenu-open");
       } else {
-        root.classList.add("fa5y3menu-open");
+        target.classList.add("mr2simenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="oiwzb-title f36">
+  <div id="content"><div class="msfix-title f36">
   <h1>Kişisel Veriler</h1>
 </div>
-<div class="oiwzb">
-  <div class="oiwzb-menu-btn">
+<div class="msfix">
+  <div class="msfix-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined oiwzb-icon">menu</span>
+    <span class="material-symbols-outlined msfix-icon">menu</span>
   </div>
-  <div class="oiwzb-menu-overlay" id="oiwzb-menu-overlay" aria-hidden="true"></div>
-  <div class="oiwzb-menu" id="oiwzb-menu">
-    <button class="oiwzb-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="oiwzb-menu">
+  <div class="msfix-menu-overlay" id="msfix-menu-overlay" aria-hidden="true"></div>
+  <div class="msfix-menu" id="msfix-menu">
+    <button class="msfix-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="msfix-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="oiwzb-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="oiwzb-menu-link" href="/tr/misyon/">Misyon</a><a class="oiwzb-menu-link" href="/tr/vizyon/">Vizyon</a><a class="oiwzb-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="oiwzb-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="oiwzb-menu-link active" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="oiwzb-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="oiwzb-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
+    <a class="msfix-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="msfix-menu-link" href="/tr/misyon/">Misyon</a><a class="msfix-menu-link" href="/tr/vizyon/">Vizyon</a><a class="msfix-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="msfix-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="msfix-menu-link active" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="msfix-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="msfix-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
   </div>
-  <div class="oiwzb-desc">
+  <div class="msfix-desc">
     
-    <div class="oiwzb-body"><p><h2 style="font-size: 24px;">Kişisel Veriler</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kişisel verileriniz, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında korunmaktadır. Verileriniz yalnızca hizmet kalitemizi artırmak ve yasal yükümlülüklerimizi yerine getirmek amacıyla işlenmektedir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Toplanan kişisel veriler, yalnızca yetkili kişiler tarafından erişilebilir olup, izniniz olmadan üçüncü taraflarla paylaşılmamaktadır. Verilerinize erişim, düzeltme, silme veya anonimleştirme taleplerinde bulunma hakkına sahipsiniz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kişisel verilerinizle ilgili talepleriniz için bizimle iletişime geçebilirsiniz. Verilerinizin güvenliği ve mahremiyeti önceliğimizdir.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">KVKK Kapsamında Veri İşleme</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında kişisel verilerinizin işlenmesi, korunması ve güvenliği konusunda yasal yükümlülüklerimizi yerine getiriyoruz. Kişisel verileriniz, yalnızca belirtilen amaçlar doğrultusunda ve yasal sınırlar içinde işlenmektedir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Toplanan kişisel veriler arasında ad, soyad, telefon numarası, e-posta adresi, adres bilgileri ve işletme bilgileri bulunmaktadır. Bu veriler, hizmet kalitemizi artırmak, müşteri ilişkilerimizi yönetmek, yasal yükümlülüklerimizi yerine getirmek ve hizmetlerimizi geliştirmek amacıyla işlenmektedir.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Veri Güvenliği ve Erişim Kontrolü</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kişisel verileriniz, yalnızca yetkili personel tarafından erişilebilir olup, güvenli sunucularda saklanmaktadır. Veri erişim logları tutulmakta, yetkisiz erişimlere karşı koruma sağlanmaktadır. SSL sertifikası ile veri iletimi şifrelenmekte, düzenli güvenlik güncellemeleri yapılmaktadır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Verileriniz, izniniz olmadan üçüncü taraflarla paylaşılmamakta, yalnızca yasal zorunluluklar ve hizmet kalitesi iyileştirmeleri için kullanılmaktadır. Veri paylaşımı durumunda, yasal süreçler takip edilmekte ve gerekli güvenlik önlemleri alınmaktadır.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Veri Sahibi Hakları</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        KVKK kapsamında, kişisel verilerinizle ilgili çeşitli haklara sahipsiniz. Verilerinize erişim, düzeltme, silme veya anonimleştirme taleplerinde bulunabilirsiniz. Ayrıca, verilerinizin işlenme amacı, işlenme süresi, üçüncü taraflarla paylaşımı ve veri güvenliği önlemleri hakkında bilgi talep edebilirsiniz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Veri sahibi haklarınızı kullanmak için iletişim kanallarımız üzerinden bize ulaşabilirsiniz. Talepleriniz en geç 30 gün içinde değerlendirilecek ve yanıtlanacaktır. Veri silme talepleriniz, yasal saklama süreleri dikkate alınarak değerlendirilecektir.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Veri İşleme Süreleri ve Saklama</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kişisel verileriniz, belirtilen amaçlar doğrultusunda işlenmekte ve yasal saklama süreleri boyunca saklanmaktadır. Hizmet ilişkisinin sona ermesi durumunda, verileriniz yasal saklama süreleri dikkate alınarak silinmekte veya anonimleştirilmektedir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Veri güvenliği ve mahremiyeti önceliğimizdir. Kişisel verilerinizin korunması konusunda sürekli iyileştirmeler yapıyor, en son güvenlik teknolojilerini kullanıyoruz. Veri ihlali durumunda, yasal süre içinde ilgili makamlara bildirim yapılmakta ve veri sahipleri bilgilendirilmektedir.</p>
-<p>    </p></p></div>
+    <div class="msfix-body"><h2 style="font-size: 24px;">Kişisel Veriler</h2>
+    <p style="font-size: 16px;">
+        Kişisel verileriniz, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında korunmaktadır. Verileriniz yalnızca hizmet kalitemizi artırmak ve yasal yükümlülüklerimizi yerine getirmek amacıyla işlenmektedir.
+    </p>
+    <p style="font-size: 16px;">
+        Toplanan kişisel veriler, yalnızca yetkili kişiler tarafından erişilebilir olup, izniniz olmadan üçüncü taraflarla paylaşılmamaktadır. Verilerinize erişim, düzeltme, silme veya anonimleştirme taleplerinde bulunma hakkına sahipsiniz.
+    </p>
+    <p style="font-size: 16px;">
+        Kişisel verilerinizle ilgili talepleriniz için bizimle iletişime geçebilirsiniz. Verilerinizin güvenliği ve mahremiyeti önceliğimizdir.
+    </p>
+    <h3 style="font-size: 20px;">KVKK Kapsamında Veri İşleme</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında kişisel verilerinizin işlenmesi, korunması ve güvenliği konusunda yasal yükümlülüklerimizi yerine getiriyoruz. Kişisel verileriniz, yalnızca belirtilen amaçlar doğrultusunda ve yasal sınırlar içinde işlenmektedir.
+    </p>
+    <p style="font-size: 16px;">
+        Toplanan kişisel veriler arasında ad, soyad, telefon numarası, e-posta adresi, adres bilgileri ve işletme bilgileri bulunmaktadır. Bu veriler, hizmet kalitemizi artırmak, müşteri ilişkilerimizi yönetmek, yasal yükümlülüklerimizi yerine getirmek ve hizmetlerimizi geliştirmek amacıyla işlenmektedir.
+    </p>
+    <h3 style="font-size: 20px;">Veri Güvenliği ve Erişim Kontrolü</h3>
+    <p style="font-size: 16px;">
+        Kişisel verileriniz, yalnızca yetkili personel tarafından erişilebilir olup, güvenli sunucularda saklanmaktadır. Veri erişim logları tutulmakta, yetkisiz erişimlere karşı koruma sağlanmaktadır. SSL sertifikası ile veri iletimi şifrelenmekte, düzenli güvenlik güncellemeleri yapılmaktadır.
+    </p>
+    <p style="font-size: 16px;">
+        Verileriniz, izniniz olmadan üçüncü taraflarla paylaşılmamakta, yalnızca yasal zorunluluklar ve hizmet kalitesi iyileştirmeleri için kullanılmaktadır. Veri paylaşımı durumunda, yasal süreçler takip edilmekte ve gerekli güvenlik önlemleri alınmaktadır.
+    </p>
+    <h3 style="font-size: 20px;">Veri Sahibi Hakları</h3>
+    <p style="font-size: 16px;">
+        KVKK kapsamında, kişisel verilerinizle ilgili çeşitli haklara sahipsiniz. Verilerinize erişim, düzeltme, silme veya anonimleştirme taleplerinde bulunabilirsiniz. Ayrıca, verilerinizin işlenme amacı, işlenme süresi, üçüncü taraflarla paylaşımı ve veri güvenliği önlemleri hakkında bilgi talep edebilirsiniz.
+    </p>
+    <p style="font-size: 16px;">
+        Veri sahibi haklarınızı kullanmak için iletişim kanallarımız üzerinden bize ulaşabilirsiniz. Talepleriniz en geç 30 gün içinde değerlendirilecek ve yanıtlanacaktır. Veri silme talepleriniz, yasal saklama süreleri dikkate alınarak değerlendirilecektir.
+    </p>
+    <h3 style="font-size: 20px;">Veri İşleme Süreleri ve Saklama</h3>
+    <p style="font-size: 16px;">
+        Kişisel verileriniz, belirtilen amaçlar doğrultusunda işlenmekte ve yasal saklama süreleri boyunca saklanmaktadır. Hizmet ilişkisinin sona ermesi durumunda, verileriniz yasal saklama süreleri dikkate alınarak silinmekte veya anonimleştirilmektedir.
+    </p>
+    <p style="font-size: 16px;">
+        Veri güvenliği ve mahremiyeti önceliğimizdir. Kişisel verilerinizin korunması konusunda sürekli iyileştirmeler yapıyor, en son güvenlik teknolojilerini kullanıyoruz. Veri ihlali durumunda, yasal süre içinde ilgili makamlara bildirim yapılmakta ve veri sahipleri bilgilendirilmektedir.
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".oiwzb-menu-btn");
-    var menu = document.querySelector(".oiwzb-menu");
-    var overlay = document.querySelector(".oiwzb-menu-overlay");
-    var closeButton = document.querySelector(".oiwzb-menu-close");
+    var menuToggleBtn = document.querySelector(".msfix-menu-btn");
+    var menu = document.querySelector(".msfix-menu");
+    var overlay = document.querySelector(".msfix-menu-overlay");
+    var closeButton = document.querySelector(".msfix-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -245,7 +251,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".oiwzb-menu-close");
+      var closeBtn = event.target.closest(".msfix-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -293,15 +299,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".oiwzb-top").forEach(function (button) {
+    document.querySelectorAll(".msfix-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".oiwzb-menu-group");
+        var group = this.closest(".msfix-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".oiwzb-sub");
+        var sub = group.querySelector(".msfix-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".oiwzb-icon");
+        var icon = this.querySelector(".msfix-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -401,8 +407,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=upj3h"></script>
-<script defer src="/src/cookie.js?v=upj3h"></script>
+<script defer type="text/javascript" src="/src/js.js?v=zglnb"></script>
+<script defer src="/src/cookie.js?v=zglnb"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

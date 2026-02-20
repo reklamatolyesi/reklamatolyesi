@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=xmoqa" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=xmoqa" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ki22i" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ki22i" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=xmoqa" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ki22i" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,71 +52,77 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=xmoqa">
+<link rel="stylesheet" href="style.css?v=ki22i">
 </head>
 
 <body>
-  <div id="header"><div class="xi11t">
-  <div class="xi11ttitle">
-    <div class="xi11ttitlebody">
-      <div class="xi11ttitlebodylang">
+  <div id="header"><div class="ljith">
+  <div class="ljithtitle">
+    <div class="ljithtitlebody">
+      <div class="ljithtitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="xi11tbody">
+  <div class="ljithbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=xmoqa"
+        src="/img/logo.svg?v=ki22i"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="xi11tbodylogo"
+        class="ljithbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="xi11t-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ljith-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="xi11tmenubody">
-    <div class="xi11tmenu" id="menu-2-root">
-      <div class="xi11tmenulistbody">
-        <div class="xi11tmenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="ljith-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="ljithmenubody">
+    <div class="ljithmenu" id="menu-2-root">
+      <div class="ljithmenulistbody">
+        <div class="ljithmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="xi11tlanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="ljithlanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.ljith) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("xi11tmenu-open")) {
-        root.classList.remove("xi11tmenu-open");
+      var wrapper = root.closest ? root.closest(".ljith") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("ljithmenu-open")) {
+        target.classList.remove("ljithmenu-open");
       } else {
-        root.classList.add("xi11tmenu-open");
+        target.classList.add("ljithmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="ud72a-title f36">
+  <div id="content"><div class="rb7ne-title f36">
   <h1>Gaziantep ışıklı tabela</h1>
 </div>
 
-<div class="ud72a"><h2>Gaziantep Işıklı Tabela – Reklam Atölyesi ile Markanızı Aydınlatın</h2>
+<div class="rb7ne"><h2>Gaziantep Işıklı Tabela – Reklam Atölyesi ile Markanızı Aydınlatın</h2>
 
 <p><strong>Reklam Atölyesi</strong> olarak, <strong>Gaziantep ışıklı tabela</strong> alanında işletmenizin yüzünü aydınlatacak ve marka bilinirliğinizi zirveye taşıyacak çözümler sunuyoruz. Gaziantep'in dinamik iş dünyasına özel tasarımlarla, <em>Gaziantep ışıklı tabela</em> ihtiyaçlarınıza cevap veriyoruz. Kaliteli malzeme, üstün işçilik ve yaratıcı tasarımlarla, işletmenizin <strong>Gaziantep</strong>'te öne çıkmasını sağlıyoruz. Müşterilerinizin dikkatini çeken, akılda kalıcı ve etkili ışıklı tabelalar ile markanızın prestijini artırıyoruz. Reklam Atölyesi, Gaziantep'te ışıklı tabela denince akla gelen ilk adreslerden biri olmayı hedefliyor.</p>
 
@@ -181,22 +187,22 @@
 <h3>Gaziantep'te Işıklı Tabela Fiyatları Nasıldır?</h3>
 <p>Işıklı tabela fiyatları, tabelanın türüne, boyutuna, tasarımına ve kullanılan malzemelere göre değişiklik göstermektedir. Size özel bir teklif almak için, bizimle iletişime geçebilirsiniz.</p></div>
 
-<div class="jeaf4">
-  <div class="jeaf4body">
-    <div class="jeaf4container">
-      <div class="jeaf4containerbody">
-        <h2 class="jeaf4containertitle">Bize Ulaşın</h2>
-        <a href="tel:05316791014" target="_blank" rel="noopener noreferrer" class="jeaf4containerlist">
+<div class="sbxgo">
+  <div class="sbxgobody">
+    <div class="sbxgocontainer">
+      <div class="sbxgocontainerbody">
+        <h2 class="sbxgocontainertitle">Bize Ulaşın</h2>
+        <a href="tel:05316791014" target="_blank" rel="noopener noreferrer" class="sbxgocontainerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    phone
                   </span>
                   <div>0531 679 10 14</div>
-                </a><a href="email:info@reklamatolyesi.org" target="_blank" rel="noopener noreferrer" class="jeaf4containerlist">
+                </a><a href="email:info@reklamatolyesi.org" target="_blank" rel="noopener noreferrer" class="sbxgocontainerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    email
                   </span>
                   <div>info@reklamatolyesi.org</div>
-                </a><a href="https://share.google/aNKs6f6JPb3H4BcsK" target="_blank" rel="noopener noreferrer" class="jeaf4containerlist">
+                </a><a href="https://share.google/aNKs6f6JPb3H4BcsK" target="_blank" rel="noopener noreferrer" class="sbxgocontainerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    map
                   </span>
@@ -295,8 +301,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=xmoqa"></script>
-<script defer src="/src/cookie.js?v=xmoqa"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ki22i"></script>
+<script defer src="/src/cookie.js?v=ki22i"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

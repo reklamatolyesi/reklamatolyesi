@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=i63ei" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=i63ei" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=btty8" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=btty8" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=i63ei" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=btty8" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,186 +52,192 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=i63ei">
+<link rel="stylesheet" href="style.css?v=btty8">
 </head>
 
 <body>
-  <div id="header"><div class="qu58i">
-  <div class="qu58ititle">
-    <div class="qu58ititlebody">
-      <div class="qu58ititlebodylang">
+  <div id="header"><div class="x73h5">
+  <div class="x73h5title">
+    <div class="x73h5titlebody">
+      <div class="x73h5titlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="qu58ibody">
+  <div class="x73h5body">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=i63ei"
+        src="/img/logo.svg?v=btty8"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="qu58ibodylogo"
+        class="x73h5bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="qu58i-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="x73h5-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="qu58imenubody">
-    <div class="qu58imenu" id="menu-2-root">
-      <div class="qu58imenulistbody">
-        <div class="qu58imenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="x73h5-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="x73h5menubody">
+    <div class="x73h5menu" id="menu-2-root">
+      <div class="x73h5menulistbody">
+        <div class="x73h5menulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="qu58ilanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="x73h5languages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.x73h5) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("qu58imenu-open")) {
-        root.classList.remove("qu58imenu-open");
+      var wrapper = root.closest ? root.closest(".x73h5") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("x73h5menu-open")) {
+        target.classList.remove("x73h5menu-open");
       } else {
-        root.classList.add("qu58imenu-open");
+        target.classList.add("x73h5menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="ewm9d-title f36">
+  <div id="content"><div class="mv7kt-title f36">
   <h1>Araç Reklam Tasarımı</h1>
 </div>
-<div class="ewm9d">
-  <div class="ewm9d-menu-btn">
+<div class="mv7kt">
+  <div class="mv7kt-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined ewm9d-icon">menu</span>
+    <span class="material-symbols-outlined mv7kt-icon">menu</span>
   </div>
-  <div class="ewm9d-menu-overlay" id="ewm9d-menu-overlay" aria-hidden="true"></div>
-  <div class="ewm9d-menu" id="ewm9d-menu">
-    <button class="ewm9d-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="ewm9d-menu">
+  <div class="mv7kt-menu-overlay" id="mv7kt-menu-overlay" aria-hidden="true"></div>
+  <div class="mv7kt-menu" id="mv7kt-menu">
+    <button class="mv7kt-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="mv7kt-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="ewm9d-menu-group">
-          <button type="button" class="ewm9d-top">
+        <div class="mv7kt-menu-group">
+          <button type="button" class="mv7kt-top">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined ewm9d-icon">expand_more</span>
+            <span class="material-symbols-outlined mv7kt-icon">expand_more</span>
           </button>
-          <div class="ewm9d-sub">
-            <a class="ewm9d-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="ewm9d-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="ewm9d-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="ewm9d-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="ewm9d-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="ewm9d-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="mv7kt-sub">
+            <a class="mv7kt-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="mv7kt-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="mv7kt-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="mv7kt-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="mv7kt-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="mv7kt-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="ewm9d-menu-group">
-          <button type="button" class="ewm9d-top">
+        <div class="mv7kt-menu-group">
+          <button type="button" class="mv7kt-top">
             <div>Tabela</div>
-            <span class="material-symbols-outlined ewm9d-icon">expand_more</span>
+            <span class="material-symbols-outlined mv7kt-icon">expand_more</span>
           </button>
-          <div class="ewm9d-sub">
-            <a class="ewm9d-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="ewm9d-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="ewm9d-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="ewm9d-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="ewm9d-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="mv7kt-sub">
+            <a class="mv7kt-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="mv7kt-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="mv7kt-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="mv7kt-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="mv7kt-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="ewm9d-menu-group">
-          <button type="button" class="ewm9d-top">
+        <div class="mv7kt-menu-group">
+          <button type="button" class="mv7kt-top">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined ewm9d-icon">expand_more</span>
+            <span class="material-symbols-outlined mv7kt-icon">expand_more</span>
           </button>
-          <div class="ewm9d-sub">
-            <a class="ewm9d-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="ewm9d-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="ewm9d-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="ewm9d-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="ewm9d-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="mv7kt-sub">
+            <a class="mv7kt-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="mv7kt-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="mv7kt-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="mv7kt-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="mv7kt-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="ewm9d-menu-group open">
-          <button type="button" class="ewm9d-top active">
+        <div class="mv7kt-menu-group open">
+          <button type="button" class="mv7kt-top active">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined ewm9d-icon">expand_more</span>
+            <span class="material-symbols-outlined mv7kt-icon">expand_more</span>
           </button>
-          <div class="ewm9d-sub show">
-            <a class="ewm9d-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="ewm9d-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="ewm9d-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="ewm9d-sub-link active" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="ewm9d-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="mv7kt-sub show">
+            <a class="mv7kt-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="mv7kt-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="mv7kt-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="mv7kt-sub-link active" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="mv7kt-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="ewm9d-menu-group">
-          <button type="button" class="ewm9d-top">
+        <div class="mv7kt-menu-group">
+          <button type="button" class="mv7kt-top">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined ewm9d-icon">expand_more</span>
+            <span class="material-symbols-outlined mv7kt-icon">expand_more</span>
           </button>
-          <div class="ewm9d-sub">
-            <a class="ewm9d-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="ewm9d-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="ewm9d-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="ewm9d-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="ewm9d-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="mv7kt-sub">
+            <a class="mv7kt-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="mv7kt-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="mv7kt-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="mv7kt-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="mv7kt-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="ewm9d-menu-group">
-          <button type="button" class="ewm9d-top">
+        <div class="mv7kt-menu-group">
+          <button type="button" class="mv7kt-top">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined ewm9d-icon">expand_more</span>
+            <span class="material-symbols-outlined mv7kt-icon">expand_more</span>
           </button>
-          <div class="ewm9d-sub">
-            <a class="ewm9d-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="ewm9d-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="ewm9d-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="ewm9d-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="ewm9d-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="mv7kt-sub">
+            <a class="mv7kt-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="mv7kt-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="mv7kt-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="mv7kt-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="mv7kt-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="ewm9d-desc">
+  <div class="mv7kt-desc">
     
-    <div class="ewm9d-body"><p><h2 style="font-size: 24px;">Gaziantep'te Araç Reklam Tasarım Hizmetleri</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te araç reklam tasarımlarınız için profesyonel çözümler sunuyoruz. Kurumsal kimliğinize uygun, dikkat çekici ve akılda kalıcı araç reklam tasarımları oluşturuyoruz. Adobe Creative Suite programlarında uzman tasarım ekibimiz, araç tiplerine özel şablon sistemleri ve 3D görselleştirme teknikleriyle çalışıyor.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Araç Reklam Tasarım Süreci</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Araç reklam tasarım hizmetlerimizde, her araç tipine özel tasarım yaklaşımı, maksimum görünürlük analizi ve okunabilirlik testleriyle etkili reklam tasarımları hazırlıyoruz. Logo yerleşimi, renk kullanımı, yazı karakteri seçimi ve görsel düzen konularında profesyonel danışmanlık veriyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Araç giydirme öncesi 3D görselleştirme, revizyon imkanı ve alternatif tasarım seçenekleri sunuyoruz. Filo projeleri için kurumsal kimlik standartlarına uygun, tekrar edilebilir tasarım sistemleri geliştiriyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Danışmanlık</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Araç reklam tasarım hizmetlerimizde, müşterilerimizle yakın iletişim halinde çalışıyor, beklentilerini anlayarak özel çözümler sunuyoruz. Yaratıcı tasarımlar ve profesyonel yaklaşım ile müşterilerimize değer katıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle araç reklam tasarım sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli tasarım ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Araç reklam tasarım ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
-<p>    </p>
-<p>    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Araç Reklam Tasarımı konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kalite ve Güven</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Araç Reklam Tasarımı hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Araç Reklam Tasarımı konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Araç Reklam Tasarımı ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.</p>
-<p>    </p></p></p>
-<p>    <h3 style="font-size: 20px;">Hizmet Sürecimiz</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Araç Reklam Tasarımı hizmetlerimizde, proje başlangıcından teslimata kadar tüm süreçte müşterilerimizle yakın iletişim halinde çalışıyoruz. Ücretsiz keşif ve ölçüm hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Profesyonel montaj ekibimizle, işlerinizi güvenli şekilde uyguluyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Gaziantep'te Araç Reklam Tasarımı konusunda 15 yıllık deneyimimizle, binlerce başarılı projeye imza attık. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz. Kalite standartlarımızdan asla taviz vermeden, sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz.</p>
-<p>    </p></p></div>
+    <div class="mv7kt-body"><h2 style="font-size: 24px;">Gaziantep'te Araç Reklam Tasarım Hizmetleri</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te araç reklam tasarımlarınız için profesyonel çözümler sunuyoruz. Kurumsal kimliğinize uygun, dikkat çekici ve akılda kalıcı araç reklam tasarımları oluşturuyoruz. Adobe Creative Suite programlarında uzman tasarım ekibimiz, araç tiplerine özel şablon sistemleri ve 3D görselleştirme teknikleriyle çalışıyor.
+    </p>
+    <h3 style="font-size: 20px;">Araç Reklam Tasarım Süreci</h3>
+    <p style="font-size: 16px;">
+        Araç reklam tasarım hizmetlerimizde, her araç tipine özel tasarım yaklaşımı, maksimum görünürlük analizi ve okunabilirlik testleriyle etkili reklam tasarımları hazırlıyoruz. Logo yerleşimi, renk kullanımı, yazı karakteri seçimi ve görsel düzen konularında profesyonel danışmanlık veriyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Araç giydirme öncesi 3D görselleştirme, revizyon imkanı ve alternatif tasarım seçenekleri sunuyoruz. Filo projeleri için kurumsal kimlik standartlarına uygun, tekrar edilebilir tasarım sistemleri geliştiriyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Danışmanlık</h3>
+    <p style="font-size: 16px;">
+        Araç reklam tasarım hizmetlerimizde, müşterilerimizle yakın iletişim halinde çalışıyor, beklentilerini anlayarak özel çözümler sunuyoruz. Yaratıcı tasarımlar ve profesyonel yaklaşım ile müşterilerimize değer katıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle araç reklam tasarım sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli tasarım ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Araç reklam tasarım ihtiyaçlarınız için hemen bizimle iletişime geçin!
+    
+    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Araç Reklam Tasarımı konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Kalite ve Güven</h3>
+    <p style="font-size: 16px;">
+        Araç Reklam Tasarımı hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Araç Reklam Tasarımı konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.
+    </p>
+    <p style="font-size: 16px;">
+        Araç Reklam Tasarımı ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.
+    </p></p>
+    <h3 style="font-size: 20px;">Hizmet Sürecimiz</h3>
+    <p style="font-size: 16px;">
+        Araç Reklam Tasarımı hizmetlerimizde, proje başlangıcından teslimata kadar tüm süreçte müşterilerimizle yakın iletişim halinde çalışıyoruz. Ücretsiz keşif ve ölçüm hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Profesyonel montaj ekibimizle, işlerinizi güvenli şekilde uyguluyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Gaziantep'te Araç Reklam Tasarımı konusunda 15 yıllık deneyimimizle, binlerce başarılı projeye imza attık. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz. Kalite standartlarımızdan asla taviz vermeden, sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz.
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".ewm9d-menu-btn");
-    var menu = document.querySelector(".ewm9d-menu");
-    var overlay = document.querySelector(".ewm9d-menu-overlay");
-    var closeButton = document.querySelector(".ewm9d-menu-close");
+    var menuToggleBtn = document.querySelector(".mv7kt-menu-btn");
+    var menu = document.querySelector(".mv7kt-menu");
+    var overlay = document.querySelector(".mv7kt-menu-overlay");
+    var closeButton = document.querySelector(".mv7kt-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -301,7 +307,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".ewm9d-menu-close");
+      var closeBtn = event.target.closest(".mv7kt-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -349,15 +355,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".ewm9d-top").forEach(function (button) {
+    document.querySelectorAll(".mv7kt-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".ewm9d-menu-group");
+        var group = this.closest(".mv7kt-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".ewm9d-sub");
+        var sub = group.querySelector(".mv7kt-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".ewm9d-icon");
+        var icon = this.querySelector(".mv7kt-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -457,8 +463,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=i63ei"></script>
-<script defer src="/src/cookie.js?v=i63ei"></script>
+<script defer type="text/javascript" src="/src/js.js?v=btty8"></script>
+<script defer src="/src/cookie.js?v=btty8"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

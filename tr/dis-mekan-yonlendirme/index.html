@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=cw5sm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=cw5sm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=hsxy0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=hsxy0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=cw5sm" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=hsxy0" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,164 +52,170 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=cw5sm">
+<link rel="stylesheet" href="style.css?v=hsxy0">
 </head>
 
 <body>
-  <div id="header"><div class="aybpf">
-  <div class="aybpftitle">
-    <div class="aybpftitlebody">
-      <div class="aybpftitlebodylang">
+  <div id="header"><div class="tzuuu">
+  <div class="tzuuutitle">
+    <div class="tzuuutitlebody">
+      <div class="tzuuutitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="aybpfbody">
+  <div class="tzuuubody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=cw5sm"
+        src="/img/logo.svg?v=hsxy0"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="aybpfbodylogo"
+        class="tzuuubodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="aybpf-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="tzuuu-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="aybpfmenubody">
-    <div class="aybpfmenu" id="menu-2-root">
-      <div class="aybpfmenulistbody">
-        <div class="aybpfmenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="tzuuu-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="tzuuumenubody">
+    <div class="tzuuumenu" id="menu-2-root">
+      <div class="tzuuumenulistbody">
+        <div class="tzuuumenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="aybpflanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="tzuuulanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.tzuuu) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("aybpfmenu-open")) {
-        root.classList.remove("aybpfmenu-open");
+      var wrapper = root.closest ? root.closest(".tzuuu") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("tzuuumenu-open")) {
+        target.classList.remove("tzuuumenu-open");
       } else {
-        root.classList.add("aybpfmenu-open");
+        target.classList.add("tzuuumenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="i9bxw-title f36">
+  <div id="content"><div class="f9gq9-title f36">
   <h1>Dış Mekan Yönlendirme</h1>
 </div>
-<div class="i9bxw">
-  <div class="i9bxw-menu-btn">
+<div class="f9gq9">
+  <div class="f9gq9-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined i9bxw-icon">menu</span>
+    <span class="material-symbols-outlined f9gq9-icon">menu</span>
   </div>
-  <div class="i9bxw-menu-overlay" id="i9bxw-menu-overlay" aria-hidden="true"></div>
-  <div class="i9bxw-menu" id="i9bxw-menu">
-    <button class="i9bxw-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="i9bxw-menu">
+  <div class="f9gq9-menu-overlay" id="f9gq9-menu-overlay" aria-hidden="true"></div>
+  <div class="f9gq9-menu" id="f9gq9-menu">
+    <button class="f9gq9-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="f9gq9-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="i9bxw-menu-group">
-          <button type="button" class="i9bxw-top">
+        <div class="f9gq9-menu-group">
+          <button type="button" class="f9gq9-top">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined i9bxw-icon">expand_more</span>
+            <span class="material-symbols-outlined f9gq9-icon">expand_more</span>
           </button>
-          <div class="i9bxw-sub">
-            <a class="i9bxw-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="i9bxw-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="i9bxw-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="i9bxw-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="i9bxw-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="i9bxw-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="f9gq9-sub">
+            <a class="f9gq9-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="f9gq9-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="f9gq9-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="f9gq9-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="f9gq9-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="f9gq9-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="i9bxw-menu-group">
-          <button type="button" class="i9bxw-top">
+        <div class="f9gq9-menu-group">
+          <button type="button" class="f9gq9-top">
             <div>Tabela</div>
-            <span class="material-symbols-outlined i9bxw-icon">expand_more</span>
+            <span class="material-symbols-outlined f9gq9-icon">expand_more</span>
           </button>
-          <div class="i9bxw-sub">
-            <a class="i9bxw-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="i9bxw-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="i9bxw-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="i9bxw-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="i9bxw-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="f9gq9-sub">
+            <a class="f9gq9-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="f9gq9-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="f9gq9-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="f9gq9-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="f9gq9-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="i9bxw-menu-group">
-          <button type="button" class="i9bxw-top">
+        <div class="f9gq9-menu-group">
+          <button type="button" class="f9gq9-top">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined i9bxw-icon">expand_more</span>
+            <span class="material-symbols-outlined f9gq9-icon">expand_more</span>
           </button>
-          <div class="i9bxw-sub">
-            <a class="i9bxw-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="i9bxw-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="i9bxw-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="i9bxw-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="i9bxw-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="f9gq9-sub">
+            <a class="f9gq9-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="f9gq9-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="f9gq9-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="f9gq9-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="f9gq9-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="i9bxw-menu-group">
-          <button type="button" class="i9bxw-top">
+        <div class="f9gq9-menu-group">
+          <button type="button" class="f9gq9-top">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined i9bxw-icon">expand_more</span>
+            <span class="material-symbols-outlined f9gq9-icon">expand_more</span>
           </button>
-          <div class="i9bxw-sub">
-            <a class="i9bxw-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="i9bxw-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="i9bxw-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="i9bxw-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="i9bxw-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="f9gq9-sub">
+            <a class="f9gq9-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="f9gq9-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="f9gq9-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="f9gq9-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="f9gq9-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="i9bxw-menu-group">
-          <button type="button" class="i9bxw-top">
+        <div class="f9gq9-menu-group">
+          <button type="button" class="f9gq9-top">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined i9bxw-icon">expand_more</span>
+            <span class="material-symbols-outlined f9gq9-icon">expand_more</span>
           </button>
-          <div class="i9bxw-sub">
-            <a class="i9bxw-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="i9bxw-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="i9bxw-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="i9bxw-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="i9bxw-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="f9gq9-sub">
+            <a class="f9gq9-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="f9gq9-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="f9gq9-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="f9gq9-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="f9gq9-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="i9bxw-menu-group">
-          <button type="button" class="i9bxw-top">
+        <div class="f9gq9-menu-group">
+          <button type="button" class="f9gq9-top">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined i9bxw-icon">expand_more</span>
+            <span class="material-symbols-outlined f9gq9-icon">expand_more</span>
           </button>
-          <div class="i9bxw-sub">
-            <a class="i9bxw-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="i9bxw-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="i9bxw-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="i9bxw-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="i9bxw-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="f9gq9-sub">
+            <a class="f9gq9-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="f9gq9-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="f9gq9-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="f9gq9-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="f9gq9-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="i9bxw-desc">
+  <div class="f9gq9-desc">
     
-    <div class="i9bxw-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Dış Mekan Yönlendirme Sistemleri</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel dış mekan yönlendirme sistemleri üretiyoruz. Işıklı tabelalardan farklı olarak yönlendirme ve bilgilendirme odaklı. Işıklı tabelalar aydınlatma teknolojisi ve marka görünürlüğü odaklıyken, dış mekan yönlendirme sistemleri yönlendirme, bilgilendirme ve yol gösterme amaçlıdır. Site, kampüs, park, sanayi bölgesi gibi geniş alanlar için dayanıklı ve etkili yönlendirme çözümleri sunuyoruz. Alüminyum kompozit, paslanmaz çelik, galvaniz sac gibi dış mekan şartlarına dayanıklı malzemelerle üretim yapıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Dış Mekan Yönlendirme Özellikleri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Dış mekan yönlendirme sistemlerimiz, reflektif folyolar, LED aydınlatma sistemleri ve solar enerjili çözümlerle gece-gündüz görünürlük sağlar. Site, kampüs ve park yönlendirme sistemleri için yönlendirme levhaları, yol tabelaları ve park işaretleri tasarlıyoruz. UV dayanımlı baskılar, özel kaplama teknikleri ve anti-vandal sistemlerle uzun ömürlü uygulamalar gerçekleştiriyoruz. Statik hesaplamalar, zemin etüdü ve rüzgar yükü analizleriyle güvenli montaj sağlıyoruz. Yönlendirme sistemleri, alüminyum kompozit, paslanmaz çelik ve galvaniz sac gibi dış mekan şartlarına dayanıklı malzemelerle üretilmektedir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        3D tasarım, görselleştirme ve teknik çizim hizmetlerimizle projenizi önceden görme imkanı sunuyoruz. Statik hesaplamalar, zemin etüdü ve rüzgar yükü analizleriyle güvenli montaj sağlıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Destek</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Dış mekan yönlendirme hizmetlerimizde, ücretsiz keşif, profesyonel montaj ve bakım hizmetleriyle eksiksiz çözümler üretiyoruz. Hava şartlarına dayanıklı, uzun ömürlü ve güvenli çözümler sunuyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Dış mekan yönlendirme sistemlerimizde, reflektif folyolar, LED aydınlatma sistemleri ve solar enerjili çözümlerle gece-gündüz görünürlük sağlıyoruz. UV dayanımlı baskılar, özel kaplama teknikleri ve anti-vandal sistemlerle uzun ömürlü uygulamalar gerçekleştiriyoruz. Statik hesaplamalar, zemin etüdü ve rüzgar yükü analizleriyle güvenli montaj sağlıyoruz. Ücretsiz keşif, profesyonel montaj ve bakım hizmetleriyle eksiksiz çözümler üretiyoruz. Dış mekan yönlendirme ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
-<p>    </p></p></div>
+    <div class="f9gq9-body"><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Dış Mekan Yönlendirme Sistemleri</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te profesyonel dış mekan yönlendirme sistemleri üretiyoruz. Işıklı tabelalardan farklı olarak yönlendirme ve bilgilendirme odaklı. Işıklı tabelalar aydınlatma teknolojisi ve marka görünürlüğü odaklıyken, dış mekan yönlendirme sistemleri yönlendirme, bilgilendirme ve yol gösterme amaçlıdır. Site, kampüs, park, sanayi bölgesi gibi geniş alanlar için dayanıklı ve etkili yönlendirme çözümleri sunuyoruz. Alüminyum kompozit, paslanmaz çelik, galvaniz sac gibi dış mekan şartlarına dayanıklı malzemelerle üretim yapıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Dış Mekan Yönlendirme Özellikleri</h3>
+    <p style="font-size: 16px;">
+        Dış mekan yönlendirme sistemlerimiz, reflektif folyolar, LED aydınlatma sistemleri ve solar enerjili çözümlerle gece-gündüz görünürlük sağlar. Site, kampüs ve park yönlendirme sistemleri için yönlendirme levhaları, yol tabelaları ve park işaretleri tasarlıyoruz. UV dayanımlı baskılar, özel kaplama teknikleri ve anti-vandal sistemlerle uzun ömürlü uygulamalar gerçekleştiriyoruz. Statik hesaplamalar, zemin etüdü ve rüzgar yükü analizleriyle güvenli montaj sağlıyoruz. Yönlendirme sistemleri, alüminyum kompozit, paslanmaz çelik ve galvaniz sac gibi dış mekan şartlarına dayanıklı malzemelerle üretilmektedir.
+    </p>
+    <p style="font-size: 16px;">
+        3D tasarım, görselleştirme ve teknik çizim hizmetlerimizle projenizi önceden görme imkanı sunuyoruz. Statik hesaplamalar, zemin etüdü ve rüzgar yükü analizleriyle güvenli montaj sağlıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Destek</h3>
+    <p style="font-size: 16px;">
+        Dış mekan yönlendirme hizmetlerimizde, ücretsiz keşif, profesyonel montaj ve bakım hizmetleriyle eksiksiz çözümler üretiyoruz. Hava şartlarına dayanıklı, uzun ömürlü ve güvenli çözümler sunuyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Dış mekan yönlendirme sistemlerimizde, reflektif folyolar, LED aydınlatma sistemleri ve solar enerjili çözümlerle gece-gündüz görünürlük sağlıyoruz. UV dayanımlı baskılar, özel kaplama teknikleri ve anti-vandal sistemlerle uzun ömürlü uygulamalar gerçekleştiriyoruz. Statik hesaplamalar, zemin etüdü ve rüzgar yükü analizleriyle güvenli montaj sağlıyoruz. Ücretsiz keşif, profesyonel montaj ve bakım hizmetleriyle eksiksiz çözümler üretiyoruz. Dış mekan yönlendirme ihtiyaçlarınız için hemen bizimle iletişime geçin!
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".i9bxw-menu-btn");
-    var menu = document.querySelector(".i9bxw-menu");
-    var overlay = document.querySelector(".i9bxw-menu-overlay");
-    var closeButton = document.querySelector(".i9bxw-menu-close");
+    var menuToggleBtn = document.querySelector(".f9gq9-menu-btn");
+    var menu = document.querySelector(".f9gq9-menu");
+    var overlay = document.querySelector(".f9gq9-menu-overlay");
+    var closeButton = document.querySelector(".f9gq9-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -279,7 +285,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".i9bxw-menu-close");
+      var closeBtn = event.target.closest(".f9gq9-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -327,15 +333,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".i9bxw-top").forEach(function (button) {
+    document.querySelectorAll(".f9gq9-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".i9bxw-menu-group");
+        var group = this.closest(".f9gq9-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".i9bxw-sub");
+        var sub = group.querySelector(".f9gq9-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".i9bxw-icon");
+        var icon = this.querySelector(".f9gq9-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -435,8 +441,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=cw5sm"></script>
-<script defer src="/src/cookie.js?v=cw5sm"></script>
+<script defer type="text/javascript" src="/src/js.js?v=hsxy0"></script>
+<script defer src="/src/cookie.js?v=hsxy0"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=mri0j" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=mri0j" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=l86k6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=l86k6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=mri0j" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=l86k6" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,71 +52,77 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=mri0j">
+<link rel="stylesheet" href="style.css?v=l86k6">
 </head>
 
 <body>
-  <div id="header"><div class="z3bj7">
-  <div class="z3bj7title">
-    <div class="z3bj7titlebody">
-      <div class="z3bj7titlebodylang">
+  <div id="header"><div class="cmkbq">
+  <div class="cmkbqtitle">
+    <div class="cmkbqtitlebody">
+      <div class="cmkbqtitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="z3bj7body">
+  <div class="cmkbqbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=mri0j"
+        src="/img/logo.svg?v=l86k6"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="z3bj7bodylogo"
+        class="cmkbqbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="z3bj7-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="cmkbq-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="z3bj7menubody">
-    <div class="z3bj7menu" id="menu-2-root">
-      <div class="z3bj7menulistbody">
-        <div class="z3bj7menulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="cmkbq-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="cmkbqmenubody">
+    <div class="cmkbqmenu" id="menu-2-root">
+      <div class="cmkbqmenulistbody">
+        <div class="cmkbqmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="z3bj7languages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="cmkbqlanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.cmkbq) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("z3bj7menu-open")) {
-        root.classList.remove("z3bj7menu-open");
+      var wrapper = root.closest ? root.closest(".cmkbq") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("cmkbqmenu-open")) {
+        target.classList.remove("cmkbqmenu-open");
       } else {
-        root.classList.add("z3bj7menu-open");
+        target.classList.add("cmkbqmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="cwai7-title f36">
+  <div id="content"><div class="z3yba-title f36">
   <h1>Gaziantep Paslanmaz harf</h1>
 </div>
 
-<div class="cwai7"><h2>Gaziantep Paslanmaz Harf – Reklam Atölyesi ile Markanızı Yükseltin</h2>
+<div class="z3yba"><h2>Gaziantep Paslanmaz Harf – Reklam Atölyesi ile Markanızı Yükseltin</h2>
 
 <p><strong>Reklam Atölyesi</strong>, <strong>Gaziantep paslanmaz harf</strong> uygulamalarında öncü bir firmadır. İşletmenizin kurumsal kimliğini en iyi şekilde yansıtan, modern ve uzun ömürlü <strong>paslanmaz harfler</strong> ile markanızın görünürlüğünü artırmak için buradayız. <strong>Gaziantep</strong>’te yer alan <strong>Reklam Atölyesi</strong>, sadece <strong>paslanmaz harf</strong> değil, aynı zamanda kapsamlı <strong>tabela</strong> ve <strong>reklam</strong> çözümleri sunarak işletmenizin iletişim stratejilerine değer katmaktadır.</p>
 
@@ -198,22 +204,22 @@
 
 <p><strong>Reklam Atölyesi</strong>, <strong>Gaziantep</strong>’te <strong>paslanmaz harf</strong> ve <strong>tabela</strong> çözümlerinde <strong>size</strong> en iyi hizmeti sunmak için sabırsızlanıyor.  <strong>İhtiyaçlarınız</strong> doğrultusunda, işletmenizin marka değerini yükseltecek, etkileyici ve dayanıklı çözümler üretmek için bizimle iletişime geçin.</p></div>
 
-<div class="tb629">
-  <div class="tb629body">
-    <div class="tb629container">
-      <div class="tb629containerbody">
-        <h2 class="tb629containertitle">Bize Ulaşın</h2>
-        <a href="tel:05316791014" target="_blank" rel="noopener noreferrer" class="tb629containerlist">
+<div class="zme59">
+  <div class="zme59body">
+    <div class="zme59container">
+      <div class="zme59containerbody">
+        <h2 class="zme59containertitle">Bize Ulaşın</h2>
+        <a href="tel:05316791014" target="_blank" rel="noopener noreferrer" class="zme59containerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    phone
                   </span>
                   <div>0531 679 10 14</div>
-                </a><a href="email:info@reklamatolyesi.org" target="_blank" rel="noopener noreferrer" class="tb629containerlist">
+                </a><a href="email:info@reklamatolyesi.org" target="_blank" rel="noopener noreferrer" class="zme59containerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    email
                   </span>
                   <div>info@reklamatolyesi.org</div>
-                </a><a href="https://share.google/aNKs6f6JPb3H4BcsK" target="_blank" rel="noopener noreferrer" class="tb629containerlist">
+                </a><a href="https://share.google/aNKs6f6JPb3H4BcsK" target="_blank" rel="noopener noreferrer" class="zme59containerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    map
                   </span>
@@ -312,8 +318,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=mri0j"></script>
-<script defer src="/src/cookie.js?v=mri0j"></script>
+<script defer type="text/javascript" src="/src/js.js?v=l86k6"></script>
+<script defer src="/src/cookie.js?v=l86k6"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

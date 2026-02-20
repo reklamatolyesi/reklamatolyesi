@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=v5fzp" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=v5fzp" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=w1w8c" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=w1w8c" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=v5fzp" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=w1w8c" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,164 +52,170 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=v5fzp">
+<link rel="stylesheet" href="style.css?v=w1w8c">
 </head>
 
 <body>
-  <div id="header"><div class="cqu8c">
-  <div class="cqu8ctitle">
-    <div class="cqu8ctitlebody">
-      <div class="cqu8ctitlebodylang">
+  <div id="header"><div class="n7gz0">
+  <div class="n7gz0title">
+    <div class="n7gz0titlebody">
+      <div class="n7gz0titlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="cqu8cbody">
+  <div class="n7gz0body">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=v5fzp"
+        src="/img/logo.svg?v=w1w8c"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="cqu8cbodylogo"
+        class="n7gz0bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="cqu8c-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="n7gz0-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="cqu8cmenubody">
-    <div class="cqu8cmenu" id="menu-2-root">
-      <div class="cqu8cmenulistbody">
-        <div class="cqu8cmenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="n7gz0-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="n7gz0menubody">
+    <div class="n7gz0menu" id="menu-2-root">
+      <div class="n7gz0menulistbody">
+        <div class="n7gz0menulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="cqu8clanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="n7gz0languages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.n7gz0) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("cqu8cmenu-open")) {
-        root.classList.remove("cqu8cmenu-open");
+      var wrapper = root.closest ? root.closest(".n7gz0") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("n7gz0menu-open")) {
+        target.classList.remove("n7gz0menu-open");
       } else {
-        root.classList.add("cqu8cmenu-open");
+        target.classList.add("n7gz0menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="oba10-title f36">
+  <div id="content"><div class="uu1b2-title f36">
   <h1>Örümcek Stand</h1>
 </div>
-<div class="oba10">
-  <div class="oba10-menu-btn">
+<div class="uu1b2">
+  <div class="uu1b2-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined oba10-icon">menu</span>
+    <span class="material-symbols-outlined uu1b2-icon">menu</span>
   </div>
-  <div class="oba10-menu-overlay" id="oba10-menu-overlay" aria-hidden="true"></div>
-  <div class="oba10-menu" id="oba10-menu">
-    <button class="oba10-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="oba10-menu">
+  <div class="uu1b2-menu-overlay" id="uu1b2-menu-overlay" aria-hidden="true"></div>
+  <div class="uu1b2-menu" id="uu1b2-menu">
+    <button class="uu1b2-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="uu1b2-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="oba10-menu-group">
-          <button type="button" class="oba10-top">
+        <div class="uu1b2-menu-group">
+          <button type="button" class="uu1b2-top">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined oba10-icon">expand_more</span>
+            <span class="material-symbols-outlined uu1b2-icon">expand_more</span>
           </button>
-          <div class="oba10-sub">
-            <a class="oba10-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="oba10-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="oba10-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="oba10-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="oba10-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="oba10-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="uu1b2-sub">
+            <a class="uu1b2-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="uu1b2-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="uu1b2-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="uu1b2-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="uu1b2-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="uu1b2-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="oba10-menu-group">
-          <button type="button" class="oba10-top">
+        <div class="uu1b2-menu-group">
+          <button type="button" class="uu1b2-top">
             <div>Tabela</div>
-            <span class="material-symbols-outlined oba10-icon">expand_more</span>
+            <span class="material-symbols-outlined uu1b2-icon">expand_more</span>
           </button>
-          <div class="oba10-sub">
-            <a class="oba10-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="oba10-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="oba10-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="oba10-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="oba10-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="uu1b2-sub">
+            <a class="uu1b2-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="uu1b2-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="uu1b2-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="uu1b2-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="uu1b2-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="oba10-menu-group">
-          <button type="button" class="oba10-top">
+        <div class="uu1b2-menu-group">
+          <button type="button" class="uu1b2-top">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined oba10-icon">expand_more</span>
+            <span class="material-symbols-outlined uu1b2-icon">expand_more</span>
           </button>
-          <div class="oba10-sub">
-            <a class="oba10-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="oba10-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="oba10-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="oba10-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="oba10-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="uu1b2-sub">
+            <a class="uu1b2-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="uu1b2-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="uu1b2-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="uu1b2-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="uu1b2-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="oba10-menu-group">
-          <button type="button" class="oba10-top">
+        <div class="uu1b2-menu-group">
+          <button type="button" class="uu1b2-top">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined oba10-icon">expand_more</span>
+            <span class="material-symbols-outlined uu1b2-icon">expand_more</span>
           </button>
-          <div class="oba10-sub">
-            <a class="oba10-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="oba10-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="oba10-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="oba10-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="oba10-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="uu1b2-sub">
+            <a class="uu1b2-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="uu1b2-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="uu1b2-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="uu1b2-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="uu1b2-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="oba10-menu-group">
-          <button type="button" class="oba10-top">
+        <div class="uu1b2-menu-group">
+          <button type="button" class="uu1b2-top">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined oba10-icon">expand_more</span>
+            <span class="material-symbols-outlined uu1b2-icon">expand_more</span>
           </button>
-          <div class="oba10-sub">
-            <a class="oba10-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="oba10-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="oba10-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="oba10-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="oba10-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="uu1b2-sub">
+            <a class="uu1b2-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="uu1b2-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="uu1b2-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="uu1b2-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="uu1b2-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="oba10-menu-group open">
-          <button type="button" class="oba10-top active">
+        <div class="uu1b2-menu-group open">
+          <button type="button" class="uu1b2-top active">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined oba10-icon">expand_more</span>
+            <span class="material-symbols-outlined uu1b2-icon">expand_more</span>
           </button>
-          <div class="oba10-sub show">
-            <a class="oba10-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="oba10-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="oba10-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="oba10-sub-link active" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="oba10-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="uu1b2-sub show">
+            <a class="uu1b2-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="uu1b2-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="uu1b2-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="uu1b2-sub-link active" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="uu1b2-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="oba10-desc">
+  <div class="uu1b2-desc">
     
-    <div class="oba10-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Örümcek Stand Sistemleri</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel örümcek stand sistemleri üretiyoruz. Ticari araç reklamlarından farklı olarak fuar, lansman, sergi ve tanıtım etkinlikleriniz için hızlı kurulumlu, kompakt ve etkileyici örümcek stand çözümleri sunuyoruz. Ticari araç reklamları mobil reklam ve filo giydirme odaklıyken, örümcek stand fuar alanlarında sabit kurulum ve sergileme amaçlıdır. Hafif alüminyum konstrüksiyon, özel germe sistem teknolojisi ve yüksek kaliteli baskı malzemeleriyle dayanıklı ürünler üretiyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Örümcek Stand Özellikleri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Örümcek stand (spider stand) sistemlerimiz, 2x2, 3x3, 4x3 gibi standart ölçüler ve özel ebat seçenekleriyle her alana uygun çözümler sağlar. Backdrop stand teknolojisi ile germe sistem kullanarak profesyonel görünüm elde ediyoruz. Çift taraflı baskı imkanı, LED aydınlatma opsiyonu ve değiştirilebilir görsel sistemiyle esnek kullanım sunuyoruz. Katlanabilir ve taşınabilir özellikleri ile fuar sürecinizi kolaylaştırır. Örümcek stand, alüminyum konstrüksiyon ve özel germe sistem teknolojisi ile hızlı kurulum avantajı sunmaktadır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Sert taşıma çantası, kurulum kılavuzu ve yedek parça garantisiyle eksiksiz hizmet veriyoruz. Geniş format dijital baskı teknolojimiz ve laminasyon uygulamalarımızla canlı ve uzun ömürlü görseller elde ediyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Kalite</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Örümcek stand hizmetlerimizde kaliteden ödün vermeden, müşteri memnuniyetini ön planda tutuyoruz. Hızlı kurulum, kolay taşıma ve uzun ömürlü kullanım avantajları ile müşterilerimize değer katıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Örümcek stand sistemlerimizde, sert taşıma çantası, kurulum kılavuzu ve yedek parça garantisiyle eksiksiz hizmet veriyoruz. Geniş format dijital baskı teknolojimiz ve laminasyon uygulamalarımızla canlı ve uzun ömürlü görseller elde ediyoruz. Hızlı kurulum, kolay taşıma ve uzun ömürlü kullanım avantajları ile müşterilerimize değer katıyoruz. Örümcek stand ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
-<p>    </p></p></div>
+    <div class="uu1b2-body"><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Örümcek Stand Sistemleri</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te profesyonel örümcek stand sistemleri üretiyoruz. Ticari araç reklamlarından farklı olarak fuar, lansman, sergi ve tanıtım etkinlikleriniz için hızlı kurulumlu, kompakt ve etkileyici örümcek stand çözümleri sunuyoruz. Ticari araç reklamları mobil reklam ve filo giydirme odaklıyken, örümcek stand fuar alanlarında sabit kurulum ve sergileme amaçlıdır. Hafif alüminyum konstrüksiyon, özel germe sistem teknolojisi ve yüksek kaliteli baskı malzemeleriyle dayanıklı ürünler üretiyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Örümcek Stand Özellikleri</h3>
+    <p style="font-size: 16px;">
+        Örümcek stand (spider stand) sistemlerimiz, 2x2, 3x3, 4x3 gibi standart ölçüler ve özel ebat seçenekleriyle her alana uygun çözümler sağlar. Backdrop stand teknolojisi ile germe sistem kullanarak profesyonel görünüm elde ediyoruz. Çift taraflı baskı imkanı, LED aydınlatma opsiyonu ve değiştirilebilir görsel sistemiyle esnek kullanım sunuyoruz. Katlanabilir ve taşınabilir özellikleri ile fuar sürecinizi kolaylaştırır. Örümcek stand, alüminyum konstrüksiyon ve özel germe sistem teknolojisi ile hızlı kurulum avantajı sunmaktadır.
+    </p>
+    <p style="font-size: 16px;">
+        Sert taşıma çantası, kurulum kılavuzu ve yedek parça garantisiyle eksiksiz hizmet veriyoruz. Geniş format dijital baskı teknolojimiz ve laminasyon uygulamalarımızla canlı ve uzun ömürlü görseller elde ediyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Kalite</h3>
+    <p style="font-size: 16px;">
+        Örümcek stand hizmetlerimizde kaliteden ödün vermeden, müşteri memnuniyetini ön planda tutuyoruz. Hızlı kurulum, kolay taşıma ve uzun ömürlü kullanım avantajları ile müşterilerimize değer katıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Örümcek stand sistemlerimizde, sert taşıma çantası, kurulum kılavuzu ve yedek parça garantisiyle eksiksiz hizmet veriyoruz. Geniş format dijital baskı teknolojimiz ve laminasyon uygulamalarımızla canlı ve uzun ömürlü görseller elde ediyoruz. Hızlı kurulum, kolay taşıma ve uzun ömürlü kullanım avantajları ile müşterilerimize değer katıyoruz. Örümcek stand ihtiyaçlarınız için hemen bizimle iletişime geçin!
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".oba10-menu-btn");
-    var menu = document.querySelector(".oba10-menu");
-    var overlay = document.querySelector(".oba10-menu-overlay");
-    var closeButton = document.querySelector(".oba10-menu-close");
+    var menuToggleBtn = document.querySelector(".uu1b2-menu-btn");
+    var menu = document.querySelector(".uu1b2-menu");
+    var overlay = document.querySelector(".uu1b2-menu-overlay");
+    var closeButton = document.querySelector(".uu1b2-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -279,7 +285,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".oba10-menu-close");
+      var closeBtn = event.target.closest(".uu1b2-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -327,15 +333,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".oba10-top").forEach(function (button) {
+    document.querySelectorAll(".uu1b2-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".oba10-menu-group");
+        var group = this.closest(".uu1b2-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".oba10-sub");
+        var sub = group.querySelector(".uu1b2-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".oba10-icon");
+        var icon = this.querySelector(".uu1b2-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -435,8 +441,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=v5fzp"></script>
-<script defer src="/src/cookie.js?v=v5fzp"></script>
+<script defer type="text/javascript" src="/src/js.js?v=w1w8c"></script>
+<script defer src="/src/cookie.js?v=w1w8c"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

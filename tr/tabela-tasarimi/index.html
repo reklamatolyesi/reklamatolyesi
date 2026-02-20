@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=yzha5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=yzha5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=khbjm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=khbjm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=yzha5" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=khbjm" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,71 +52,77 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=yzha5">
+<link rel="stylesheet" href="style.css?v=khbjm">
 </head>
 
 <body>
-  <div id="header"><div class="pokta">
-  <div class="poktatitle">
-    <div class="poktatitlebody">
-      <div class="poktatitlebodylang">
+  <div id="header"><div class="ta3pw">
+  <div class="ta3pwtitle">
+    <div class="ta3pwtitlebody">
+      <div class="ta3pwtitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="poktabody">
+  <div class="ta3pwbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=yzha5"
+        src="/img/logo.svg?v=khbjm"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="poktabodylogo"
+        class="ta3pwbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="pokta-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ta3pw-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="poktamenubody">
-    <div class="poktamenu" id="menu-2-root">
-      <div class="poktamenulistbody">
-        <div class="poktamenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="ta3pw-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="ta3pwmenubody">
+    <div class="ta3pwmenu" id="menu-2-root">
+      <div class="ta3pwmenulistbody">
+        <div class="ta3pwmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="poktalanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="ta3pwlanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.ta3pw) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("poktamenu-open")) {
-        root.classList.remove("poktamenu-open");
+      var wrapper = root.closest ? root.closest(".ta3pw") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("ta3pwmenu-open")) {
+        target.classList.remove("ta3pwmenu-open");
       } else {
-        root.classList.add("poktamenu-open");
+        target.classList.add("ta3pwmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="yipg5-title f36">
+  <div id="content"><div class="jnqub-title f36">
   <h1>Gaziantep Tabela tasarımı</h1>
 </div>
 
-<div class="yipg5"><h2>Gaziantep Tabela Tasarımı – Markanızı Yükseltin!</h2>
+<div class="jnqub"><h2>Gaziantep Tabela Tasarımı – Markanızı Yükseltin!</h2>
 <p><strong>Reklam Atölyesi</strong>, Gaziantep’in canlı iş dünyasında markanızın görünürlüğünü artırmak için yenilikçi <strong>Gaziantep tabela tasarımı</strong> hizmetleri sunuyor. İşletmenizin değerlerini ve kimliğini yansıtan, estetik açıdan etkileyici ve fonksiyonel <strong>tabelalar</strong> ile potansiyel müşterilerinizi cezbedin. <strong>Gaziantep’te tabela</strong> yaptırmak isteyenler için, <strong>Reklam Atölyesi</strong>, <strong>profesyonel</strong> çözümler ve <strong>kaliteli</strong> uygulamalarla öne çıkıyor.  <strong>Gaziantep reklam ajansı</strong> olarak, işletmenizin başarısı için size özel tasarımlar geliştiriyoruz.</p>
 
 <h2>Neden Profesyonel Tabela Tasarımı?</h2>
@@ -168,22 +174,22 @@
 
 <p><strong>Reklam Atölyesi</strong>, <strong>Gaziantep’te</strong>  <strong>tabela tasarımı</strong> ve <strong>reklam</strong> çözümleri konusunda uzman bir ekibe sahiptir.  Sizin için en iyi <strong>tabela</strong>yı tasarlamak ve üretmek için hemen bizimle iletişime geçin.  Markanızı öne çıkarmak ve işinizi büyütmek için <strong>Reklam Atölyesi</strong> yanınızda!</p></div>
 
-<div class="tekgk">
-  <div class="tekgkbody">
-    <div class="tekgkcontainer">
-      <div class="tekgkcontainerbody">
-        <h2 class="tekgkcontainertitle">Bize Ulaşın</h2>
-        <a href="tel:05316791014" target="_blank" rel="noopener noreferrer" class="tekgkcontainerlist">
+<div class="ltwi9">
+  <div class="ltwi9body">
+    <div class="ltwi9container">
+      <div class="ltwi9containerbody">
+        <h2 class="ltwi9containertitle">Bize Ulaşın</h2>
+        <a href="tel:05316791014" target="_blank" rel="noopener noreferrer" class="ltwi9containerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    phone
                   </span>
                   <div>0531 679 10 14</div>
-                </a><a href="email:info@reklamatolyesi.org" target="_blank" rel="noopener noreferrer" class="tekgkcontainerlist">
+                </a><a href="email:info@reklamatolyesi.org" target="_blank" rel="noopener noreferrer" class="ltwi9containerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    email
                   </span>
                   <div>info@reklamatolyesi.org</div>
-                </a><a href="https://share.google/aNKs6f6JPb3H4BcsK" target="_blank" rel="noopener noreferrer" class="tekgkcontainerlist">
+                </a><a href="https://share.google/aNKs6f6JPb3H4BcsK" target="_blank" rel="noopener noreferrer" class="ltwi9containerlist">
                   <span class="material-symbols-outlined" aria-hidden="true">
                    map
                   </span>
@@ -282,8 +288,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=yzha5"></script>
-<script defer src="/src/cookie.js?v=yzha5"></script>
+<script defer type="text/javascript" src="/src/js.js?v=khbjm"></script>
+<script defer src="/src/cookie.js?v=khbjm"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

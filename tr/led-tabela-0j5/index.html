@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=gazda" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=gazda" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=r3elr" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=r3elr" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=gazda" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=r3elr" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,193 +52,199 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=gazda">
+<link rel="stylesheet" href="style.css?v=r3elr">
 </head>
 
 <body>
-  <div id="header"><div class="zrjis">
-  <div class="zrjistitle">
-    <div class="zrjistitlebody">
-      <div class="zrjistitlebodylang">
+  <div id="header"><div class="ugywc">
+  <div class="ugywctitle">
+    <div class="ugywctitlebody">
+      <div class="ugywctitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="zrjisbody">
+  <div class="ugywcbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=gazda"
+        src="/img/logo.svg?v=r3elr"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="zrjisbodylogo"
+        class="ugywcbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="zrjis-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ugywc-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="zrjismenubody">
-    <div class="zrjismenu" id="menu-2-root">
-      <div class="zrjismenulistbody">
-        <div class="zrjismenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="ugywc-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="ugywcmenubody">
+    <div class="ugywcmenu" id="menu-2-root">
+      <div class="ugywcmenulistbody">
+        <div class="ugywcmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="zrjislanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="ugywclanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.ugywc) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("zrjismenu-open")) {
-        root.classList.remove("zrjismenu-open");
+      var wrapper = root.closest ? root.closest(".ugywc") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("ugywcmenu-open")) {
+        target.classList.remove("ugywcmenu-open");
       } else {
-        root.classList.add("zrjismenu-open");
+        target.classList.add("ugywcmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="ho0a9-title f36">
+  <div id="content"><div class="a3oty-title f36">
   <h1>LED Tabela</h1>
 </div>
-<div class="ho0a9">
-  <div class="ho0a9-menu-btn">
+<div class="a3oty">
+  <div class="a3oty-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined ho0a9-icon">menu</span>
+    <span class="material-symbols-outlined a3oty-icon">menu</span>
   </div>
-  <div class="ho0a9-menu-overlay" id="ho0a9-menu-overlay" aria-hidden="true"></div>
-  <div class="ho0a9-menu" id="ho0a9-menu">
-    <button class="ho0a9-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="ho0a9-menu">
+  <div class="a3oty-menu-overlay" id="a3oty-menu-overlay" aria-hidden="true"></div>
+  <div class="a3oty-menu" id="a3oty-menu">
+    <button class="a3oty-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="a3oty-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="ho0a9-menu-group">
-          <button type="button" class="ho0a9-top">
+        <div class="a3oty-menu-group">
+          <button type="button" class="a3oty-top">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined ho0a9-icon">expand_more</span>
+            <span class="material-symbols-outlined a3oty-icon">expand_more</span>
           </button>
-          <div class="ho0a9-sub">
-            <a class="ho0a9-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="ho0a9-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="ho0a9-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="ho0a9-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="ho0a9-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="ho0a9-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="a3oty-sub">
+            <a class="a3oty-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="a3oty-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="a3oty-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="a3oty-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="a3oty-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="a3oty-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="ho0a9-menu-group open">
-          <button type="button" class="ho0a9-top active">
+        <div class="a3oty-menu-group open">
+          <button type="button" class="a3oty-top active">
             <div>Tabela</div>
-            <span class="material-symbols-outlined ho0a9-icon">expand_more</span>
+            <span class="material-symbols-outlined a3oty-icon">expand_more</span>
           </button>
-          <div class="ho0a9-sub show">
-            <a class="ho0a9-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="ho0a9-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="ho0a9-sub-link active" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="ho0a9-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="ho0a9-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="a3oty-sub show">
+            <a class="a3oty-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="a3oty-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="a3oty-sub-link active" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="a3oty-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="a3oty-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="ho0a9-menu-group">
-          <button type="button" class="ho0a9-top">
+        <div class="a3oty-menu-group">
+          <button type="button" class="a3oty-top">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined ho0a9-icon">expand_more</span>
+            <span class="material-symbols-outlined a3oty-icon">expand_more</span>
           </button>
-          <div class="ho0a9-sub">
-            <a class="ho0a9-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="ho0a9-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="ho0a9-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="ho0a9-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="ho0a9-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="a3oty-sub">
+            <a class="a3oty-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="a3oty-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="a3oty-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="a3oty-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="a3oty-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="ho0a9-menu-group">
-          <button type="button" class="ho0a9-top">
+        <div class="a3oty-menu-group">
+          <button type="button" class="a3oty-top">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined ho0a9-icon">expand_more</span>
+            <span class="material-symbols-outlined a3oty-icon">expand_more</span>
           </button>
-          <div class="ho0a9-sub">
-            <a class="ho0a9-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="ho0a9-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="ho0a9-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="ho0a9-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="ho0a9-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="a3oty-sub">
+            <a class="a3oty-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="a3oty-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="a3oty-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="a3oty-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="a3oty-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="ho0a9-menu-group">
-          <button type="button" class="ho0a9-top">
+        <div class="a3oty-menu-group">
+          <button type="button" class="a3oty-top">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined ho0a9-icon">expand_more</span>
+            <span class="material-symbols-outlined a3oty-icon">expand_more</span>
           </button>
-          <div class="ho0a9-sub">
-            <a class="ho0a9-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="ho0a9-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="ho0a9-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="ho0a9-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="ho0a9-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="a3oty-sub">
+            <a class="a3oty-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="a3oty-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="a3oty-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="a3oty-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="a3oty-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="ho0a9-menu-group">
-          <button type="button" class="ho0a9-top">
+        <div class="a3oty-menu-group">
+          <button type="button" class="a3oty-top">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined ho0a9-icon">expand_more</span>
+            <span class="material-symbols-outlined a3oty-icon">expand_more</span>
           </button>
-          <div class="ho0a9-sub">
-            <a class="ho0a9-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="ho0a9-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="ho0a9-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="ho0a9-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="ho0a9-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="a3oty-sub">
+            <a class="a3oty-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="a3oty-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="a3oty-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="a3oty-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="a3oty-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="ho0a9-desc">
+  <div class="a3oty-desc">
     
-    <div class="ho0a9-body"><p><h2 style="font-size: 24px;">Gaziantep'te Modern LED Tabela Sistemleri</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te modern LED tabela sistemleri üretiyoruz. Programlanabilir LED ekranlar, neon flex uygulamaları ve dijital tabela çözümleriyle işletmenizi 7/24 görünür kılıyoruz. Yüksek parlaklık LED modüller, özel kontrol sistemleri ve profesyonel yazılım çözümleriyle dinamik reklamcılık imkanı sunuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">LED Ekran Teknolojileri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        LED ekran sistemlerimiz, P4, P6, P8, P10 gibi farklı piksel aralığı seçenekleri ile iç ve dış mekan uygulamaları için özel çözümler sunar. Yüksek çözünürlüklü LED modüller, geniş renk skalası ve yüksek parlaklık özellikleri ile net ve etkileyici görüntüler elde ediyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Programlanabilir LED ekranlar, dinamik içerik gösterimi için idealdir. Video, animasyon ve metin içerikleri ile reklamlarınızı canlandırıyoruz. Kablosuz kontrol sistemi, uzaktan yönetim yazılımı ve otomatik parlaklık ayarı ile kullanım kolaylığı sağlıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Neon Flex ve Dijital Tabela Çözümleri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Neon flex uygulamaları, esnek LED şeritler ile özel tasarım tabelalar oluşturur. Kıvrımlı yüzeyler, özel şekiller ve yaratıcı tasarımlar için neon flex teknolojisini kullanıyoruz. RGB LED seçenekleri ile renkli ve dinamik neon flex uygulamaları yapıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Dijital tabela çözümlerimiz, LED teknolojisi ile modern ve etkileyici tabelalar oluşturur. Statik veya dinamik içerik gösterimi seçenekleri ile müşterilerimizin ihtiyaçlarına özel çözümler sunuyoruz. Enerji tasarruflu LED teknolojisi ile uzun ömürlü ve ekonomik çözümler üretiyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Enerji Verimliliği ve Uzun Ömür</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        LED tabela sistemlerimiz, enerji tasarruflu LED teknolojisi ile işletme maliyetlerinizi düşürür. Yüksek görüntü kalitesi ve uzun ömürlü elektronik komponentlerle güvenilir çözümler sunuyoruz. Düşük bakım maliyetleri ve yüksek performans ile müşterilerimize ekonomik çözümler üretiyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        LED teknolojisi, geleneksel aydınlatma yöntemlerine göre daha enerji verimli ve çevre dostudur. Uzun ömürlü LED modüller, düşük bakım gereksinimleri ile işletme maliyetlerinizi minimize eder. Yüksek kaliteli elektronik komponentler ile güvenilir ve dayanıklı LED tabela sistemleri üretiyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Teknik Destek</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        LED tabela hizmetlerimizde, ücretsiz keşif, profesyonel montaj ve 7/24 teknik servis desteği sunuyoruz. Deneyimli montaj ekibimiz, LED tabelalarınızı güvenli şekilde kuruyor ve test ediyor. Teknik servis ekibimiz, herhangi bir sorun durumunda hızlı müdahale sağlıyor.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle LED tabela sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli teknoloji ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. LED tabela ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
-<p>    </p>
-<p>    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile LED Tabela konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kalite ve Güven</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        LED Tabela hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, LED Tabela konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        LED Tabela ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.</p>
-<p>    </p></p></p></div>
+    <div class="a3oty-body"><h2 style="font-size: 24px;">Gaziantep'te Modern LED Tabela Sistemleri</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te modern LED tabela sistemleri üretiyoruz. Programlanabilir LED ekranlar, neon flex uygulamaları ve dijital tabela çözümleriyle işletmenizi 7/24 görünür kılıyoruz. Yüksek parlaklık LED modüller, özel kontrol sistemleri ve profesyonel yazılım çözümleriyle dinamik reklamcılık imkanı sunuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">LED Ekran Teknolojileri</h3>
+    <p style="font-size: 16px;">
+        LED ekran sistemlerimiz, P4, P6, P8, P10 gibi farklı piksel aralığı seçenekleri ile iç ve dış mekan uygulamaları için özel çözümler sunar. Yüksek çözünürlüklü LED modüller, geniş renk skalası ve yüksek parlaklık özellikleri ile net ve etkileyici görüntüler elde ediyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Programlanabilir LED ekranlar, dinamik içerik gösterimi için idealdir. Video, animasyon ve metin içerikleri ile reklamlarınızı canlandırıyoruz. Kablosuz kontrol sistemi, uzaktan yönetim yazılımı ve otomatik parlaklık ayarı ile kullanım kolaylığı sağlıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Neon Flex ve Dijital Tabela Çözümleri</h3>
+    <p style="font-size: 16px;">
+        Neon flex uygulamaları, esnek LED şeritler ile özel tasarım tabelalar oluşturur. Kıvrımlı yüzeyler, özel şekiller ve yaratıcı tasarımlar için neon flex teknolojisini kullanıyoruz. RGB LED seçenekleri ile renkli ve dinamik neon flex uygulamaları yapıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Dijital tabela çözümlerimiz, LED teknolojisi ile modern ve etkileyici tabelalar oluşturur. Statik veya dinamik içerik gösterimi seçenekleri ile müşterilerimizin ihtiyaçlarına özel çözümler sunuyoruz. Enerji tasarruflu LED teknolojisi ile uzun ömürlü ve ekonomik çözümler üretiyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Enerji Verimliliği ve Uzun Ömür</h3>
+    <p style="font-size: 16px;">
+        LED tabela sistemlerimiz, enerji tasarruflu LED teknolojisi ile işletme maliyetlerinizi düşürür. Yüksek görüntü kalitesi ve uzun ömürlü elektronik komponentlerle güvenilir çözümler sunuyoruz. Düşük bakım maliyetleri ve yüksek performans ile müşterilerimize ekonomik çözümler üretiyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        LED teknolojisi, geleneksel aydınlatma yöntemlerine göre daha enerji verimli ve çevre dostudur. Uzun ömürlü LED modüller, düşük bakım gereksinimleri ile işletme maliyetlerinizi minimize eder. Yüksek kaliteli elektronik komponentler ile güvenilir ve dayanıklı LED tabela sistemleri üretiyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Teknik Destek</h3>
+    <p style="font-size: 16px;">
+        LED tabela hizmetlerimizde, ücretsiz keşif, profesyonel montaj ve 7/24 teknik servis desteği sunuyoruz. Deneyimli montaj ekibimiz, LED tabelalarınızı güvenli şekilde kuruyor ve test ediyor. Teknik servis ekibimiz, herhangi bir sorun durumunda hızlı müdahale sağlıyor.
+    </p>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle LED tabela sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli teknoloji ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. LED tabela ihtiyaçlarınız için hemen bizimle iletişime geçin!
+    
+    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile LED Tabela konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Kalite ve Güven</h3>
+    <p style="font-size: 16px;">
+        LED Tabela hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, LED Tabela konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.
+    </p>
+    <p style="font-size: 16px;">
+        LED Tabela ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.
+    </p></p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".ho0a9-menu-btn");
-    var menu = document.querySelector(".ho0a9-menu");
-    var overlay = document.querySelector(".ho0a9-menu-overlay");
-    var closeButton = document.querySelector(".ho0a9-menu-close");
+    var menuToggleBtn = document.querySelector(".a3oty-menu-btn");
+    var menu = document.querySelector(".a3oty-menu");
+    var overlay = document.querySelector(".a3oty-menu-overlay");
+    var closeButton = document.querySelector(".a3oty-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -308,7 +314,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".ho0a9-menu-close");
+      var closeBtn = event.target.closest(".a3oty-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -356,15 +362,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".ho0a9-top").forEach(function (button) {
+    document.querySelectorAll(".a3oty-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".ho0a9-menu-group");
+        var group = this.closest(".a3oty-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".ho0a9-sub");
+        var sub = group.querySelector(".a3oty-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".ho0a9-icon");
+        var icon = this.querySelector(".a3oty-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -464,8 +470,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=gazda"></script>
-<script defer src="/src/cookie.js?v=gazda"></script>
+<script defer type="text/javascript" src="/src/js.js?v=r3elr"></script>
+<script defer src="/src/cookie.js?v=r3elr"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

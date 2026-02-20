@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=cvvxm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=cvvxm" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ca8mo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ca8mo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=cvvxm" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ca8mo" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,186 +52,192 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=cvvxm">
+<link rel="stylesheet" href="style.css?v=ca8mo">
 </head>
 
 <body>
-  <div id="header"><div class="zk6iz">
-  <div class="zk6iztitle">
-    <div class="zk6iztitlebody">
-      <div class="zk6iztitlebodylang">
+  <div id="header"><div class="jutbd">
+  <div class="jutbdtitle">
+    <div class="jutbdtitlebody">
+      <div class="jutbdtitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="zk6izbody">
+  <div class="jutbdbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=cvvxm"
+        src="/img/logo.svg?v=ca8mo"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="zk6izbodylogo"
+        class="jutbdbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="zk6iz-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="jutbd-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="zk6izmenubody">
-    <div class="zk6izmenu" id="menu-2-root">
-      <div class="zk6izmenulistbody">
-        <div class="zk6izmenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="jutbd-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="jutbdmenubody">
+    <div class="jutbdmenu" id="menu-2-root">
+      <div class="jutbdmenulistbody">
+        <div class="jutbdmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="zk6izlanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="jutbdlanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.jutbd) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("zk6izmenu-open")) {
-        root.classList.remove("zk6izmenu-open");
+      var wrapper = root.closest ? root.closest(".jutbd") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("jutbdmenu-open")) {
+        target.classList.remove("jutbdmenu-open");
       } else {
-        root.classList.add("zk6izmenu-open");
+        target.classList.add("jutbdmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="coy40-title f36">
+  <div id="content"><div class="s0b2z-title f36">
   <h1>Totem Tabela</h1>
 </div>
-<div class="coy40">
-  <div class="coy40-menu-btn">
+<div class="s0b2z">
+  <div class="s0b2z-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined coy40-icon">menu</span>
+    <span class="material-symbols-outlined s0b2z-icon">menu</span>
   </div>
-  <div class="coy40-menu-overlay" id="coy40-menu-overlay" aria-hidden="true"></div>
-  <div class="coy40-menu" id="coy40-menu">
-    <button class="coy40-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="coy40-menu">
+  <div class="s0b2z-menu-overlay" id="s0b2z-menu-overlay" aria-hidden="true"></div>
+  <div class="s0b2z-menu" id="s0b2z-menu">
+    <button class="s0b2z-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="s0b2z-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="coy40-menu-group">
-          <button type="button" class="coy40-top">
+        <div class="s0b2z-menu-group">
+          <button type="button" class="s0b2z-top">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined coy40-icon">expand_more</span>
+            <span class="material-symbols-outlined s0b2z-icon">expand_more</span>
           </button>
-          <div class="coy40-sub">
-            <a class="coy40-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="coy40-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="coy40-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="coy40-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="coy40-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="coy40-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="s0b2z-sub">
+            <a class="s0b2z-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="s0b2z-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="s0b2z-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="s0b2z-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="s0b2z-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="s0b2z-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="coy40-menu-group open">
-          <button type="button" class="coy40-top active">
+        <div class="s0b2z-menu-group open">
+          <button type="button" class="s0b2z-top active">
             <div>Tabela</div>
-            <span class="material-symbols-outlined coy40-icon">expand_more</span>
+            <span class="material-symbols-outlined s0b2z-icon">expand_more</span>
           </button>
-          <div class="coy40-sub show">
-            <a class="coy40-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="coy40-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="coy40-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="coy40-sub-link active" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="coy40-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="s0b2z-sub show">
+            <a class="s0b2z-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="s0b2z-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="s0b2z-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="s0b2z-sub-link active" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="s0b2z-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="coy40-menu-group">
-          <button type="button" class="coy40-top">
+        <div class="s0b2z-menu-group">
+          <button type="button" class="s0b2z-top">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined coy40-icon">expand_more</span>
+            <span class="material-symbols-outlined s0b2z-icon">expand_more</span>
           </button>
-          <div class="coy40-sub">
-            <a class="coy40-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="coy40-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="coy40-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="coy40-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="coy40-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="s0b2z-sub">
+            <a class="s0b2z-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="s0b2z-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="s0b2z-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="s0b2z-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="s0b2z-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="coy40-menu-group">
-          <button type="button" class="coy40-top">
+        <div class="s0b2z-menu-group">
+          <button type="button" class="s0b2z-top">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined coy40-icon">expand_more</span>
+            <span class="material-symbols-outlined s0b2z-icon">expand_more</span>
           </button>
-          <div class="coy40-sub">
-            <a class="coy40-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="coy40-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="coy40-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="coy40-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="coy40-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="s0b2z-sub">
+            <a class="s0b2z-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="s0b2z-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="s0b2z-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="s0b2z-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="s0b2z-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="coy40-menu-group">
-          <button type="button" class="coy40-top">
+        <div class="s0b2z-menu-group">
+          <button type="button" class="s0b2z-top">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined coy40-icon">expand_more</span>
+            <span class="material-symbols-outlined s0b2z-icon">expand_more</span>
           </button>
-          <div class="coy40-sub">
-            <a class="coy40-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="coy40-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="coy40-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="coy40-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="coy40-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="s0b2z-sub">
+            <a class="s0b2z-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="s0b2z-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="s0b2z-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="s0b2z-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="s0b2z-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="coy40-menu-group">
-          <button type="button" class="coy40-top">
+        <div class="s0b2z-menu-group">
+          <button type="button" class="s0b2z-top">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined coy40-icon">expand_more</span>
+            <span class="material-symbols-outlined s0b2z-icon">expand_more</span>
           </button>
-          <div class="coy40-sub">
-            <a class="coy40-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="coy40-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="coy40-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="coy40-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="coy40-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="s0b2z-sub">
+            <a class="s0b2z-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="s0b2z-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="s0b2z-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="s0b2z-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="s0b2z-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="coy40-desc">
+  <div class="s0b2z-desc">
     
-    <div class="coy40-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Totem Tabela Üretimi</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel totem tabela üretimi yapıyoruz. İşletmenizin konumunu vurgulayan, uzaktan görünürlüğü yüksek ve kurumsal kimliğinizi yansıtan özel tasarım totem tabelalar üretiyoruz. Çelik konstrüksiyon, alüminyum kompozit kaplama ve özel aydınlatma sistemleriyle dayanıklı ve etkileyici çözümler sunuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Totem Tabela Seçenekleri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Totem tabela sistemlerimiz, tek yüz, çift yüz, ışıklı, ışıksız ve LED ekranlı totem seçenekleriyle ihtiyaçlarınıza özel alternatifler sağlar. Dış mekan yönlendirme ve bilgilendirme sistemleri için idealdir. Paslanmaz çelik, alüminyum kompozit ve dayanıklı malzemeler kullanarak, hava şartlarına dayanıklı totem tabelalar üretiyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Statik hesaplama, zemin etüdü ve rüzgar yükü analizi ile güvenli ve sağlam uygulamalar gerçekleştiriyoruz. 3D tasarım, fotorealistik görselleştirme ve teknik çizim hizmetlerimizle projenizi önceden görme imkanı sunuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Destek</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Totem tabela hizmetlerimizde, ücretsiz keşif, belediye izin süreçleri takibi ve montaj sonrası teknik servis desteğiyle eksiksiz hizmet veriyoruz. Profesyonel montaj ekibimizle, totem tabelalarınızı güvenli şekilde uyguluyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle totem tabela sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli üretim ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Totem tabela ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
-<p>    </p>
-<p>    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Totem Tabela konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kalite ve Güven</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Totem Tabela hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Totem Tabela konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Totem Tabela ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.</p>
-<p>    </p></p></p>
-<p>    <h3 style="font-size: 20px;">Hizmet Sürecimiz</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Totem Tabela hizmetlerimizde, proje başlangıcından teslimata kadar tüm süreçte müşterilerimizle yakın iletişim halinde çalışıyoruz. Ücretsiz keşif ve ölçüm hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Profesyonel montaj ekibimizle, işlerinizi güvenli şekilde uyguluyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Gaziantep'te Totem Tabela konusunda 15 yıllık deneyimimizle, binlerce başarılı projeye imza attık. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz. Kalite standartlarımızdan asla taviz vermeden, sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz.</p>
-<p>    </p></p></div>
+    <div class="s0b2z-body"><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Totem Tabela Üretimi</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te profesyonel totem tabela üretimi yapıyoruz. İşletmenizin konumunu vurgulayan, uzaktan görünürlüğü yüksek ve kurumsal kimliğinizi yansıtan özel tasarım totem tabelalar üretiyoruz. Çelik konstrüksiyon, alüminyum kompozit kaplama ve özel aydınlatma sistemleriyle dayanıklı ve etkileyici çözümler sunuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Totem Tabela Seçenekleri</h3>
+    <p style="font-size: 16px;">
+        Totem tabela sistemlerimiz, tek yüz, çift yüz, ışıklı, ışıksız ve LED ekranlı totem seçenekleriyle ihtiyaçlarınıza özel alternatifler sağlar. Dış mekan yönlendirme ve bilgilendirme sistemleri için idealdir. Paslanmaz çelik, alüminyum kompozit ve dayanıklı malzemeler kullanarak, hava şartlarına dayanıklı totem tabelalar üretiyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Statik hesaplama, zemin etüdü ve rüzgar yükü analizi ile güvenli ve sağlam uygulamalar gerçekleştiriyoruz. 3D tasarım, fotorealistik görselleştirme ve teknik çizim hizmetlerimizle projenizi önceden görme imkanı sunuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Destek</h3>
+    <p style="font-size: 16px;">
+        Totem tabela hizmetlerimizde, ücretsiz keşif, belediye izin süreçleri takibi ve montaj sonrası teknik servis desteğiyle eksiksiz hizmet veriyoruz. Profesyonel montaj ekibimizle, totem tabelalarınızı güvenli şekilde uyguluyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle totem tabela sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli üretim ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Totem tabela ihtiyaçlarınız için hemen bizimle iletişime geçin!
+    
+    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Totem Tabela konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Kalite ve Güven</h3>
+    <p style="font-size: 16px;">
+        Totem Tabela hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Totem Tabela konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.
+    </p>
+    <p style="font-size: 16px;">
+        Totem Tabela ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.
+    </p></p>
+    <h3 style="font-size: 20px;">Hizmet Sürecimiz</h3>
+    <p style="font-size: 16px;">
+        Totem Tabela hizmetlerimizde, proje başlangıcından teslimata kadar tüm süreçte müşterilerimizle yakın iletişim halinde çalışıyoruz. Ücretsiz keşif ve ölçüm hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Profesyonel montaj ekibimizle, işlerinizi güvenli şekilde uyguluyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Gaziantep'te Totem Tabela konusunda 15 yıllık deneyimimizle, binlerce başarılı projeye imza attık. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz. Kalite standartlarımızdan asla taviz vermeden, sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz.
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".coy40-menu-btn");
-    var menu = document.querySelector(".coy40-menu");
-    var overlay = document.querySelector(".coy40-menu-overlay");
-    var closeButton = document.querySelector(".coy40-menu-close");
+    var menuToggleBtn = document.querySelector(".s0b2z-menu-btn");
+    var menu = document.querySelector(".s0b2z-menu");
+    var overlay = document.querySelector(".s0b2z-menu-overlay");
+    var closeButton = document.querySelector(".s0b2z-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -301,7 +307,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".coy40-menu-close");
+      var closeBtn = event.target.closest(".s0b2z-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -349,15 +355,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".coy40-top").forEach(function (button) {
+    document.querySelectorAll(".s0b2z-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".coy40-menu-group");
+        var group = this.closest(".s0b2z-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".coy40-sub");
+        var sub = group.querySelector(".s0b2z-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".coy40-icon");
+        var icon = this.querySelector(".s0b2z-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -457,8 +463,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=cvvxm"></script>
-<script defer src="/src/cookie.js?v=cvvxm"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ca8mo"></script>
+<script defer src="/src/cookie.js?v=ca8mo"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

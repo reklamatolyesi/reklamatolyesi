@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=g8h6n" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=g8h6n" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=nubgq" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=nubgq" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=g8h6n" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=nubgq" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,195 +52,201 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=g8h6n">
+<link rel="stylesheet" href="style.css?v=nubgq">
 </head>
 
 <body>
-  <div id="header"><div class="ni26v">
-  <div class="ni26vtitle">
-    <div class="ni26vtitlebody">
-      <div class="ni26vtitlebodylang">
+  <div id="header"><div class="g2po0">
+  <div class="g2po0title">
+    <div class="g2po0titlebody">
+      <div class="g2po0titlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="ni26vbody">
+  <div class="g2po0body">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=g8h6n"
+        src="/img/logo.svg?v=nubgq"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="ni26vbodylogo"
+        class="g2po0bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="ni26v-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="g2po0-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="ni26vmenubody">
-    <div class="ni26vmenu" id="menu-2-root">
-      <div class="ni26vmenulistbody">
-        <div class="ni26vmenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="g2po0-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="g2po0menubody">
+    <div class="g2po0menu" id="menu-2-root">
+      <div class="g2po0menulistbody">
+        <div class="g2po0menulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="ni26vlanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="g2po0languages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.g2po0) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("ni26vmenu-open")) {
-        root.classList.remove("ni26vmenu-open");
+      var wrapper = root.closest ? root.closest(".g2po0") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("g2po0menu-open")) {
+        target.classList.remove("g2po0menu-open");
       } else {
-        root.classList.add("ni26vmenu-open");
+        target.classList.add("g2po0menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="ki593-title f36">
+  <div id="content"><div class="gq56t-title f36">
   <h1>Stand ve Fuar Sistemleri</h1>
 </div>
-<div class="ki593">
-  <div class="ki593-menu-btn">
+<div class="gq56t">
+  <div class="gq56t-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined ki593-icon">menu</span>
+    <span class="material-symbols-outlined gq56t-icon">menu</span>
   </div>
-  <div class="ki593-menu-overlay" id="ki593-menu-overlay" aria-hidden="true"></div>
-  <div class="ki593-menu" id="ki593-menu">
-    <button class="ki593-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="ki593-menu">
+  <div class="gq56t-menu-overlay" id="gq56t-menu-overlay" aria-hidden="true"></div>
+  <div class="gq56t-menu" id="gq56t-menu">
+    <button class="gq56t-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="gq56t-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="ki593-menu-group">
-          <button type="button" class="ki593-top">
+        <div class="gq56t-menu-group">
+          <button type="button" class="gq56t-top">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined ki593-icon">expand_more</span>
+            <span class="material-symbols-outlined gq56t-icon">expand_more</span>
           </button>
-          <div class="ki593-sub">
-            <a class="ki593-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="ki593-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="ki593-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="ki593-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="ki593-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="ki593-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="gq56t-sub">
+            <a class="gq56t-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="gq56t-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="gq56t-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="gq56t-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="gq56t-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="gq56t-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="ki593-menu-group">
-          <button type="button" class="ki593-top">
+        <div class="gq56t-menu-group">
+          <button type="button" class="gq56t-top">
             <div>Tabela</div>
-            <span class="material-symbols-outlined ki593-icon">expand_more</span>
+            <span class="material-symbols-outlined gq56t-icon">expand_more</span>
           </button>
-          <div class="ki593-sub">
-            <a class="ki593-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="ki593-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="ki593-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="ki593-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="ki593-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="gq56t-sub">
+            <a class="gq56t-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="gq56t-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="gq56t-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="gq56t-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="gq56t-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="ki593-menu-group">
-          <button type="button" class="ki593-top">
+        <div class="gq56t-menu-group">
+          <button type="button" class="gq56t-top">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined ki593-icon">expand_more</span>
+            <span class="material-symbols-outlined gq56t-icon">expand_more</span>
           </button>
-          <div class="ki593-sub">
-            <a class="ki593-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="ki593-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="ki593-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="ki593-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="ki593-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="gq56t-sub">
+            <a class="gq56t-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="gq56t-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="gq56t-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="gq56t-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="gq56t-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="ki593-menu-group">
-          <button type="button" class="ki593-top">
+        <div class="gq56t-menu-group">
+          <button type="button" class="gq56t-top">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined ki593-icon">expand_more</span>
+            <span class="material-symbols-outlined gq56t-icon">expand_more</span>
           </button>
-          <div class="ki593-sub">
-            <a class="ki593-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="ki593-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="ki593-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="ki593-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="ki593-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="gq56t-sub">
+            <a class="gq56t-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="gq56t-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="gq56t-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="gq56t-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="gq56t-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="ki593-menu-group">
-          <button type="button" class="ki593-top">
+        <div class="gq56t-menu-group">
+          <button type="button" class="gq56t-top">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined ki593-icon">expand_more</span>
+            <span class="material-symbols-outlined gq56t-icon">expand_more</span>
           </button>
-          <div class="ki593-sub">
-            <a class="ki593-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="ki593-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="ki593-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="ki593-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="ki593-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="gq56t-sub">
+            <a class="gq56t-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="gq56t-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="gq56t-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="gq56t-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="gq56t-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="ki593-menu-group open">
-          <button type="button" class="ki593-top active">
+        <div class="gq56t-menu-group open">
+          <button type="button" class="gq56t-top active">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined ki593-icon">expand_more</span>
+            <span class="material-symbols-outlined gq56t-icon">expand_more</span>
           </button>
-          <div class="ki593-sub show">
-            <a class="ki593-sub-link active" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="ki593-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="ki593-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="ki593-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="ki593-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="gq56t-sub show">
+            <a class="gq56t-sub-link active" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="gq56t-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="gq56t-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="gq56t-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="gq56t-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="ki593-desc">
+  <div class="gq56t-desc">
     
-    <div class="ki593-desc-body">
-            <img src="/page/stand001/d646f.webp?v=g8h6n" width="100%" alt="Stand ve Fuar Sistemleri" loading="lazy" />
+    <div class="gq56t-desc-body">
+            <img src="/page/stand001/d646f.webp?v=nubgq" width="100%" alt="Stand ve Fuar Sistemleri" loading="lazy" />
     </div>
-    <div class="ki593-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Fuar Standı ve Sergileme Sistemleri</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel fuar standı ve sergileme sistemleri hizmetleri sunuyoruz. Modüler stand, roll-up banner, örümcek stand, X-banner, backdrop ve özel tasarım stand çözümleri ile fuarlarda öne çıkmanızı sağlıyoruz. Profesyonel tasarım, kaliteli üretim ve montaj hizmetlerimizle fuar sürecinizi kolaylaştırıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Modüler Stand Sistemleri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Modüler stand sistemleri, farklı ebat ve konfigürasyonlarda kullanılabilen, esnek ve yeniden kullanılabilir stand çözümleridir. Alüminyum profil sistemleri, paneller ve aksesuarlarla oluşturulan modüler standlar, her fuar için özel tasarlanabilir. Kurulum ve söküm kolaylığı ile fuar sürecinizi hızlandırır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Modüler stand sistemlerimiz, farklı ebat seçenekleri ile küçük ve büyük alanlar için idealdir. Özel tasarım ve baskı seçenekleri ile marka kimliğinizi yansıtan standlar oluşturuyoruz. LED aydınlatma, raf sistemleri ve özel aksesuarlarla standınızı zenginleştiriyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Roll-Up ve Portatif Stand Sistemleri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Roll-up banner sistemleri, taşınabilir ve hızlı kurulumlu stand çözümleridir. Tek kişi tarafından kolayca kurulabilen, hafif ve pratik roll-up bannerlar, küçük fuarlar ve etkinlikler için idealdir. Farklı ebat seçenekleri ile ihtiyacınıza uygun roll-up bannerlar üretiyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Örümcek stand sistemleri, katlanabilir ve taşınabilir stand çözümleridir. Hızlı kurulum ve söküm özelliği ile fuar sürecinizi kolaylaştırır. X-banner sistemleri ise, kompakt ve pratik stand çözümleridir. Tüm portatif stand sistemlerimiz, yüksek kaliteli malzemeler ve profesyonel baskı ile üretilmektedir.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Backdrop ve Özel Tasarım Standlar</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Backdrop sistemleri, fuar standlarınızın arka planını oluşturan büyük format baskı çözümleridir. Yüksek çözünürlüklü dijital baskı teknolojimizle, net ve etkileyici backdrop baskıları yapıyoruz. Farklı malzeme seçenekleri ile iç ve dış mekan kullanımı için uygun backdroplar üretiyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Özel tasarım standlar, marka kimliğinizi yansıtan, benzersiz ve dikkat çekici stand çözümleridir. Profesyonel tasarımcılarımız, fuar alanınızı analiz ederek, özel tasarım standlar oluşturuyor. Özel kesim, montaj ve aksesuar seçenekleri ile standınızı zenginleştiriyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Stand Aksesuarları ve Montaj Hizmetleri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Stand aksesuarları, fuar standlarınızı tamamlayan önemli detaylardır. Masa, sandalye, raf, vitrin, LED aydınlatma, ses sistemi ve diğer aksesuarlarla standınızı zenginleştiriyoruz. Kurumsal kimliğinizle uyumlu, tutarlı ve profesyonel aksesuar çözümleri sunuyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Profesyonel montaj ve demontaj hizmetlerimizle, fuar sürecinizi kolaylaştırıyoruz. Deneyimli montaj ekibimiz, fuar alanında standınızı kuruyor, sergileme sistemlerinizi yerleştiriyor ve fuar sonrası söküm işlemlerini yapıyor. Zamanında kurulum ve güvenli söküm garantisi veriyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Fuar Stand Tasarımı ve Danışmanlık</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Fuar stand tasarımı, markanızın fuarda öne çıkması için kritik öneme sahiptir. Profesyonel tasarımcılarımız, fuar alanınızı, hedef kitlenizi ve marka kimliğinizi analiz ederek, etkili stand tasarımları oluşturuyor. 3D görselleştirme ile standınızı fuar öncesi görselleştiriyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Fuar danışmanlık hizmetlerimiz kapsamında, fuar seçimi, stand konumu, sergileme stratejisi ve etkinlik planlama konularında destek sağlıyoruz. Fuar sürecinizi baştan sona yöneterek, başarılı bir fuar deneyimi yaşamanızı sağlıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kalite ve Zamanında Teslimat</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Fuar stand hizmetlerimizde kaliteden ödün vermeden, müşteri memnuniyetini ön planda tutuyoruz. Yüksek kaliteli malzemeler, profesyonel tasarım ve montaj hizmetleri ile hatasız sonuçlar garanti ediyoruz. Fuar tarihlerinize uygun, zamanında teslimat garantisi veriyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle fuar stand sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli üretim ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Fuar stand ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
-<p>    </p></p></div>
+    <div class="gq56t-body"><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Fuar Standı ve Sergileme Sistemleri</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te profesyonel fuar standı ve sergileme sistemleri hizmetleri sunuyoruz. Modüler stand, roll-up banner, örümcek stand, X-banner, backdrop ve özel tasarım stand çözümleri ile fuarlarda öne çıkmanızı sağlıyoruz. Profesyonel tasarım, kaliteli üretim ve montaj hizmetlerimizle fuar sürecinizi kolaylaştırıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Modüler Stand Sistemleri</h3>
+    <p style="font-size: 16px;">
+        Modüler stand sistemleri, farklı ebat ve konfigürasyonlarda kullanılabilen, esnek ve yeniden kullanılabilir stand çözümleridir. Alüminyum profil sistemleri, paneller ve aksesuarlarla oluşturulan modüler standlar, her fuar için özel tasarlanabilir. Kurulum ve söküm kolaylığı ile fuar sürecinizi hızlandırır.
+    </p>
+    <p style="font-size: 16px;">
+        Modüler stand sistemlerimiz, farklı ebat seçenekleri ile küçük ve büyük alanlar için idealdir. Özel tasarım ve baskı seçenekleri ile marka kimliğinizi yansıtan standlar oluşturuyoruz. LED aydınlatma, raf sistemleri ve özel aksesuarlarla standınızı zenginleştiriyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Roll-Up ve Portatif Stand Sistemleri</h3>
+    <p style="font-size: 16px;">
+        Roll-up banner sistemleri, taşınabilir ve hızlı kurulumlu stand çözümleridir. Tek kişi tarafından kolayca kurulabilen, hafif ve pratik roll-up bannerlar, küçük fuarlar ve etkinlikler için idealdir. Farklı ebat seçenekleri ile ihtiyacınıza uygun roll-up bannerlar üretiyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Örümcek stand sistemleri, katlanabilir ve taşınabilir stand çözümleridir. Hızlı kurulum ve söküm özelliği ile fuar sürecinizi kolaylaştırır. X-banner sistemleri ise, kompakt ve pratik stand çözümleridir. Tüm portatif stand sistemlerimiz, yüksek kaliteli malzemeler ve profesyonel baskı ile üretilmektedir.
+    </p>
+    <h3 style="font-size: 20px;">Backdrop ve Özel Tasarım Standlar</h3>
+    <p style="font-size: 16px;">
+        Backdrop sistemleri, fuar standlarınızın arka planını oluşturan büyük format baskı çözümleridir. Yüksek çözünürlüklü dijital baskı teknolojimizle, net ve etkileyici backdrop baskıları yapıyoruz. Farklı malzeme seçenekleri ile iç ve dış mekan kullanımı için uygun backdroplar üretiyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Özel tasarım standlar, marka kimliğinizi yansıtan, benzersiz ve dikkat çekici stand çözümleridir. Profesyonel tasarımcılarımız, fuar alanınızı analiz ederek, özel tasarım standlar oluşturuyor. Özel kesim, montaj ve aksesuar seçenekleri ile standınızı zenginleştiriyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Stand Aksesuarları ve Montaj Hizmetleri</h3>
+    <p style="font-size: 16px;">
+        Stand aksesuarları, fuar standlarınızı tamamlayan önemli detaylardır. Masa, sandalye, raf, vitrin, LED aydınlatma, ses sistemi ve diğer aksesuarlarla standınızı zenginleştiriyoruz. Kurumsal kimliğinizle uyumlu, tutarlı ve profesyonel aksesuar çözümleri sunuyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Profesyonel montaj ve demontaj hizmetlerimizle, fuar sürecinizi kolaylaştırıyoruz. Deneyimli montaj ekibimiz, fuar alanında standınızı kuruyor, sergileme sistemlerinizi yerleştiriyor ve fuar sonrası söküm işlemlerini yapıyor. Zamanında kurulum ve güvenli söküm garantisi veriyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Fuar Stand Tasarımı ve Danışmanlık</h3>
+    <p style="font-size: 16px;">
+        Fuar stand tasarımı, markanızın fuarda öne çıkması için kritik öneme sahiptir. Profesyonel tasarımcılarımız, fuar alanınızı, hedef kitlenizi ve marka kimliğinizi analiz ederek, etkili stand tasarımları oluşturuyor. 3D görselleştirme ile standınızı fuar öncesi görselleştiriyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Fuar danışmanlık hizmetlerimiz kapsamında, fuar seçimi, stand konumu, sergileme stratejisi ve etkinlik planlama konularında destek sağlıyoruz. Fuar sürecinizi baştan sona yöneterek, başarılı bir fuar deneyimi yaşamanızı sağlıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Kalite ve Zamanında Teslimat</h3>
+    <p style="font-size: 16px;">
+        Fuar stand hizmetlerimizde kaliteden ödün vermeden, müşteri memnuniyetini ön planda tutuyoruz. Yüksek kaliteli malzemeler, profesyonel tasarım ve montaj hizmetleri ile hatasız sonuçlar garanti ediyoruz. Fuar tarihlerinize uygun, zamanında teslimat garantisi veriyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle fuar stand sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli üretim ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Fuar stand ihtiyaçlarınız için hemen bizimle iletişime geçin!
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".ki593-menu-btn");
-    var menu = document.querySelector(".ki593-menu");
-    var overlay = document.querySelector(".ki593-menu-overlay");
-    var closeButton = document.querySelector(".ki593-menu-close");
+    var menuToggleBtn = document.querySelector(".gq56t-menu-btn");
+    var menu = document.querySelector(".gq56t-menu");
+    var overlay = document.querySelector(".gq56t-menu-overlay");
+    var closeButton = document.querySelector(".gq56t-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -310,7 +316,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".ki593-menu-close");
+      var closeBtn = event.target.closest(".gq56t-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -358,15 +364,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".ki593-top").forEach(function (button) {
+    document.querySelectorAll(".gq56t-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".ki593-menu-group");
+        var group = this.closest(".gq56t-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".ki593-sub");
+        var sub = group.querySelector(".gq56t-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".ki593-icon");
+        var icon = this.querySelector(".gq56t-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -466,8 +472,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=g8h6n"></script>
-<script defer src="/src/cookie.js?v=g8h6n"></script>
+<script defer type="text/javascript" src="/src/js.js?v=nubgq"></script>
+<script defer src="/src/cookie.js?v=nubgq"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=idoff" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=idoff" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=nxqj9" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=nxqj9" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=idoff" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=nxqj9" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,186 +52,192 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=idoff">
+<link rel="stylesheet" href="style.css?v=nxqj9">
 </head>
 
 <body>
-  <div id="header"><div class="kznoa">
-  <div class="kznoatitle">
-    <div class="kznoatitlebody">
-      <div class="kznoatitlebodylang">
+  <div id="header"><div class="pk7uh">
+  <div class="pk7uhtitle">
+    <div class="pk7uhtitlebody">
+      <div class="pk7uhtitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="kznoabody">
+  <div class="pk7uhbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=idoff"
+        src="/img/logo.svg?v=nxqj9"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="kznoabodylogo"
+        class="pk7uhbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="kznoa-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="pk7uh-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="kznoamenubody">
-    <div class="kznoamenu" id="menu-2-root">
-      <div class="kznoamenulistbody">
-        <div class="kznoamenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="pk7uh-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="pk7uhmenubody">
+    <div class="pk7uhmenu" id="menu-2-root">
+      <div class="pk7uhmenulistbody">
+        <div class="pk7uhmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="kznoalanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="pk7uhlanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.pk7uh) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("kznoamenu-open")) {
-        root.classList.remove("kznoamenu-open");
+      var wrapper = root.closest ? root.closest(".pk7uh") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("pk7uhmenu-open")) {
+        target.classList.remove("pk7uhmenu-open");
       } else {
-        root.classList.add("kznoamenu-open");
+        target.classList.add("pk7uhmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="e2vpy-title f36">
+  <div id="content"><div class="fbi90-title f36">
   <h1>Tekstil Baskı</h1>
 </div>
-<div class="e2vpy">
-  <div class="e2vpy-menu-btn">
+<div class="fbi90">
+  <div class="fbi90-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined e2vpy-icon">menu</span>
+    <span class="material-symbols-outlined fbi90-icon">menu</span>
   </div>
-  <div class="e2vpy-menu-overlay" id="e2vpy-menu-overlay" aria-hidden="true"></div>
-  <div class="e2vpy-menu" id="e2vpy-menu">
-    <button class="e2vpy-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="e2vpy-menu">
+  <div class="fbi90-menu-overlay" id="fbi90-menu-overlay" aria-hidden="true"></div>
+  <div class="fbi90-menu" id="fbi90-menu">
+    <button class="fbi90-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="fbi90-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="e2vpy-menu-group open">
-          <button type="button" class="e2vpy-top active">
+        <div class="fbi90-menu-group open">
+          <button type="button" class="fbi90-top active">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined e2vpy-icon">expand_more</span>
+            <span class="material-symbols-outlined fbi90-icon">expand_more</span>
           </button>
-          <div class="e2vpy-sub show">
-            <a class="e2vpy-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="e2vpy-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="e2vpy-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="e2vpy-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="e2vpy-sub-link active" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="e2vpy-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="fbi90-sub show">
+            <a class="fbi90-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="fbi90-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="fbi90-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="fbi90-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="fbi90-sub-link active" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="fbi90-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="e2vpy-menu-group">
-          <button type="button" class="e2vpy-top">
+        <div class="fbi90-menu-group">
+          <button type="button" class="fbi90-top">
             <div>Tabela</div>
-            <span class="material-symbols-outlined e2vpy-icon">expand_more</span>
+            <span class="material-symbols-outlined fbi90-icon">expand_more</span>
           </button>
-          <div class="e2vpy-sub">
-            <a class="e2vpy-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="e2vpy-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="e2vpy-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="e2vpy-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="e2vpy-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="fbi90-sub">
+            <a class="fbi90-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="fbi90-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="fbi90-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="fbi90-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="fbi90-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="e2vpy-menu-group">
-          <button type="button" class="e2vpy-top">
+        <div class="fbi90-menu-group">
+          <button type="button" class="fbi90-top">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined e2vpy-icon">expand_more</span>
+            <span class="material-symbols-outlined fbi90-icon">expand_more</span>
           </button>
-          <div class="e2vpy-sub">
-            <a class="e2vpy-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="e2vpy-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="e2vpy-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="e2vpy-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="e2vpy-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="fbi90-sub">
+            <a class="fbi90-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="fbi90-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="fbi90-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="fbi90-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="fbi90-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="e2vpy-menu-group">
-          <button type="button" class="e2vpy-top">
+        <div class="fbi90-menu-group">
+          <button type="button" class="fbi90-top">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined e2vpy-icon">expand_more</span>
+            <span class="material-symbols-outlined fbi90-icon">expand_more</span>
           </button>
-          <div class="e2vpy-sub">
-            <a class="e2vpy-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="e2vpy-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="e2vpy-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="e2vpy-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="e2vpy-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="fbi90-sub">
+            <a class="fbi90-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="fbi90-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="fbi90-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="fbi90-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="fbi90-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="e2vpy-menu-group">
-          <button type="button" class="e2vpy-top">
+        <div class="fbi90-menu-group">
+          <button type="button" class="fbi90-top">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined e2vpy-icon">expand_more</span>
+            <span class="material-symbols-outlined fbi90-icon">expand_more</span>
           </button>
-          <div class="e2vpy-sub">
-            <a class="e2vpy-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="e2vpy-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="e2vpy-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="e2vpy-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="e2vpy-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="fbi90-sub">
+            <a class="fbi90-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="fbi90-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="fbi90-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="fbi90-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="fbi90-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="e2vpy-menu-group">
-          <button type="button" class="e2vpy-top">
+        <div class="fbi90-menu-group">
+          <button type="button" class="fbi90-top">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined e2vpy-icon">expand_more</span>
+            <span class="material-symbols-outlined fbi90-icon">expand_more</span>
           </button>
-          <div class="e2vpy-sub">
-            <a class="e2vpy-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="e2vpy-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="e2vpy-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="e2vpy-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="e2vpy-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="fbi90-sub">
+            <a class="fbi90-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="fbi90-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="fbi90-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="fbi90-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="fbi90-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="e2vpy-desc">
+  <div class="fbi90-desc">
     
-    <div class="e2vpy-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Tekstil Baskı Hizmetleri</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel tekstil baskı çözümleri sunuyoruz. Süblimasyon baskı teknolojimiz, direkt tekstil baskı sistemlerimiz ve transfer baskı ünitelerimizle her türlü kumaşa baskı yapabiliyoruz. Tişört, forma, bayrak, flama, masa örtüsü ve tekstil promosyon ürünleri için yüksek kaliteli baskı hizmeti veriyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Tekstil Baskı Teknolojileri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Tekstil baskı hizmetlerimizde, süblimasyon baskı, direkt tekstil baskı ve transfer baskı teknolojilerini kullanıyoruz. Süblimasyon baskı, polyester kumaşlar için idealdir ve yıkama dayanımı yüksektir. Direkt tekstil baskı, pamuklu ve karışık kumaşlar için uygundur. Transfer baskı ise, küçük adetler ve özel tasarımlar için idealdir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Dijital tekstil baskı makinelerimiz, özel tekstil mürekkepleri ve profesyonel fikse sistemlerimizle yıkama dayanımı yüksek baskılar elde ediyoruz. Pantone renk eşleştirme, detaylı kalite kontrol ve profesyonel paketleme hizmetleriyle kurumsal standartlara uygun üretim yapıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Uygulama Alanları ve Ürünler</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Tekstil baskı hizmetlerimiz, geniş bir uygulama alanı sunar. Tişört, polo yaka, gömlek, forma, bayrak, flama, masa örtüsü, perde ve tekstil promosyon ürünleri için tekstil baskı yapıyoruz. Kurumsal tekstil ürünleri, promosyon tekstilleri ve özel tasarım tekstiller için profesyonel çözümler sunuyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Pamuklu, polyester, örme kumaş ve karışık kumaşlar üzerine tekstil baskı yapabiliyoruz. Farklı kumaş türleri için uygun baskı tekniği seçiyor, yüksek kaliteli sonuçlar elde ediyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Hızlı Üretim ve Kalite</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Tekstil baskı hizmetlerimizde, minimum adet sınırı olmadan, hızlı üretim ve özel ebat seçenekleriyle tekstil baskı ihtiyaçlarınızı karşılıyoruz. Sektörel deneyimimiz, teknik altyapımız ve uzman kadromuzla tekstil baskı projelerinizi hayata geçiriyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle tekstil baskı sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli teknoloji ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Tekstil baskı ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
-<p>    </p>
-<p>    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Tekstil Baskı konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kalite ve Güven</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Tekstil Baskı hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Tekstil Baskı konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Tekstil Baskı ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.</p>
-<p>    </p></p></p></div>
+    <div class="fbi90-body"><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Tekstil Baskı Hizmetleri</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te profesyonel tekstil baskı çözümleri sunuyoruz. Süblimasyon baskı teknolojimiz, direkt tekstil baskı sistemlerimiz ve transfer baskı ünitelerimizle her türlü kumaşa baskı yapabiliyoruz. Tişört, forma, bayrak, flama, masa örtüsü ve tekstil promosyon ürünleri için yüksek kaliteli baskı hizmeti veriyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Tekstil Baskı Teknolojileri</h3>
+    <p style="font-size: 16px;">
+        Tekstil baskı hizmetlerimizde, süblimasyon baskı, direkt tekstil baskı ve transfer baskı teknolojilerini kullanıyoruz. Süblimasyon baskı, polyester kumaşlar için idealdir ve yıkama dayanımı yüksektir. Direkt tekstil baskı, pamuklu ve karışık kumaşlar için uygundur. Transfer baskı ise, küçük adetler ve özel tasarımlar için idealdir.
+    </p>
+    <p style="font-size: 16px;">
+        Dijital tekstil baskı makinelerimiz, özel tekstil mürekkepleri ve profesyonel fikse sistemlerimizle yıkama dayanımı yüksek baskılar elde ediyoruz. Pantone renk eşleştirme, detaylı kalite kontrol ve profesyonel paketleme hizmetleriyle kurumsal standartlara uygun üretim yapıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Uygulama Alanları ve Ürünler</h3>
+    <p style="font-size: 16px;">
+        Tekstil baskı hizmetlerimiz, geniş bir uygulama alanı sunar. Tişört, polo yaka, gömlek, forma, bayrak, flama, masa örtüsü, perde ve tekstil promosyon ürünleri için tekstil baskı yapıyoruz. Kurumsal tekstil ürünleri, promosyon tekstilleri ve özel tasarım tekstiller için profesyonel çözümler sunuyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Pamuklu, polyester, örme kumaş ve karışık kumaşlar üzerine tekstil baskı yapabiliyoruz. Farklı kumaş türleri için uygun baskı tekniği seçiyor, yüksek kaliteli sonuçlar elde ediyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Hızlı Üretim ve Kalite</h3>
+    <p style="font-size: 16px;">
+        Tekstil baskı hizmetlerimizde, minimum adet sınırı olmadan, hızlı üretim ve özel ebat seçenekleriyle tekstil baskı ihtiyaçlarınızı karşılıyoruz. Sektörel deneyimimiz, teknik altyapımız ve uzman kadromuzla tekstil baskı projelerinizi hayata geçiriyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Gaziantep'te 15 yıllık deneyimiyle tekstil baskı sektöründe güvenilir bir çözüm ortağıdır. Profesyonel hizmet, kaliteli teknoloji ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız. Tekstil baskı ihtiyaçlarınız için hemen bizimle iletişime geçin!
+    
+    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Tekstil Baskı konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Kalite ve Güven</h3>
+    <p style="font-size: 16px;">
+        Tekstil Baskı hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Tekstil Baskı konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.
+    </p>
+    <p style="font-size: 16px;">
+        Tekstil Baskı ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.
+    </p></p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".e2vpy-menu-btn");
-    var menu = document.querySelector(".e2vpy-menu");
-    var overlay = document.querySelector(".e2vpy-menu-overlay");
-    var closeButton = document.querySelector(".e2vpy-menu-close");
+    var menuToggleBtn = document.querySelector(".fbi90-menu-btn");
+    var menu = document.querySelector(".fbi90-menu");
+    var overlay = document.querySelector(".fbi90-menu-overlay");
+    var closeButton = document.querySelector(".fbi90-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -301,7 +307,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".e2vpy-menu-close");
+      var closeBtn = event.target.closest(".fbi90-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -349,15 +355,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".e2vpy-top").forEach(function (button) {
+    document.querySelectorAll(".fbi90-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".e2vpy-menu-group");
+        var group = this.closest(".fbi90-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".e2vpy-sub");
+        var sub = group.querySelector(".fbi90-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".e2vpy-icon");
+        var icon = this.querySelector(".fbi90-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -457,8 +463,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=idoff"></script>
-<script defer src="/src/cookie.js?v=idoff"></script>
+<script defer type="text/javascript" src="/src/js.js?v=nxqj9"></script>
+<script defer src="/src/cookie.js?v=nxqj9"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

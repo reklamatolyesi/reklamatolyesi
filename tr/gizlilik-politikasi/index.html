@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=j9srh" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=j9srh" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=h1640" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=h1640" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=j9srh" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=h1640" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,130 +52,136 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=j9srh">
+<link rel="stylesheet" href="style.css?v=h1640">
 </head>
 
 <body>
-  <div id="header"><div class="if15t">
-  <div class="if15ttitle">
-    <div class="if15ttitlebody">
-      <div class="if15ttitlebodylang">
+  <div id="header"><div class="uuczp">
+  <div class="uuczptitle">
+    <div class="uuczptitlebody">
+      <div class="uuczptitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="if15tbody">
+  <div class="uuczpbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=j9srh"
+        src="/img/logo.svg?v=h1640"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="if15tbodylogo"
+        class="uuczpbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="if15t-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="uuczp-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="if15tmenubody">
-    <div class="if15tmenu" id="menu-2-root">
-      <div class="if15tmenulistbody">
-        <div class="if15tmenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="uuczp-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="uuczpmenubody">
+    <div class="uuczpmenu" id="menu-2-root">
+      <div class="uuczpmenulistbody">
+        <div class="uuczpmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="if15tlanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="uuczplanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.uuczp) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("if15tmenu-open")) {
-        root.classList.remove("if15tmenu-open");
+      var wrapper = root.closest ? root.closest(".uuczp") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("uuczpmenu-open")) {
+        target.classList.remove("uuczpmenu-open");
       } else {
-        root.classList.add("if15tmenu-open");
+        target.classList.add("uuczpmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="um8j6-title f36">
+  <div id="content"><div class="zfbr3-title f36">
   <h1>Gizlilik Politikası</h1>
 </div>
-<div class="um8j6">
-  <div class="um8j6-menu-btn">
+<div class="zfbr3">
+  <div class="zfbr3-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined um8j6-icon">menu</span>
+    <span class="material-symbols-outlined zfbr3-icon">menu</span>
   </div>
-  <div class="um8j6-menu-overlay" id="um8j6-menu-overlay" aria-hidden="true"></div>
-  <div class="um8j6-menu" id="um8j6-menu">
-    <button class="um8j6-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="um8j6-menu">
+  <div class="zfbr3-menu-overlay" id="zfbr3-menu-overlay" aria-hidden="true"></div>
+  <div class="zfbr3-menu" id="zfbr3-menu">
+    <button class="zfbr3-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="zfbr3-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="um8j6-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="um8j6-menu-link" href="/tr/misyon/">Misyon</a><a class="um8j6-menu-link" href="/tr/vizyon/">Vizyon</a><a class="um8j6-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="um8j6-menu-link active" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="um8j6-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="um8j6-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="um8j6-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
+    <a class="zfbr3-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="zfbr3-menu-link" href="/tr/misyon/">Misyon</a><a class="zfbr3-menu-link" href="/tr/vizyon/">Vizyon</a><a class="zfbr3-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="zfbr3-menu-link active" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="zfbr3-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="zfbr3-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="zfbr3-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
   </div>
-  <div class="um8j6-desc">
+  <div class="zfbr3-desc">
     
-    <div class="um8j6-body"><p><h2 style="font-size: 24px;">Gizlilik Politikası</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Web sitemizi ziyaret ettiğinizde, sitemizi kullanımınızı ve sunduğumuz hizmetleri geliştirmek amacıyla çerezler (cookies) aracılığıyla bazı bilgiler toplanmaktadır. Bu bilgiler, kimlik bilgileriniz hariç olmak üzere, hizmetlerimizin daha iyi sunulması ve kullanıcı deneyiminin iyileştirilmesi amacıyla kullanılmaktadır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Toplanan bilgiler, üçüncü taraflarla paylaşılmamakta olup, yalnızca sitemizin performansını artırmak ve hizmetlerimizi geliştirmek amacıyla kullanılmaktadır. Kullanıcılar, tarayıcı ayarlarını değiştirerek çerezlerin kullanımını engelleyebilirler.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Gizliliğiniz bizim için son derece önemlidir. Kişisel bilgilerinizin güvenliğini sağlamak için gerekli teknik ve idari önlemleri alıyoruz. Gizlilik Politikamız ile ilgili sorularınız için bizimle iletişime geçebilirsiniz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Çerez Kullanımı ve Veri Toplama</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Web sitemizde kullanıcı deneyimini iyileştirmek ve site performansını artırmak amacıyla çerezler kullanılmaktadır. Çerezler, web sitesini ziyaret ettiğinizde tarayıcınızda saklanan küçük metin dosyalarıdır. Bu çerezler, site içindeki tercihlerinizi hatırlamak, sayfa yükleme sürelerini optimize etmek ve size daha iyi bir deneyim sunmak için kullanılmaktadır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kullanılan çerez türleri arasında oturum çerezleri, kalıcı çerezler ve üçüncü taraf çerezleri bulunmaktadır. Oturum çerezleri, tarayıcı kapatıldığında otomatik olarak silinir. Kalıcı çerezler ise belirli bir süre boyunca tarayıcınızda kalır ve siteyi tekrar ziyaret ettiğinizde kullanılır. Üçüncü taraf çerezleri, site analitiği ve reklam hizmetleri için kullanılmaktadır.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kişisel Verilerin Korunması</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, kişisel verilerinizin korunması konusunda son derece hassas davranıyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, kişisel verileriniz yalnızca belirtilen amaçlar doğrultusunda ve yasal sınırlar içinde işlenmektedir. Toplanan kişisel veriler, yalnızca yetkili personel tarafından erişilebilir olup, güvenli sunucularda saklanmaktadır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kişisel verileriniz, hizmet kalitemizi artırmak, yasal yükümlülüklerimizi yerine getirmek ve müşteri ilişkilerimizi yönetmek amacıyla işlenmektedir. Verileriniz, izniniz olmadan üçüncü taraflarla paylaşılmamakta, yalnızca yasal zorunluluklar ve hizmet kalitesi iyileştirmeleri için kullanılmaktadır.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Veri Güvenliği ve Teknik Önlemler</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kişisel bilgilerinizin güvenliğini sağlamak için gerekli teknik ve idari önlemleri alıyoruz. SSL sertifikası ile veri iletimi şifrelenmekte, güvenli sunucularda saklanmaktadır. Düzenli güvenlik güncellemeleri yapılmakta, yetkisiz erişimlere karşı koruma sağlanmaktadır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Veri güvenliği konusunda sürekli iyileştirmeler yapıyor, en son güvenlik teknolojilerini kullanıyoruz. Personelimize düzenli güvenlik eğitimleri veriyor, veri işleme süreçlerinde etik kurallara uygun hareket ediyoruz. Veri sızıntısı durumunda, yasal süre içinde ilgili makamlara bildirim yapılmakta ve kullanıcılar bilgilendirilmektedir.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kullanıcı Hakları ve İletişim</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        KVKK kapsamında, kişisel verilerinizle ilgili çeşitli haklara sahipsiniz. Verilerinize erişim, düzeltme, silme veya anonimleştirme taleplerinde bulunabilirsiniz. Ayrıca, verilerinizin işlenme amacı ve üçüncü taraflarla paylaşımı hakkında bilgi talep edebilirsiniz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Gizlilik Politikamız ile ilgili sorularınız, talepleriniz veya şikayetleriniz için bizimle iletişime geçebilirsiniz. İletişim kanallarımız üzerinden bize ulaşarak, kişisel verilerinizle ilgili tüm taleplerinizi iletebilirsiniz. Talepleriniz en kısa sürede değerlendirilecek ve yanıtlanacaktır.</p>
-<p>    </p></p></div>
+    <div class="zfbr3-body"><h2 style="font-size: 24px;">Gizlilik Politikası</h2>
+    <p style="font-size: 16px;">
+        Web sitemizi ziyaret ettiğinizde, sitemizi kullanımınızı ve sunduğumuz hizmetleri geliştirmek amacıyla çerezler (cookies) aracılığıyla bazı bilgiler toplanmaktadır. Bu bilgiler, kimlik bilgileriniz hariç olmak üzere, hizmetlerimizin daha iyi sunulması ve kullanıcı deneyiminin iyileştirilmesi amacıyla kullanılmaktadır.
+    </p>
+    <p style="font-size: 16px;">
+        Toplanan bilgiler, üçüncü taraflarla paylaşılmamakta olup, yalnızca sitemizin performansını artırmak ve hizmetlerimizi geliştirmek amacıyla kullanılmaktadır. Kullanıcılar, tarayıcı ayarlarını değiştirerek çerezlerin kullanımını engelleyebilirler.
+    </p>
+    <p style="font-size: 16px;">
+        Gizliliğiniz bizim için son derece önemlidir. Kişisel bilgilerinizin güvenliğini sağlamak için gerekli teknik ve idari önlemleri alıyoruz. Gizlilik Politikamız ile ilgili sorularınız için bizimle iletişime geçebilirsiniz.
+    </p>
+    <h3 style="font-size: 20px;">Çerez Kullanımı ve Veri Toplama</h3>
+    <p style="font-size: 16px;">
+        Web sitemizde kullanıcı deneyimini iyileştirmek ve site performansını artırmak amacıyla çerezler kullanılmaktadır. Çerezler, web sitesini ziyaret ettiğinizde tarayıcınızda saklanan küçük metin dosyalarıdır. Bu çerezler, site içindeki tercihlerinizi hatırlamak, sayfa yükleme sürelerini optimize etmek ve size daha iyi bir deneyim sunmak için kullanılmaktadır.
+    </p>
+    <p style="font-size: 16px;">
+        Kullanılan çerez türleri arasında oturum çerezleri, kalıcı çerezler ve üçüncü taraf çerezleri bulunmaktadır. Oturum çerezleri, tarayıcı kapatıldığında otomatik olarak silinir. Kalıcı çerezler ise belirli bir süre boyunca tarayıcınızda kalır ve siteyi tekrar ziyaret ettiğinizde kullanılır. Üçüncü taraf çerezleri, site analitiği ve reklam hizmetleri için kullanılmaktadır.
+    </p>
+    <h3 style="font-size: 20px;">Kişisel Verilerin Korunması</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, kişisel verilerinizin korunması konusunda son derece hassas davranıyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, kişisel verileriniz yalnızca belirtilen amaçlar doğrultusunda ve yasal sınırlar içinde işlenmektedir. Toplanan kişisel veriler, yalnızca yetkili personel tarafından erişilebilir olup, güvenli sunucularda saklanmaktadır.
+    </p>
+    <p style="font-size: 16px;">
+        Kişisel verileriniz, hizmet kalitemizi artırmak, yasal yükümlülüklerimizi yerine getirmek ve müşteri ilişkilerimizi yönetmek amacıyla işlenmektedir. Verileriniz, izniniz olmadan üçüncü taraflarla paylaşılmamakta, yalnızca yasal zorunluluklar ve hizmet kalitesi iyileştirmeleri için kullanılmaktadır.
+    </p>
+    <h3 style="font-size: 20px;">Veri Güvenliği ve Teknik Önlemler</h3>
+    <p style="font-size: 16px;">
+        Kişisel bilgilerinizin güvenliğini sağlamak için gerekli teknik ve idari önlemleri alıyoruz. SSL sertifikası ile veri iletimi şifrelenmekte, güvenli sunucularda saklanmaktadır. Düzenli güvenlik güncellemeleri yapılmakta, yetkisiz erişimlere karşı koruma sağlanmaktadır.
+    </p>
+    <p style="font-size: 16px;">
+        Veri güvenliği konusunda sürekli iyileştirmeler yapıyor, en son güvenlik teknolojilerini kullanıyoruz. Personelimize düzenli güvenlik eğitimleri veriyor, veri işleme süreçlerinde etik kurallara uygun hareket ediyoruz. Veri sızıntısı durumunda, yasal süre içinde ilgili makamlara bildirim yapılmakta ve kullanıcılar bilgilendirilmektedir.
+    </p>
+    <h3 style="font-size: 20px;">Kullanıcı Hakları ve İletişim</h3>
+    <p style="font-size: 16px;">
+        KVKK kapsamında, kişisel verilerinizle ilgili çeşitli haklara sahipsiniz. Verilerinize erişim, düzeltme, silme veya anonimleştirme taleplerinde bulunabilirsiniz. Ayrıca, verilerinizin işlenme amacı ve üçüncü taraflarla paylaşımı hakkında bilgi talep edebilirsiniz.
+    </p>
+    <p style="font-size: 16px;">
+        Gizlilik Politikamız ile ilgili sorularınız, talepleriniz veya şikayetleriniz için bizimle iletişime geçebilirsiniz. İletişim kanallarımız üzerinden bize ulaşarak, kişisel verilerinizle ilgili tüm taleplerinizi iletebilirsiniz. Talepleriniz en kısa sürede değerlendirilecek ve yanıtlanacaktır.
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".um8j6-menu-btn");
-    var menu = document.querySelector(".um8j6-menu");
-    var overlay = document.querySelector(".um8j6-menu-overlay");
-    var closeButton = document.querySelector(".um8j6-menu-close");
+    var menuToggleBtn = document.querySelector(".zfbr3-menu-btn");
+    var menu = document.querySelector(".zfbr3-menu");
+    var overlay = document.querySelector(".zfbr3-menu-overlay");
+    var closeButton = document.querySelector(".zfbr3-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -245,7 +251,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".um8j6-menu-close");
+      var closeBtn = event.target.closest(".zfbr3-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -293,15 +299,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".um8j6-top").forEach(function (button) {
+    document.querySelectorAll(".zfbr3-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".um8j6-menu-group");
+        var group = this.closest(".zfbr3-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".um8j6-sub");
+        var sub = group.querySelector(".zfbr3-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".um8j6-icon");
+        var icon = this.querySelector(".zfbr3-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -401,8 +407,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=j9srh"></script>
-<script defer src="/src/cookie.js?v=j9srh"></script>
+<script defer type="text/javascript" src="/src/js.js?v=h1640"></script>
+<script defer src="/src/cookie.js?v=h1640"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

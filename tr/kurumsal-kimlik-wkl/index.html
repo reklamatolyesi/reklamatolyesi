@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=yi9n0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=yi9n0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=fzddp" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=fzddp" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=yi9n0" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=fzddp" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,164 +52,170 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=yi9n0">
+<link rel="stylesheet" href="style.css?v=fzddp">
 </head>
 
 <body>
-  <div id="header"><div class="l6qid">
-  <div class="l6qidtitle">
-    <div class="l6qidtitlebody">
-      <div class="l6qidtitlebodylang">
+  <div id="header"><div class="lh37c">
+  <div class="lh37ctitle">
+    <div class="lh37ctitlebody">
+      <div class="lh37ctitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="l6qidbody">
+  <div class="lh37cbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=yi9n0"
+        src="/img/logo.svg?v=fzddp"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="l6qidbodylogo"
+        class="lh37cbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="l6qid-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="lh37c-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="l6qidmenubody">
-    <div class="l6qidmenu" id="menu-2-root">
-      <div class="l6qidmenulistbody">
-        <div class="l6qidmenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="lh37c-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="lh37cmenubody">
+    <div class="lh37cmenu" id="menu-2-root">
+      <div class="lh37cmenulistbody">
+        <div class="lh37cmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="l6qidlanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="lh37clanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.lh37c) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("l6qidmenu-open")) {
-        root.classList.remove("l6qidmenu-open");
+      var wrapper = root.closest ? root.closest(".lh37c") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("lh37cmenu-open")) {
+        target.classList.remove("lh37cmenu-open");
       } else {
-        root.classList.add("l6qidmenu-open");
+        target.classList.add("lh37cmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="woh4r-title f36">
+  <div id="content"><div class="ahu7w-title f36">
   <h1>Kurumsal Kimlik</h1>
 </div>
-<div class="woh4r">
-  <div class="woh4r-menu-btn">
+<div class="ahu7w">
+  <div class="ahu7w-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined woh4r-icon">menu</span>
+    <span class="material-symbols-outlined ahu7w-icon">menu</span>
   </div>
-  <div class="woh4r-menu-overlay" id="woh4r-menu-overlay" aria-hidden="true"></div>
-  <div class="woh4r-menu" id="woh4r-menu">
-    <button class="woh4r-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="woh4r-menu">
+  <div class="ahu7w-menu-overlay" id="ahu7w-menu-overlay" aria-hidden="true"></div>
+  <div class="ahu7w-menu" id="ahu7w-menu">
+    <button class="ahu7w-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="ahu7w-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="woh4r-menu-group">
-          <button type="button" class="woh4r-top">
+        <div class="ahu7w-menu-group">
+          <button type="button" class="ahu7w-top">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined woh4r-icon">expand_more</span>
+            <span class="material-symbols-outlined ahu7w-icon">expand_more</span>
           </button>
-          <div class="woh4r-sub">
-            <a class="woh4r-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="woh4r-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="woh4r-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="woh4r-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="woh4r-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="woh4r-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="ahu7w-sub">
+            <a class="ahu7w-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="ahu7w-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="ahu7w-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="ahu7w-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="ahu7w-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="ahu7w-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="woh4r-menu-group">
-          <button type="button" class="woh4r-top">
+        <div class="ahu7w-menu-group">
+          <button type="button" class="ahu7w-top">
             <div>Tabela</div>
-            <span class="material-symbols-outlined woh4r-icon">expand_more</span>
+            <span class="material-symbols-outlined ahu7w-icon">expand_more</span>
           </button>
-          <div class="woh4r-sub">
-            <a class="woh4r-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="woh4r-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="woh4r-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="woh4r-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="woh4r-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="ahu7w-sub">
+            <a class="ahu7w-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="ahu7w-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="ahu7w-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="ahu7w-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="ahu7w-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="woh4r-menu-group open">
-          <button type="button" class="woh4r-top active">
+        <div class="ahu7w-menu-group open">
+          <button type="button" class="ahu7w-top active">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined woh4r-icon">expand_more</span>
+            <span class="material-symbols-outlined ahu7w-icon">expand_more</span>
           </button>
-          <div class="woh4r-sub show">
-            <a class="woh4r-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="woh4r-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="woh4r-sub-link active" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="woh4r-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="woh4r-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="ahu7w-sub show">
+            <a class="ahu7w-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="ahu7w-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="ahu7w-sub-link active" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="ahu7w-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="ahu7w-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="woh4r-menu-group">
-          <button type="button" class="woh4r-top">
+        <div class="ahu7w-menu-group">
+          <button type="button" class="ahu7w-top">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined woh4r-icon">expand_more</span>
+            <span class="material-symbols-outlined ahu7w-icon">expand_more</span>
           </button>
-          <div class="woh4r-sub">
-            <a class="woh4r-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="woh4r-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="woh4r-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="woh4r-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="woh4r-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="ahu7w-sub">
+            <a class="ahu7w-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="ahu7w-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="ahu7w-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="ahu7w-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="ahu7w-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="woh4r-menu-group">
-          <button type="button" class="woh4r-top">
+        <div class="ahu7w-menu-group">
+          <button type="button" class="ahu7w-top">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined woh4r-icon">expand_more</span>
+            <span class="material-symbols-outlined ahu7w-icon">expand_more</span>
           </button>
-          <div class="woh4r-sub">
-            <a class="woh4r-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="woh4r-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="woh4r-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="woh4r-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="woh4r-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="ahu7w-sub">
+            <a class="ahu7w-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="ahu7w-sub-link" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="ahu7w-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="ahu7w-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="ahu7w-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="woh4r-menu-group">
-          <button type="button" class="woh4r-top">
+        <div class="ahu7w-menu-group">
+          <button type="button" class="ahu7w-top">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined woh4r-icon">expand_more</span>
+            <span class="material-symbols-outlined ahu7w-icon">expand_more</span>
           </button>
-          <div class="woh4r-sub">
-            <a class="woh4r-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="woh4r-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="woh4r-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="woh4r-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="woh4r-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="ahu7w-sub">
+            <a class="ahu7w-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="ahu7w-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="ahu7w-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="ahu7w-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="ahu7w-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="woh4r-desc">
+  <div class="ahu7w-desc">
     
-    <div class="woh4r-body"><p><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Kurumsal Kimlik Tasarımı</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te profesyonel kurumsal kimlik tasarımı hizmetleri sunuyoruz. Sosyal medya tasarımından farklı olarak kurumsal kimlik hizmeti ve marka kılavuzu odaklı. Sosyal medya tasarımları platform bazlı dijital içerik odaklıyken, kurumsal kimlik tasarımı marka kimliği, görsel tutarlılık ve kurumsal evrakların tasarımını kapsar. Logo tasarımından başlayarak, kartvizit, antetli kağıt, zarf, dosya, fatura gibi kurumsal evrakların tasarımını yapıyoruz. Marka kimliğinizi yansıtan renk paleti, tipografi seçimi ve tasarım dili oluşturarak tutarlı bir kurumsal görünüm sağlıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kurumsal Kimlik Elemanları</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kurumsal kimlik çalışmalarımızda, logo, kartvizit, antetli kağıt, zarf, dosya ve diğer kurumsal materyallerin tasarımını yapıyoruz. Kurumsal kimlik kılavuzu hazırlayarak markanızın tüm mecralarda doğru kullanımını garanti altına alıyoruz. Dijital ve basılı mecralarda kullanılacak tüm materyallerin tasarımını tek bir çatı altında topluyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Sosyal medya şablonları, e-posta imzaları, sunum şablonları gibi dijital kurumsal kimlik elemanları tasarlıyoruz. Baskı teknik şartnameleri, pantone renk kodları ve vektörel dosyalarla eksiksiz teslim yapıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Danışmanlık</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kurumsal kimlik tasarım hizmetlerimizde, ücretsiz danışmanlık, revizyon imkanı ve teknik destek hizmetleriyle tam kapsamlı çözümler sunuyoruz. Adobe Creative Suite programlarında uzman tasarım ekibimizle modern ve profesyonel çözümler üretiyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kurumsal kimlik çalışmalarımızda, logo, kartvizit, antetli kağıt, zarf, dosya ve diğer kurumsal materyallerin tasarımını yapıyoruz. Kurumsal kimlik kılavuzu hazırlayarak markanızın tüm mecralarda doğru kullanımını garanti altına alıyoruz. Sosyal medya şablonları, e-posta imzaları, sunum şablonları gibi dijital kurumsal kimlik elemanları tasarlıyoruz. Baskı teknik şartnameleri, pantone renk kodları ve vektörel dosyalarla eksiksiz teslim yapıyoruz. Ücretsiz danışmanlık, revizyon imkanı ve teknik destek hizmetleriyle tam kapsamlı çözümler sunuyoruz. Kurumsal kimlik tasarım ihtiyaçlarınız için hemen bizimle iletişime geçin!</p>
-<p>    </p></p></div>
+    <div class="ahu7w-body"><h2 style="font-size: 24px;">Gaziantep'te Profesyonel Kurumsal Kimlik Tasarımı</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te profesyonel kurumsal kimlik tasarımı hizmetleri sunuyoruz. Sosyal medya tasarımından farklı olarak kurumsal kimlik hizmeti ve marka kılavuzu odaklı. Sosyal medya tasarımları platform bazlı dijital içerik odaklıyken, kurumsal kimlik tasarımı marka kimliği, görsel tutarlılık ve kurumsal evrakların tasarımını kapsar. Logo tasarımından başlayarak, kartvizit, antetli kağıt, zarf, dosya, fatura gibi kurumsal evrakların tasarımını yapıyoruz. Marka kimliğinizi yansıtan renk paleti, tipografi seçimi ve tasarım dili oluşturarak tutarlı bir kurumsal görünüm sağlıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Kurumsal Kimlik Elemanları</h3>
+    <p style="font-size: 16px;">
+        Kurumsal kimlik çalışmalarımızda, logo, kartvizit, antetli kağıt, zarf, dosya ve diğer kurumsal materyallerin tasarımını yapıyoruz. Kurumsal kimlik kılavuzu hazırlayarak markanızın tüm mecralarda doğru kullanımını garanti altına alıyoruz. Dijital ve basılı mecralarda kullanılacak tüm materyallerin tasarımını tek bir çatı altında topluyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Sosyal medya şablonları, e-posta imzaları, sunum şablonları gibi dijital kurumsal kimlik elemanları tasarlıyoruz. Baskı teknik şartnameleri, pantone renk kodları ve vektörel dosyalarla eksiksiz teslim yapıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet ve Danışmanlık</h3>
+    <p style="font-size: 16px;">
+        Kurumsal kimlik tasarım hizmetlerimizde, ücretsiz danışmanlık, revizyon imkanı ve teknik destek hizmetleriyle tam kapsamlı çözümler sunuyoruz. Adobe Creative Suite programlarında uzman tasarım ekibimizle modern ve profesyonel çözümler üretiyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Kurumsal kimlik çalışmalarımızda, logo, kartvizit, antetli kağıt, zarf, dosya ve diğer kurumsal materyallerin tasarımını yapıyoruz. Kurumsal kimlik kılavuzu hazırlayarak markanızın tüm mecralarda doğru kullanımını garanti altına alıyoruz. Sosyal medya şablonları, e-posta imzaları, sunum şablonları gibi dijital kurumsal kimlik elemanları tasarlıyoruz. Baskı teknik şartnameleri, pantone renk kodları ve vektörel dosyalarla eksiksiz teslim yapıyoruz. Ücretsiz danışmanlık, revizyon imkanı ve teknik destek hizmetleriyle tam kapsamlı çözümler sunuyoruz. Kurumsal kimlik tasarım ihtiyaçlarınız için hemen bizimle iletişime geçin!
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".woh4r-menu-btn");
-    var menu = document.querySelector(".woh4r-menu");
-    var overlay = document.querySelector(".woh4r-menu-overlay");
-    var closeButton = document.querySelector(".woh4r-menu-close");
+    var menuToggleBtn = document.querySelector(".ahu7w-menu-btn");
+    var menu = document.querySelector(".ahu7w-menu");
+    var overlay = document.querySelector(".ahu7w-menu-overlay");
+    var closeButton = document.querySelector(".ahu7w-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -279,7 +285,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".woh4r-menu-close");
+      var closeBtn = event.target.closest(".ahu7w-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -327,15 +333,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".woh4r-top").forEach(function (button) {
+    document.querySelectorAll(".ahu7w-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".woh4r-menu-group");
+        var group = this.closest(".ahu7w-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".woh4r-sub");
+        var sub = group.querySelector(".ahu7w-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".woh4r-icon");
+        var icon = this.querySelector(".ahu7w-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -435,8 +441,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=yi9n0"></script>
-<script defer src="/src/cookie.js?v=yi9n0"></script>
+<script defer type="text/javascript" src="/src/js.js?v=fzddp"></script>
+<script defer src="/src/cookie.js?v=fzddp"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

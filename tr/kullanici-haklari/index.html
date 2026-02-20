@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=fdnz3" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=fdnz3" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=mgw50" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=mgw50" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=fdnz3" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=mgw50" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,130 +52,136 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=fdnz3">
+<link rel="stylesheet" href="style.css?v=mgw50">
 </head>
 
 <body>
-  <div id="header"><div class="lxuy6">
-  <div class="lxuy6title">
-    <div class="lxuy6titlebody">
-      <div class="lxuy6titlebodylang">
+  <div id="header"><div class="ws805">
+  <div class="ws805title">
+    <div class="ws805titlebody">
+      <div class="ws805titlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="lxuy6body">
+  <div class="ws805body">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=fdnz3"
+        src="/img/logo.svg?v=mgw50"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="lxuy6bodylogo"
+        class="ws805bodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="lxuy6-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ws805-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="lxuy6menubody">
-    <div class="lxuy6menu" id="menu-2-root">
-      <div class="lxuy6menulistbody">
-        <div class="lxuy6menulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="ws805-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="ws805menubody">
+    <div class="ws805menu" id="menu-2-root">
+      <div class="ws805menulistbody">
+        <div class="ws805menulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="lxuy6languages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="ws805languages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.ws805) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("lxuy6menu-open")) {
-        root.classList.remove("lxuy6menu-open");
+      var wrapper = root.closest ? root.closest(".ws805") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("ws805menu-open")) {
+        target.classList.remove("ws805menu-open");
       } else {
-        root.classList.add("lxuy6menu-open");
+        target.classList.add("ws805menu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="jk5vy-title f36">
+  <div id="content"><div class="orvdj-title f36">
   <h1>Kullanıcı Hakları</h1>
 </div>
-<div class="jk5vy">
-  <div class="jk5vy-menu-btn">
+<div class="orvdj">
+  <div class="orvdj-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined jk5vy-icon">menu</span>
+    <span class="material-symbols-outlined orvdj-icon">menu</span>
   </div>
-  <div class="jk5vy-menu-overlay" id="jk5vy-menu-overlay" aria-hidden="true"></div>
-  <div class="jk5vy-menu" id="jk5vy-menu">
-    <button class="jk5vy-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="jk5vy-menu">
+  <div class="orvdj-menu-overlay" id="orvdj-menu-overlay" aria-hidden="true"></div>
+  <div class="orvdj-menu" id="orvdj-menu">
+    <button class="orvdj-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="orvdj-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="jk5vy-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="jk5vy-menu-link" href="/tr/misyon/">Misyon</a><a class="jk5vy-menu-link" href="/tr/vizyon/">Vizyon</a><a class="jk5vy-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="jk5vy-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="jk5vy-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="jk5vy-menu-link active" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="jk5vy-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
+    <a class="orvdj-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="orvdj-menu-link" href="/tr/misyon/">Misyon</a><a class="orvdj-menu-link" href="/tr/vizyon/">Vizyon</a><a class="orvdj-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="orvdj-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="orvdj-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="orvdj-menu-link active" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="orvdj-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
   </div>
-  <div class="jk5vy-desc">
+  <div class="orvdj-desc">
     
-    <div class="jk5vy-body"><p><h2 style="font-size: 24px;">Kullanıcı Hakları</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Web sitemiz üzerinden hizmetlerimizden faydalanan tüm kullanıcılarımız, kişisel verilerinin korunması hakkına sahiptir. KVKK kapsamında, verilerinizin nasıl işlendiği, saklandığı ve kullanıldığı konusunda bilgi alma hakkınız bulunmaktadır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kullanıcı olarak, verilerinizin güncellenmesi, düzeltilmesi veya silinmesi taleplerinde bulunabilirsiniz. Ayrıca, verilerinizin işlenme amacı ve üçüncü taraflarla paylaşımı hakkında bilgi talep edebilirsiniz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Haklarınızı kullanmak için iletişim kanallarımız üzerinden bize ulaşabilirsiniz. Talepleriniz en kısa sürede değerlendirilecek ve yanıtlanacaktır.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">KVKK Kapsamında Kullanıcı Hakları</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, kişisel verilerinizle ilgili çeşitli haklara sahipsiniz. Bu haklar, veri sahibi olarak size tanınan yasal haklardır ve Reklam Atölyesi olarak bu haklarınızı kullanmanızı kolaylaştırmak için gerekli tüm önlemleri alıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        KVKK kapsamında sahip olduğunuz haklar arasında verilerinize erişim, düzeltme, silme veya anonimleştirme taleplerinde bulunma, verilerinizin işlenme amacı hakkında bilgi alma, üçüncü taraflarla paylaşımı hakkında bilgi talep etme ve veri taşınabilirliği hakları bulunmaktadır.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Veri Erişim ve Düzeltme Hakları</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kişisel verilerinize erişim hakkınız bulunmaktadır. Bu hak kapsamında, hangi kişisel verilerinizin işlendiği, işlenme amacı, işlenme süresi ve üçüncü taraflarla paylaşımı hakkında detaylı bilgi talep edebilirsiniz. Ayrıca, yanlış veya eksik olan verilerinizin düzeltilmesini talep edebilirsiniz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Veri düzeltme talepleriniz, en geç 30 gün içinde değerlendirilecek ve gerekli düzeltmeler yapılacaktır. Düzeltme işlemi sonrasında, düzeltilen verileriniz üçüncü taraflarla paylaşılmışsa, bu taraflara da bilgilendirme yapılacaktır.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Veri Silme ve Anonimleştirme Hakları</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kişisel verilerinizin silinmesini veya anonimleştirilmesini talep edebilirsiniz. Bu hak, verilerinizin artık işlenme amacının kalmadığı durumlarda kullanılabilir. Veri silme talepleriniz, yasal saklama süreleri dikkate alınarak değerlendirilecektir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Veri silme işlemi sonrasında, silinen verileriniz üçüncü taraflarla paylaşılmışsa, bu taraflara da bilgilendirme yapılacak ve verilerin silinmesi talep edilecektir. Anonimleştirme işlemi, verilerin kişiyi tanımlayamayacak şekilde işlenmesi anlamına gelmektedir.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Hak Kullanımı ve İletişim</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        KVKK kapsamındaki haklarınızı kullanmak için iletişim kanallarımız üzerinden bize ulaşabilirsiniz. Talepleriniz, kimlik tespiti yapıldıktan sonra değerlendirilecek ve en geç 30 gün içinde yanıtlanacaktır. Talebinizin reddedilmesi durumunda, gerekçe bildirilecek ve itiraz hakkınız bulunduğu hatırlatılacaktır.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Veri sahibi haklarınızın kullanımı ücretsizdir. Ancak, talebinizin haksız veya aşırı olduğu durumlarda, makul bir ücret talep edilebilir. Haklarınızı kullanırken, kimlik tespiti için gerekli belgeleri sunmanız gerekmektedir.</p>
-<p>    </p></p></div>
+    <div class="orvdj-body"><h2 style="font-size: 24px;">Kullanıcı Hakları</h2>
+    <p style="font-size: 16px;">
+        Web sitemiz üzerinden hizmetlerimizden faydalanan tüm kullanıcılarımız, kişisel verilerinin korunması hakkına sahiptir. KVKK kapsamında, verilerinizin nasıl işlendiği, saklandığı ve kullanıldığı konusunda bilgi alma hakkınız bulunmaktadır.
+    </p>
+    <p style="font-size: 16px;">
+        Kullanıcı olarak, verilerinizin güncellenmesi, düzeltilmesi veya silinmesi taleplerinde bulunabilirsiniz. Ayrıca, verilerinizin işlenme amacı ve üçüncü taraflarla paylaşımı hakkında bilgi talep edebilirsiniz.
+    </p>
+    <p style="font-size: 16px;">
+        Haklarınızı kullanmak için iletişim kanallarımız üzerinden bize ulaşabilirsiniz. Talepleriniz en kısa sürede değerlendirilecek ve yanıtlanacaktır.
+    </p>
+    <h3 style="font-size: 20px;">KVKK Kapsamında Kullanıcı Hakları</h3>
+    <p style="font-size: 16px;">
+        6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, kişisel verilerinizle ilgili çeşitli haklara sahipsiniz. Bu haklar, veri sahibi olarak size tanınan yasal haklardır ve Reklam Atölyesi olarak bu haklarınızı kullanmanızı kolaylaştırmak için gerekli tüm önlemleri alıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        KVKK kapsamında sahip olduğunuz haklar arasında verilerinize erişim, düzeltme, silme veya anonimleştirme taleplerinde bulunma, verilerinizin işlenme amacı hakkında bilgi alma, üçüncü taraflarla paylaşımı hakkında bilgi talep etme ve veri taşınabilirliği hakları bulunmaktadır.
+    </p>
+    <h3 style="font-size: 20px;">Veri Erişim ve Düzeltme Hakları</h3>
+    <p style="font-size: 16px;">
+        Kişisel verilerinize erişim hakkınız bulunmaktadır. Bu hak kapsamında, hangi kişisel verilerinizin işlendiği, işlenme amacı, işlenme süresi ve üçüncü taraflarla paylaşımı hakkında detaylı bilgi talep edebilirsiniz. Ayrıca, yanlış veya eksik olan verilerinizin düzeltilmesini talep edebilirsiniz.
+    </p>
+    <p style="font-size: 16px;">
+        Veri düzeltme talepleriniz, en geç 30 gün içinde değerlendirilecek ve gerekli düzeltmeler yapılacaktır. Düzeltme işlemi sonrasında, düzeltilen verileriniz üçüncü taraflarla paylaşılmışsa, bu taraflara da bilgilendirme yapılacaktır.
+    </p>
+    <h3 style="font-size: 20px;">Veri Silme ve Anonimleştirme Hakları</h3>
+    <p style="font-size: 16px;">
+        Kişisel verilerinizin silinmesini veya anonimleştirilmesini talep edebilirsiniz. Bu hak, verilerinizin artık işlenme amacının kalmadığı durumlarda kullanılabilir. Veri silme talepleriniz, yasal saklama süreleri dikkate alınarak değerlendirilecektir.
+    </p>
+    <p style="font-size: 16px;">
+        Veri silme işlemi sonrasında, silinen verileriniz üçüncü taraflarla paylaşılmışsa, bu taraflara da bilgilendirme yapılacak ve verilerin silinmesi talep edilecektir. Anonimleştirme işlemi, verilerin kişiyi tanımlayamayacak şekilde işlenmesi anlamına gelmektedir.
+    </p>
+    <h3 style="font-size: 20px;">Hak Kullanımı ve İletişim</h3>
+    <p style="font-size: 16px;">
+        KVKK kapsamındaki haklarınızı kullanmak için iletişim kanallarımız üzerinden bize ulaşabilirsiniz. Talepleriniz, kimlik tespiti yapıldıktan sonra değerlendirilecek ve en geç 30 gün içinde yanıtlanacaktır. Talebinizin reddedilmesi durumunda, gerekçe bildirilecek ve itiraz hakkınız bulunduğu hatırlatılacaktır.
+    </p>
+    <p style="font-size: 16px;">
+        Veri sahibi haklarınızın kullanımı ücretsizdir. Ancak, talebinizin haksız veya aşırı olduğu durumlarda, makul bir ücret talep edilebilir. Haklarınızı kullanırken, kimlik tespiti için gerekli belgeleri sunmanız gerekmektedir.
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".jk5vy-menu-btn");
-    var menu = document.querySelector(".jk5vy-menu");
-    var overlay = document.querySelector(".jk5vy-menu-overlay");
-    var closeButton = document.querySelector(".jk5vy-menu-close");
+    var menuToggleBtn = document.querySelector(".orvdj-menu-btn");
+    var menu = document.querySelector(".orvdj-menu");
+    var overlay = document.querySelector(".orvdj-menu-overlay");
+    var closeButton = document.querySelector(".orvdj-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -245,7 +251,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".jk5vy-menu-close");
+      var closeBtn = event.target.closest(".orvdj-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -293,15 +299,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".jk5vy-top").forEach(function (button) {
+    document.querySelectorAll(".orvdj-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".jk5vy-menu-group");
+        var group = this.closest(".orvdj-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".jk5vy-sub");
+        var sub = group.querySelector(".orvdj-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".jk5vy-icon");
+        var icon = this.querySelector(".orvdj-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -401,8 +407,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=fdnz3"></script>
-<script defer src="/src/cookie.js?v=fdnz3"></script>
+<script defer type="text/javascript" src="/src/js.js?v=mgw50"></script>
+<script defer src="/src/cookie.js?v=mgw50"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

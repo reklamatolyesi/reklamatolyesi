@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=pp09h" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=pp09h" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=tethj" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=tethj" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=pp09h" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=tethj" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,123 +52,129 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=pp09h">
+<link rel="stylesheet" href="style.css?v=tethj">
 </head>
 
 <body>
-  <div id="header"><div class="fwnx0">
-  <div class="fwnx0title">
-    <div class="fwnx0titlebody">
-      <div class="fwnx0titlebodylang">
+  <div id="header"><div class="bdely">
+  <div class="bdelytitle">
+    <div class="bdelytitlebody">
+      <div class="bdelytitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="fwnx0body">
+  <div class="bdelybody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=pp09h"
+        src="/img/logo.svg?v=tethj"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="fwnx0bodylogo"
+        class="bdelybodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="fwnx0-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="bdely-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="fwnx0menubody">
-    <div class="fwnx0menu" id="menu-2-root">
-      <div class="fwnx0menulistbody">
-        <div class="fwnx0menulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="bdely-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="bdelymenubody">
+    <div class="bdelymenu" id="menu-2-root">
+      <div class="bdelymenulistbody">
+        <div class="bdelymenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="fwnx0languages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="bdelylanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.bdely) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("fwnx0menu-open")) {
-        root.classList.remove("fwnx0menu-open");
+      var wrapper = root.closest ? root.closest(".bdely") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("bdelymenu-open")) {
+        target.classList.remove("bdelymenu-open");
       } else {
-        root.classList.add("fwnx0menu-open");
+        target.classList.add("bdelymenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="zq3g7-title f36">
+  <div id="content"><div class="dop5g-title f36">
   <h1>Hakkımızda</h1>
 </div>
-<div class="zq3g7">
-  <div class="zq3g7-menu-btn">
+<div class="dop5g">
+  <div class="dop5g-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined zq3g7-icon">menu</span>
+    <span class="material-symbols-outlined dop5g-icon">menu</span>
   </div>
-  <div class="zq3g7-menu-overlay" id="zq3g7-menu-overlay" aria-hidden="true"></div>
-  <div class="zq3g7-menu" id="zq3g7-menu">
-    <button class="zq3g7-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="zq3g7-menu">
+  <div class="dop5g-menu-overlay" id="dop5g-menu-overlay" aria-hidden="true"></div>
+  <div class="dop5g-menu" id="dop5g-menu">
+    <button class="dop5g-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="dop5g-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="zq3g7-menu-link active" href="/tr/hakkimizda/">Hakkımızda</a><a class="zq3g7-menu-link" href="/tr/misyon/">Misyon</a><a class="zq3g7-menu-link" href="/tr/vizyon/">Vizyon</a><a class="zq3g7-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="zq3g7-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="zq3g7-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="zq3g7-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="zq3g7-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
+    <a class="dop5g-menu-link active" href="/tr/hakkimizda/">Hakkımızda</a><a class="dop5g-menu-link" href="/tr/misyon/">Misyon</a><a class="dop5g-menu-link" href="/tr/vizyon/">Vizyon</a><a class="dop5g-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="dop5g-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="dop5g-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="dop5g-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="dop5g-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
   </div>
-  <div class="zq3g7-desc">
+  <div class="dop5g-desc">
     
-    <div class="zq3g7-body"><p><h2 style="font-size: 24px;">Gaziantep'in Güvenilir Reklam Ajansı</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıldır reklam ve tanıtım sektörüne yön veriyoruz. Modern teknoloji parkurumuz, deneyimli ekibimiz ve yaratıcı çözümlerimizle işletmelerin markalaşma süreçlerine değer katıyoruz. Dijital baskıdan araç kaplamaya, tabela sistemlerinden promosyon ürünlerine kadar geniş hizmet yelpazemizle müşterilerimizin tüm reklam ihtiyaçlarını tek çatı altında karşılıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Üretim tesisimizde en son teknoloji makine parkuru ile yüksek kalitede baskı ve uygulama hizmetleri sunuyoruz. Vinil baskı, dijital baskı, UV baskı, solvent baskı gibi farklı baskı teknolojileri ile her türlü malzeme üzerine kusursuz baskı yapabiliyoruz. Kutu harf, LED tabela, totem tabela gibi görünürlük çözümlerimizle markaların dikkat çekmesini sağlıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Grafik tasarım ekibimiz, logo tasarımından kurumsal kimlik çalışmalarına, sosyal medya tasarımlarından katalog tasarımına kadar tüm görsel ihtiyaçlarınız için yaratıcı çözümler üretiyor. Profesyonel yaklaşımımız, zamanında teslimat anlayışımız ve uygun fiyat politikamızla Gaziantep'in tercih edilen reklam ajansı olmaktan gurur duyuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Sektördeki Deneyimimiz ve Başarılarımız</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        2008 yılından bu yana Gaziantep ve çevre illerde binlerce başarılı projeye imza attık. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz. Her projede müşteri memnuniyetini ön planda tutarak, kaliteden ödün vermeden çalışıyoruz. Sektördeki gelişmeleri yakından takip ediyor, teknolojik altyapımızı sürekli yeniliyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Üretim tesisimizde bulunan son teknoloji dijital baskı makinelerimiz, kesim plotter'larımız ve montaj ekipmanlarımızla her türlü reklam ihtiyacınızı karşılayabiliyoruz. Vinil kesim, dijital baskı, UV baskı, solvent baskı, latex baskı gibi farklı baskı teknolojilerini kullanarak her malzeme üzerine yüksek kaliteli baskı yapabiliyoruz. Branda, mesh, folyo, pleksiglas, alüminyum kompozit gibi malzemeler üzerinde profesyonel çalışmalar gerçekleştiriyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Hizmet Alanlarımız ve Uzmanlığımız</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Dijital baskı hizmetlerimiz kapsamında poster, afiş, branda, mesh, folyo, sticker, etiket ve özel ebat baskılar yapıyoruz. Tabela sistemlerinde kutu harf, LED tabela, totem tabela, pleksiglas tabela, ışıklı tabela ve yönlendirme sistemleri üretiyoruz. Araç kaplama konusunda tam araç kaplama, kısmi kaplama, kurumsal filo giydirme ve araç reklam tasarımı hizmetleri sunuyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Grafik tasarım departmanımız logo tasarımı, kurumsal kimlik çalışmaları, kartvizit tasarımı, antetli kağıt tasarımı, broşür ve katalog tasarımı, sosyal medya görsel tasarımları, menü tasarımları ve ambalaj tasarımları konusunda uzman. Promosyon ürünleri bölümümüzde ajanda, takvim, kalem, USB bellek, power bank, termos, çanta ve daha birçok ürüne baskı ve özel tasarım hizmetleri veriyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Müşteri Odaklı Hizmet Anlayışımız</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Her müşterimizin ihtiyacı farklıdır ve biz bu farklılıkları anlayarak özel çözümler üretiyoruz. Proje başlangıcından teslimata kadar tüm süreçte müşterilerimizle yakın iletişim halinde çalışıyoruz. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Zamanında teslimat garantimiz ve kalite kontrol sistemimizle müşterilerimize güven veriyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz. Acil işleriniz için 7/24 destek sağlıyor, büyük projeler için anahtar teslim çözümler sunuyoruz. Kurumsal müşterilerimiz için özel fiyatlandırma, toplu iş anlaşmaları ve uzun vadeli iş birliği imkanları sunuyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
-<p>    </p></p></div>
+    <div class="dop5g-body"><h2 style="font-size: 24px;">Gaziantep'in Güvenilir Reklam Ajansı</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te 15 yıldır reklam ve tanıtım sektörüne yön veriyoruz. Modern teknoloji parkurumuz, deneyimli ekibimiz ve yaratıcı çözümlerimizle işletmelerin markalaşma süreçlerine değer katıyoruz. Dijital baskıdan araç kaplamaya, tabela sistemlerinden promosyon ürünlerine kadar geniş hizmet yelpazemizle müşterilerimizin tüm reklam ihtiyaçlarını tek çatı altında karşılıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Üretim tesisimizde en son teknoloji makine parkuru ile yüksek kalitede baskı ve uygulama hizmetleri sunuyoruz. Vinil baskı, dijital baskı, UV baskı, solvent baskı gibi farklı baskı teknolojileri ile her türlü malzeme üzerine kusursuz baskı yapabiliyoruz. Kutu harf, LED tabela, totem tabela gibi görünürlük çözümlerimizle markaların dikkat çekmesini sağlıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Grafik tasarım ekibimiz, logo tasarımından kurumsal kimlik çalışmalarına, sosyal medya tasarımlarından katalog tasarımına kadar tüm görsel ihtiyaçlarınız için yaratıcı çözümler üretiyor. Profesyonel yaklaşımımız, zamanında teslimat anlayışımız ve uygun fiyat politikamızla Gaziantep'in tercih edilen reklam ajansı olmaktan gurur duyuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Sektördeki Deneyimimiz ve Başarılarımız</h3>
+    <p style="font-size: 16px;">
+        2008 yılından bu yana Gaziantep ve çevre illerde binlerce başarılı projeye imza attık. Küçük işletmelerden büyük kurumsal firmalara kadar geniş bir müşteri portföyüne hizmet veriyoruz. Her projede müşteri memnuniyetini ön planda tutarak, kaliteden ödün vermeden çalışıyoruz. Sektördeki gelişmeleri yakından takip ediyor, teknolojik altyapımızı sürekli yeniliyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Üretim tesisimizde bulunan son teknoloji dijital baskı makinelerimiz, kesim plotter'larımız ve montaj ekipmanlarımızla her türlü reklam ihtiyacınızı karşılayabiliyoruz. Vinil kesim, dijital baskı, UV baskı, solvent baskı, latex baskı gibi farklı baskı teknolojilerini kullanarak her malzeme üzerine yüksek kaliteli baskı yapabiliyoruz. Branda, mesh, folyo, pleksiglas, alüminyum kompozit gibi malzemeler üzerinde profesyonel çalışmalar gerçekleştiriyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Hizmet Alanlarımız ve Uzmanlığımız</h3>
+    <p style="font-size: 16px;">
+        Dijital baskı hizmetlerimiz kapsamında poster, afiş, branda, mesh, folyo, sticker, etiket ve özel ebat baskılar yapıyoruz. Tabela sistemlerinde kutu harf, LED tabela, totem tabela, pleksiglas tabela, ışıklı tabela ve yönlendirme sistemleri üretiyoruz. Araç kaplama konusunda tam araç kaplama, kısmi kaplama, kurumsal filo giydirme ve araç reklam tasarımı hizmetleri sunuyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Grafik tasarım departmanımız logo tasarımı, kurumsal kimlik çalışmaları, kartvizit tasarımı, antetli kağıt tasarımı, broşür ve katalog tasarımı, sosyal medya görsel tasarımları, menü tasarımları ve ambalaj tasarımları konusunda uzman. Promosyon ürünleri bölümümüzde ajanda, takvim, kalem, USB bellek, power bank, termos, çanta ve daha birçok ürüne baskı ve özel tasarım hizmetleri veriyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Müşteri Odaklı Hizmet Anlayışımız</h3>
+    <p style="font-size: 16px;">
+        Her müşterimizin ihtiyacı farklıdır ve biz bu farklılıkları anlayarak özel çözümler üretiyoruz. Proje başlangıcından teslimata kadar tüm süreçte müşterilerimizle yakın iletişim halinde çalışıyoruz. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Zamanında teslimat garantimiz ve kalite kontrol sistemimizle müşterilerimize güven veriyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz. Acil işleriniz için 7/24 destek sağlıyor, büyük projeler için anahtar teslim çözümler sunuyoruz. Kurumsal müşterilerimiz için özel fiyatlandırma, toplu iş anlaşmaları ve uzun vadeli iş birliği imkanları sunuyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".zq3g7-menu-btn");
-    var menu = document.querySelector(".zq3g7-menu");
-    var overlay = document.querySelector(".zq3g7-menu-overlay");
-    var closeButton = document.querySelector(".zq3g7-menu-close");
+    var menuToggleBtn = document.querySelector(".dop5g-menu-btn");
+    var menu = document.querySelector(".dop5g-menu");
+    var overlay = document.querySelector(".dop5g-menu-overlay");
+    var closeButton = document.querySelector(".dop5g-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -238,7 +244,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".zq3g7-menu-close");
+      var closeBtn = event.target.closest(".dop5g-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -286,15 +292,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".zq3g7-top").forEach(function (button) {
+    document.querySelectorAll(".dop5g-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".zq3g7-menu-group");
+        var group = this.closest(".dop5g-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".zq3g7-sub");
+        var sub = group.querySelector(".dop5g-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".zq3g7-icon");
+        var icon = this.querySelector(".dop5g-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -394,8 +400,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=pp09h"></script>
-<script defer src="/src/cookie.js?v=pp09h"></script>
+<script defer type="text/javascript" src="/src/js.js?v=tethj"></script>
+<script defer src="/src/cookie.js?v=tethj"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

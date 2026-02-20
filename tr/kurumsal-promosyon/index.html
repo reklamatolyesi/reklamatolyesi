@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=msap8" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=msap8" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=yeglr" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=yeglr" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=msap8" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=yeglr" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,182 +52,188 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=msap8">
+<link rel="stylesheet" href="style.css?v=yeglr">
 </head>
 
 <body>
-  <div id="header"><div class="dguvx">
-  <div class="dguvxtitle">
-    <div class="dguvxtitlebody">
-      <div class="dguvxtitlebodylang">
+  <div id="header"><div class="y9qwj">
+  <div class="y9qwjtitle">
+    <div class="y9qwjtitlebody">
+      <div class="y9qwjtitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="dguvxbody">
+  <div class="y9qwjbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=msap8"
+        src="/img/logo.svg?v=yeglr"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="dguvxbodylogo"
+        class="y9qwjbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="dguvx-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="y9qwj-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="dguvxmenubody">
-    <div class="dguvxmenu" id="menu-2-root">
-      <div class="dguvxmenulistbody">
-        <div class="dguvxmenulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="y9qwj-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="y9qwjmenubody">
+    <div class="y9qwjmenu" id="menu-2-root">
+      <div class="y9qwjmenulistbody">
+        <div class="y9qwjmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="dguvxlanguages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="y9qwjlanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.y9qwj) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("dguvxmenu-open")) {
-        root.classList.remove("dguvxmenu-open");
+      var wrapper = root.closest ? root.closest(".y9qwj") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("y9qwjmenu-open")) {
+        target.classList.remove("y9qwjmenu-open");
       } else {
-        root.classList.add("dguvxmenu-open");
+        target.classList.add("y9qwjmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="emxs5-title f36">
+  <div id="content"><div class="yy88b-title f36">
   <h1>Kurumsal Promosyon</h1>
 </div>
-<div class="emxs5">
-  <div class="emxs5-menu-btn">
+<div class="yy88b">
+  <div class="yy88b-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined emxs5-icon">menu</span>
+    <span class="material-symbols-outlined yy88b-icon">menu</span>
   </div>
-  <div class="emxs5-menu-overlay" id="emxs5-menu-overlay" aria-hidden="true"></div>
-  <div class="emxs5-menu" id="emxs5-menu">
-    <button class="emxs5-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="emxs5-menu">
+  <div class="yy88b-menu-overlay" id="yy88b-menu-overlay" aria-hidden="true"></div>
+  <div class="yy88b-menu" id="yy88b-menu">
+    <button class="yy88b-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="yy88b-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
     
-        <div class="emxs5-menu-group">
-          <button type="button" class="emxs5-top">
+        <div class="yy88b-menu-group">
+          <button type="button" class="yy88b-top">
             <div>Dijital Baskı</div>
-            <span class="material-symbols-outlined emxs5-icon">expand_more</span>
+            <span class="material-symbols-outlined yy88b-icon">expand_more</span>
           </button>
-          <div class="emxs5-sub">
-            <a class="emxs5-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="emxs5-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="emxs5-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="emxs5-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="emxs5-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="emxs5-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
+          <div class="yy88b-sub">
+            <a class="yy88b-sub-link" href="/tr/dijital-baski-9a6/">Dijital Baskı</a><a class="yy88b-sub-link" href="/tr/vinil-baski/">Vinil Baskı</a><a class="yy88b-sub-link" href="/tr/uv-baski-eh2/">UV Baskı</a><a class="yy88b-sub-link" href="/tr/solvent-baski/">Solvent Baskı</a><a class="yy88b-sub-link" href="/tr/tekstil-baski/">Tekstil Baskı</a><a class="yy88b-sub-link" href="/tr/promosyon-baski/">Promosyon Baskı</a>
           </div>
         </div>
-        <div class="emxs5-menu-group">
-          <button type="button" class="emxs5-top">
+        <div class="yy88b-menu-group">
+          <button type="button" class="yy88b-top">
             <div>Tabela</div>
-            <span class="material-symbols-outlined emxs5-icon">expand_more</span>
+            <span class="material-symbols-outlined yy88b-icon">expand_more</span>
           </button>
-          <div class="emxs5-sub">
-            <a class="emxs5-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="emxs5-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="emxs5-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="emxs5-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="emxs5-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
+          <div class="yy88b-sub">
+            <a class="yy88b-sub-link" href="/tr/tabela-fcm/">Tabela</a><a class="yy88b-sub-link" href="/tr/kutu-harf-oja/">Kutu Harf</a><a class="yy88b-sub-link" href="/tr/led-tabela-0j5/">LED Tabela</a><a class="yy88b-sub-link" href="/tr/totem-tabela-3ph/">Totem Tabela</a><a class="yy88b-sub-link" href="/tr/isikli-tabela-sg7/">Işıklı Tabela</a>
           </div>
         </div>
-        <div class="emxs5-menu-group">
-          <button type="button" class="emxs5-top">
+        <div class="yy88b-menu-group">
+          <button type="button" class="yy88b-top">
             <div>Grafik Tasarım</div>
-            <span class="material-symbols-outlined emxs5-icon">expand_more</span>
+            <span class="material-symbols-outlined yy88b-icon">expand_more</span>
           </button>
-          <div class="emxs5-sub">
-            <a class="emxs5-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="emxs5-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="emxs5-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="emxs5-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="emxs5-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
+          <div class="yy88b-sub">
+            <a class="yy88b-sub-link" href="/tr/grafik-tasarim/">Grafik Tasarım</a><a class="yy88b-sub-link" href="/tr/logo-tasarimi-q7z/">Logo Tasarımı</a><a class="yy88b-sub-link" href="/tr/kurumsal-kimlik-wkl/">Kurumsal Kimlik</a><a class="yy88b-sub-link" href="/tr/brosur-tasarimi-kiz/">Broşür Tasarımı</a><a class="yy88b-sub-link" href="/tr/sosyal-medya-tasarimi/">Sosyal Medya Tasarımı</a>
           </div>
         </div>
-        <div class="emxs5-menu-group">
-          <button type="button" class="emxs5-top">
+        <div class="yy88b-menu-group">
+          <button type="button" class="yy88b-top">
             <div>Araç Kaplama</div>
-            <span class="material-symbols-outlined emxs5-icon">expand_more</span>
+            <span class="material-symbols-outlined yy88b-icon">expand_more</span>
           </button>
-          <div class="emxs5-sub">
-            <a class="emxs5-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="emxs5-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="emxs5-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="emxs5-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="emxs5-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
+          <div class="yy88b-sub">
+            <a class="yy88b-sub-link" href="/tr/arac-kaplama-pv9/">Araç Kaplama</a><a class="yy88b-sub-link" href="/tr/kurumsal-filo-giydirme/">Kurumsal Filo Giydirme</a><a class="yy88b-sub-link" href="/tr/ticari-arac-reklamlari/">Ticari Araç Reklamları</a><a class="yy88b-sub-link" href="/tr/arac-reklam-tasarimi/">Araç Reklam Tasarımı</a><a class="yy88b-sub-link" href="/tr/tam-arac-kaplama/">Tam Araç Kaplama</a>
           </div>
         </div>
-        <div class="emxs5-menu-group open">
-          <button type="button" class="emxs5-top active">
+        <div class="yy88b-menu-group open">
+          <button type="button" class="yy88b-top active">
             <div>Promosyon Ürünleri</div>
-            <span class="material-symbols-outlined emxs5-icon">expand_more</span>
+            <span class="material-symbols-outlined yy88b-icon">expand_more</span>
           </button>
-          <div class="emxs5-sub show">
-            <a class="emxs5-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="emxs5-sub-link active" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="emxs5-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="emxs5-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="emxs5-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
+          <div class="yy88b-sub show">
+            <a class="yy88b-sub-link" href="/tr/promosyon-urunleri-ijc/">Promosyon Ürünleri</a><a class="yy88b-sub-link active" href="/tr/kurumsal-promosyon/">Kurumsal Promosyon</a><a class="yy88b-sub-link" href="/tr/ofis-promosyonlari/">Ofis Promosyonları</a><a class="yy88b-sub-link" href="/tr/teknolojik-promosyonlar/">Teknolojik Promosyonlar</a><a class="yy88b-sub-link" href="/tr/tekstil-promosyonlari/">Tekstil Promosyonları</a>
           </div>
         </div>
-        <div class="emxs5-menu-group">
-          <button type="button" class="emxs5-top">
+        <div class="yy88b-menu-group">
+          <button type="button" class="yy88b-top">
             <div>Stand ve Fuar Sistemleri</div>
-            <span class="material-symbols-outlined emxs5-icon">expand_more</span>
+            <span class="material-symbols-outlined yy88b-icon">expand_more</span>
           </button>
-          <div class="emxs5-sub">
-            <a class="emxs5-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="emxs5-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="emxs5-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="emxs5-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="emxs5-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
+          <div class="yy88b-sub">
+            <a class="yy88b-sub-link" href="/tr/stand-sistemleri/">Stand ve Fuar Sistemleri</a><a class="yy88b-sub-link" href="/tr/fuar-standlari/">Fuar Standları</a><a class="yy88b-sub-link" href="/tr/roll-up-banner/">Roll Up Banner</a><a class="yy88b-sub-link" href="/tr/orumcek-stand/">Örümcek Stand</a><a class="yy88b-sub-link" href="/tr/stand-aksesuarlari/">Stand Aksesuarları</a>
           </div>
         </div>
   </div>
-  <div class="emxs5-desc">
+  <div class="yy88b-desc">
     
-    <div class="emxs5-body"><p><h2 style="font-size: 24px;">Gaziantep'te Protokol ve Yönetim Seviyesi Kurumsal Hediye Setleri</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te klasik promosyon ürünlerinden ayrışan, tamamen <b>protokol, yönetim kurulu ve üst düzey misafir</b> odaklı kurumsal hediye setleri tasarlıyoruz. Bu sayfa; tekstil promosyonları (tişört, şapka vb.) veya ofis promosyonları (ajanda, kalem, notluk vb.) değil, sınırlı sayıda üretilen, kişiye özel isimlendirilmiş ve prestij odaklı özel seri ürünleri kapsar.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Limitli Üretim Kurumsal Hediye Konseptleri</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kurumsal hediye projelerimizde, her yıl veya her kampanya için markaya özel konsept oluşturuyoruz. Örneğin; yönetim kurulu üyeleri için numaralı üretim kristal plaket serileri, şirket kuruluş yıl dönümleri için tarih ve isim işlenmiş deri ajanda–kalem setleri, yabancı delegasyon ziyaretleri için ülke ve isim baskılı özel kutu setleri hazırlıyoruz. Ürünlerin her biri, seri numarası, kişisel isim gravürü ve tarih bilgisi ile benzersiz hale getiriliyor.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Bu yaklaşım, adetli ve dağıtım amaçlı tekstil promosyonlarından tamamen farklıdır. Buradaki amaç; az sayıda ama yüksek algı değeri olan hediyelerle, uzun süre saklanan ve vitrinlerde sergilenen özel ürünler üretmektir.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kişiye Özel İsimlendirme ve İmza Uygulamaları</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kurumsal hediye setlerinde; alıcı adı, unvanı, tarih ve gerekirse el yazısı imza uygulamaları ile tam kişiselleştirme yapıyoruz. Lazer kazıma, metal üzerine kimyasal markalama, cam ve kristal üzerine kumlama, deri üzerine baskı ve kabartma gibi üst seviye teknikler kullanıyoruz. İstenirse yönetim kurulu başkanının imzası, mesajı veya şirket mottosu set içine kart, sertifika veya metal plaka olarak eklenebiliyor.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Ofis promosyonlarından farklı olarak burada ürünün günlük kullanımından çok, <b>hatıra değeri</b> ve temsil ettiği prestij önemlidir. Bu nedenle malzeme seçiminde pirinç, kristal, hakiki deri ve masif ahşap gibi premium malzemeleri tercih ediyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Özel Kutu Tasarımı ve Sunum</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kurumsal hediye setlerinin algısını belirleyen en önemli unsurlardan biri de sunum şeklidir. Bu nedenle her proje için set içeriğine özel, manyetik kapaklı, iç bölmeli, sünger kesimli veya kadife yataklı hediye kutuları tasarlıyoruz. Kutuların içine sertifika kartları, teşekkür notları veya kişiye özel mesaj kartları ekleyerek sunumu tamamlıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Tekstil promosyon sayfalarımızdan ayrışan nokta tam da burasıdır: burada konuştuğumuz ürünler, fuar dağıtımlık değil; <b>protokol masalarında, ofis vitrinlerinde ve yönetim odalarında sergilenen</b> hatıra değeri yüksek parçalardır.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Protokol ve Özel Misafir Senaryoları</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Belediye, oda, dernek, sanayi kuruluşu ve büyük ölçekli şirketlerin; yabancı misafir, heyet ziyareti, açılış töreni, protokol daveti ve imza töreni gibi özel anlar için hediye konseptleri oluşturuyoruz. Her senaryo için; hedef kitle, kültürel hassasiyetler ve bütçe göz önünde bulundurularak farklı içerikler öneriyoruz. Örneğin; uluslararası heyetler için Türkiye ve Gaziantep kültürünü yansıtan özel objeler, yerel iş ortakları için daha kurumsal ve markalı setler tasarlıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Proje Bazlı Planlama ve Sınırlı Adet Üretim</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Kurumsal hediye projelerinde, stoklu ve sınırsız üretim yerine genellikle sınırlı adetli, proje bazlı üretimi tercih ediyoruz. Böylece hediyeler, alıcılar için daha değerli ve özel hale geliyor. Proje başında adet, teslim tarihi, isim listeleri ve kişiselleştirme detaylarını netleştiriyor; üretim ve paketleme planını buna göre yapıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Gaziantep ve çevre illerdeki kurumlar için; yönetim seviyesi ve protokol odaklı kurumsal hediye konseptleri geliştirmek isterseniz, tasarımdan teslimata kadar tüm süreci birlikte planlayabileceğimiz danışmanlık odaklı bir çalışma yürütüyoruz.</p>
-<p>    </p></p></div>
+    <div class="yy88b-body"><h2 style="font-size: 24px;">Gaziantep'te Protokol ve Yönetim Seviyesi Kurumsal Hediye Setleri</h2>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te klasik promosyon ürünlerinden ayrışan, tamamen <b>protokol, yönetim kurulu ve üst düzey misafir</b> odaklı kurumsal hediye setleri tasarlıyoruz. Bu sayfa; tekstil promosyonları (tişört, şapka vb.) veya ofis promosyonları (ajanda, kalem, notluk vb.) değil, sınırlı sayıda üretilen, kişiye özel isimlendirilmiş ve prestij odaklı özel seri ürünleri kapsar.
+    </p>
+    <h3 style="font-size: 20px;">Limitli Üretim Kurumsal Hediye Konseptleri</h3>
+    <p style="font-size: 16px;">
+        Kurumsal hediye projelerimizde, her yıl veya her kampanya için markaya özel konsept oluşturuyoruz. Örneğin; yönetim kurulu üyeleri için numaralı üretim kristal plaket serileri, şirket kuruluş yıl dönümleri için tarih ve isim işlenmiş deri ajanda–kalem setleri, yabancı delegasyon ziyaretleri için ülke ve isim baskılı özel kutu setleri hazırlıyoruz. Ürünlerin her biri, seri numarası, kişisel isim gravürü ve tarih bilgisi ile benzersiz hale getiriliyor.
+    </p>
+    <p style="font-size: 16px;">
+        Bu yaklaşım, adetli ve dağıtım amaçlı tekstil promosyonlarından tamamen farklıdır. Buradaki amaç; az sayıda ama yüksek algı değeri olan hediyelerle, uzun süre saklanan ve vitrinlerde sergilenen özel ürünler üretmektir.
+    </p>
+    <h3 style="font-size: 20px;">Kişiye Özel İsimlendirme ve İmza Uygulamaları</h3>
+    <p style="font-size: 16px;">
+        Kurumsal hediye setlerinde; alıcı adı, unvanı, tarih ve gerekirse el yazısı imza uygulamaları ile tam kişiselleştirme yapıyoruz. Lazer kazıma, metal üzerine kimyasal markalama, cam ve kristal üzerine kumlama, deri üzerine baskı ve kabartma gibi üst seviye teknikler kullanıyoruz. İstenirse yönetim kurulu başkanının imzası, mesajı veya şirket mottosu set içine kart, sertifika veya metal plaka olarak eklenebiliyor.
+    </p>
+    <p style="font-size: 16px;">
+        Ofis promosyonlarından farklı olarak burada ürünün günlük kullanımından çok, <b>hatıra değeri</b> ve temsil ettiği prestij önemlidir. Bu nedenle malzeme seçiminde pirinç, kristal, hakiki deri ve masif ahşap gibi premium malzemeleri tercih ediyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Özel Kutu Tasarımı ve Sunum</h3>
+    <p style="font-size: 16px;">
+        Kurumsal hediye setlerinin algısını belirleyen en önemli unsurlardan biri de sunum şeklidir. Bu nedenle her proje için set içeriğine özel, manyetik kapaklı, iç bölmeli, sünger kesimli veya kadife yataklı hediye kutuları tasarlıyoruz. Kutuların içine sertifika kartları, teşekkür notları veya kişiye özel mesaj kartları ekleyerek sunumu tamamlıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Tekstil promosyon sayfalarımızdan ayrışan nokta tam da burasıdır: burada konuştuğumuz ürünler, fuar dağıtımlık değil; <b>protokol masalarında, ofis vitrinlerinde ve yönetim odalarında sergilenen</b> hatıra değeri yüksek parçalardır.
+    </p>
+    <h3 style="font-size: 20px;">Protokol ve Özel Misafir Senaryoları</h3>
+    <p style="font-size: 16px;">
+        Belediye, oda, dernek, sanayi kuruluşu ve büyük ölçekli şirketlerin; yabancı misafir, heyet ziyareti, açılış töreni, protokol daveti ve imza töreni gibi özel anlar için hediye konseptleri oluşturuyoruz. Her senaryo için; hedef kitle, kültürel hassasiyetler ve bütçe göz önünde bulundurularak farklı içerikler öneriyoruz. Örneğin; uluslararası heyetler için Türkiye ve Gaziantep kültürünü yansıtan özel objeler, yerel iş ortakları için daha kurumsal ve markalı setler tasarlıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Proje Bazlı Planlama ve Sınırlı Adet Üretim</h3>
+    <p style="font-size: 16px;">
+        Kurumsal hediye projelerinde, stoklu ve sınırsız üretim yerine genellikle sınırlı adetli, proje bazlı üretimi tercih ediyoruz. Böylece hediyeler, alıcılar için daha değerli ve özel hale geliyor. Proje başında adet, teslim tarihi, isim listeleri ve kişiselleştirme detaylarını netleştiriyor; üretim ve paketleme planını buna göre yapıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Gaziantep ve çevre illerdeki kurumlar için; yönetim seviyesi ve protokol odaklı kurumsal hediye konseptleri geliştirmek isterseniz, tasarımdan teslimata kadar tüm süreci birlikte planlayabileceğimiz danışmanlık odaklı bir çalışma yürütüyoruz.
+    </p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".emxs5-menu-btn");
-    var menu = document.querySelector(".emxs5-menu");
-    var overlay = document.querySelector(".emxs5-menu-overlay");
-    var closeButton = document.querySelector(".emxs5-menu-close");
+    var menuToggleBtn = document.querySelector(".yy88b-menu-btn");
+    var menu = document.querySelector(".yy88b-menu");
+    var overlay = document.querySelector(".yy88b-menu-overlay");
+    var closeButton = document.querySelector(".yy88b-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -297,7 +303,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".emxs5-menu-close");
+      var closeBtn = event.target.closest(".yy88b-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -345,15 +351,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".emxs5-top").forEach(function (button) {
+    document.querySelectorAll(".yy88b-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".emxs5-menu-group");
+        var group = this.closest(".yy88b-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".emxs5-sub");
+        var sub = group.querySelector(".yy88b-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".emxs5-icon");
+        var icon = this.querySelector(".yy88b-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -453,8 +459,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=msap8"></script>
-<script defer src="/src/cookie.js?v=msap8"></script>
+<script defer type="text/javascript" src="/src/js.js?v=yeglr"></script>
+<script defer src="/src/cookie.js?v=yeglr"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

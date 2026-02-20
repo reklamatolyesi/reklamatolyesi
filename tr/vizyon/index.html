@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=kq0tn" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=kq0tn" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=tsq6a" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=tsq6a" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=kq0tn" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=tsq6a" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,135 +52,141 @@
   
   
   
-<link rel="stylesheet" href="style.css?v=kq0tn">
+<link rel="stylesheet" href="style.css?v=tsq6a">
 </head>
 
 <body>
-  <div id="header"><div class="ey9i6">
-  <div class="ey9i6title">
-    <div class="ey9i6titlebody">
-      <div class="ey9i6titlebodylang">
+  <div id="header"><div class="pco7v">
+  <div class="pco7vtitle">
+    <div class="pco7vtitlebody">
+      <div class="pco7vtitlebodylang">
         <ul>
           
         </ul>
       </div>
     </div>
   </div>
-  <div class="ey9i6body">
+  <div class="pco7vbody">
     <a href="/tr/"
       ><img
-        src="/img/logo.svg?v=kq0tn"
+        src="/img/logo.svg?v=tsq6a"
         alt="Gaziantep Tabela ve Reklam Hizmetleri | Reklam Atölyesi Logo"
-        class="ey9i6bodylogo"
+        class="pco7vbodylogo"
         loading="lazy"
     /></a>
-    <button type="button" class="ey9i6-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="pco7v-mobile-toggle" onclick="menu2_toggle()" aria-label="Menüyü aç/kapat">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="ey9i6menubody">
-    <div class="ey9i6menu" id="menu-2-root">
-      <div class="ey9i6menulistbody">
-        <div class="ey9i6menulist">
+  <!-- Mobil: dış tıklamada menüyü kapatmak için yarı saydam arka plan (app drawer tarzı) -->
+  <div class="pco7v-menu-backdrop" onclick="menu2_toggle()" aria-hidden="true"></div>
+  <div class="pco7vmenubody">
+    <div class="pco7vmenu" id="menu-2-root">
+      <div class="pco7vmenulistbody">
+        <div class="pco7vmenulist">
           <ul>
             <a href="/tr/">Anasayfa </a><a href="/tr/hakkimizda/">Kurumsal</a><a href="/tr/hizmetlerimiz/">Hizmetlerimiz</a><a href="/tr/bilgilendirme/">Bilgilendirme</a><a href="/tr/iletisim/">İletişim</a>
           </ul>
-          <div class="ey9i6languages-mobile">
-            <ul>
-              
-            </ul>
-          </div>
         </div>
+      </div>
+      <!-- Mobil kural: lang drawer'ın en altında ve ortada -->
+      <div class="pco7vlanguages-mobile">
+        <ul>
+          
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  /* Mobil menü aç/kapat: class wrapper (.pco7v) üzerinde tutulur; mobilde menü paneli buna göre gösterilir/gizlenir */
   if (typeof menu2_toggle === "undefined") {
     function menu2_toggle() {
       var root = document.getElementById("menu-2-root");
       if (!root) {
         return;
       }
-      if (root.classList.contains("ey9i6menu-open")) {
-        root.classList.remove("ey9i6menu-open");
+      var wrapper = root.closest ? root.closest(".pco7v") : null;
+      var target = wrapper || root;
+      if (target.classList.contains("pco7vmenu-open")) {
+        target.classList.remove("pco7vmenu-open");
       } else {
-        root.classList.add("ey9i6menu-open");
+        target.classList.add("pco7vmenu-open");
       }
     }
   }
 </script>
 </div>
-  <div id="content"><div class="ziuaj-title f36">
+  <div id="content"><div class="y8029-title f36">
   <h1>Vizyon</h1>
 </div>
-<div class="ziuaj">
-  <div class="ziuaj-menu-btn">
+<div class="y8029">
+  <div class="y8029-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined ziuaj-icon">menu</span>
+    <span class="material-symbols-outlined y8029-icon">menu</span>
   </div>
-  <div class="ziuaj-menu-overlay" id="ziuaj-menu-overlay" aria-hidden="true"></div>
-  <div class="ziuaj-menu" id="ziuaj-menu">
-    <button class="ziuaj-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="ziuaj-menu">
+  <div class="y8029-menu-overlay" id="y8029-menu-overlay" aria-hidden="true"></div>
+  <div class="y8029-menu" id="y8029-menu">
+    <button class="y8029-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="y8029-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="ziuaj-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="ziuaj-menu-link" href="/tr/misyon/">Misyon</a><a class="ziuaj-menu-link active" href="/tr/vizyon/">Vizyon</a><a class="ziuaj-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="ziuaj-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="ziuaj-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="ziuaj-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="ziuaj-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
+    <a class="y8029-menu-link" href="/tr/hakkimizda/">Hakkımızda</a><a class="y8029-menu-link" href="/tr/misyon/">Misyon</a><a class="y8029-menu-link active" href="/tr/vizyon/">Vizyon</a><a class="y8029-menu-link" href="/tr/kalite-politikamiz/">Kalite Politikamız</a><a class="y8029-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="y8029-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="y8029-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="y8029-menu-link" href="/tr/yasal-uyari/">Yasal Uyarı</a>
   </div>
-  <div class="ziuaj-desc">
+  <div class="y8029-desc">
     
-    <div class="ziuaj-body"><p><h2 style="font-size: 24px;">Vizyonumuz</h2></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Vizyonumuz, Gaziantep ve çevre illerde reklam sektörünün öncü kuruluşu olmaktır. Bu hedef doğrultusunda sürekli kendimizi geliştiriyor, teknolojik altyapımızı güçlendiriyor ve hizmet kalitemizi artırıyoruz. Müşterilerimizin ihtiyaç ve beklentilerini en iyi şekilde analiz ederek, her projeye özel çözümler üretiyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Yenilikçi yaklaşımımız ve güçlü teknik altyapımızla, sektördeki gelişmeleri yakından takip ediyor ve bu gelişmeleri müşterilerimizin faydasına sunuyoruz. Hedefimiz, sadece bölgesel değil, ulusal çapta tanınan ve tercih edilen bir reklam ajansı olmaktır.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Sektörde Öncü Olma Hedefi</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep ve çevre illerde reklam sektörünün öncü kuruluşu olma vizyonuyla hareket ediyoruz. Bu hedef doğrultusunda sürekli kendimizi geliştiriyor, teknolojik altyapımızı güçlendiriyor ve hizmet kalitemizi artırıyoruz. Sektördeki yenilikleri takip ediyor, bu yenilikleri müşterilerimizin faydasına sunuyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Üretim tesisimizdeki makine parkurumuzu sürekli yeniliyor, en son teknolojileri kullanıyoruz. Dijital baskı, LED tabela, araç kaplama ve grafik tasarım alanlarında uzman ekibimizle sektörde fark yaratıyoruz. Müşterilerimizin ihtiyaç ve beklentilerini en iyi şekilde analiz ederek, her projeye özel çözümler üretiyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Ulusal Çapta Tanınma ve Büyüme Stratejisi</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Hedefimiz, sadece bölgesel değil, ulusal çapta tanınan ve tercih edilen bir reklam ajansı olmaktır. Bu hedef doğrultusunda marka değerimizi artırıyor, müşteri portföyümüzü genişletiyoruz. Kaliteli hizmet anlayışımız ve müşteri memnuniyeti odaklı yaklaşımımızla sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Ulusal çapta tanınmak için dijital pazarlama stratejilerimizi güçlendiriyor, online varlığımızı artırıyoruz. Sosyal medya platformlarında aktif olarak yer alıyor, referans projelerimizi paylaşıyoruz. Müşteri yorumları ve referanslarımızla güvenilirliğimizi artırıyor, yeni müşteriler kazanıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Sürekli Gelişim ve İnovasyon</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam sektöründeki gelişmeleri yakından takip ediyor, bu gelişmeleri müşterilerimizin faydasına sunuyoruz. Ekibimizin mesleki gelişimi için düzenli eğitimler düzenliyor, sektördeki yenilikleri öğreniyoruz. Teknolojik altyapımızı sürekli yeniliyor, en son makine ve ekipmanları tesisimize kazandırıyoruz.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        İnovasyon odaklı yaklaşımımızla, müşterilerimize yeni ve yaratıcı çözümler sunuyoruz. Geleneksel reklam yöntemlerinin yanı sıra, dijital reklam çözümleri ve interaktif tasarımlarla müşterilerimizin markalarını öne çıkarıyoruz. Sürekli gelişim anlayışımızla, sektördeki liderliğimizi koruyor ve güçlendiriyoruz.</p>
-<p>    </p>
-<p>    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Vizyon konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Kalite ve Güven</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Vizyon hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.</p>
-<p>    </p></p>
-<p>    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Reklam Atölyesi, Vizyon konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.</p>
-<p>    </p></p>
-<p>    <p style="font-size: 16px;"></p>
-<p>        Vizyon ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.</p>
-<p>    </p></p></p></div>
+    <div class="y8029-body"><h2 style="font-size: 24px;">Vizyonumuz</h2>
+    <p style="font-size: 16px;">
+        Vizyonumuz, Gaziantep ve çevre illerde reklam sektörünün öncü kuruluşu olmaktır. Bu hedef doğrultusunda sürekli kendimizi geliştiriyor, teknolojik altyapımızı güçlendiriyor ve hizmet kalitemizi artırıyoruz. Müşterilerimizin ihtiyaç ve beklentilerini en iyi şekilde analiz ederek, her projeye özel çözümler üretiyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Yenilikçi yaklaşımımız ve güçlü teknik altyapımızla, sektördeki gelişmeleri yakından takip ediyor ve bu gelişmeleri müşterilerimizin faydasına sunuyoruz. Hedefimiz, sadece bölgesel değil, ulusal çapta tanınan ve tercih edilen bir reklam ajansı olmaktır.
+    </p>
+    <h3 style="font-size: 20px;">Sektörde Öncü Olma Hedefi</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep ve çevre illerde reklam sektörünün öncü kuruluşu olma vizyonuyla hareket ediyoruz. Bu hedef doğrultusunda sürekli kendimizi geliştiriyor, teknolojik altyapımızı güçlendiriyor ve hizmet kalitemizi artırıyoruz. Sektördeki yenilikleri takip ediyor, bu yenilikleri müşterilerimizin faydasına sunuyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Üretim tesisimizdeki makine parkurumuzu sürekli yeniliyor, en son teknolojileri kullanıyoruz. Dijital baskı, LED tabela, araç kaplama ve grafik tasarım alanlarında uzman ekibimizle sektörde fark yaratıyoruz. Müşterilerimizin ihtiyaç ve beklentilerini en iyi şekilde analiz ederek, her projeye özel çözümler üretiyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Ulusal Çapta Tanınma ve Büyüme Stratejisi</h3>
+    <p style="font-size: 16px;">
+        Hedefimiz, sadece bölgesel değil, ulusal çapta tanınan ve tercih edilen bir reklam ajansı olmaktır. Bu hedef doğrultusunda marka değerimizi artırıyor, müşteri portföyümüzü genişletiyoruz. Kaliteli hizmet anlayışımız ve müşteri memnuniyeti odaklı yaklaşımımızla sektörde örnek gösterilen bir kuruluş olmayı hedefliyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        Ulusal çapta tanınmak için dijital pazarlama stratejilerimizi güçlendiriyor, online varlığımızı artırıyoruz. Sosyal medya platformlarında aktif olarak yer alıyor, referans projelerimizi paylaşıyoruz. Müşteri yorumları ve referanslarımızla güvenilirliğimizi artırıyor, yeni müşteriler kazanıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Sürekli Gelişim ve İnovasyon</h3>
+    <p style="font-size: 16px;">
+        Reklam sektöründeki gelişmeleri yakından takip ediyor, bu gelişmeleri müşterilerimizin faydasına sunuyoruz. Ekibimizin mesleki gelişimi için düzenli eğitimler düzenliyor, sektördeki yenilikleri öğreniyoruz. Teknolojik altyapımızı sürekli yeniliyor, en son makine ve ekipmanları tesisimize kazandırıyoruz.
+    </p>
+    <p style="font-size: 16px;">
+        İnovasyon odaklı yaklaşımımızla, müşterilerimize yeni ve yaratıcı çözümler sunuyoruz. Geleneksel reklam yöntemlerinin yanı sıra, dijital reklam çözümleri ve interaktif tasarımlarla müşterilerimizin markalarını öne çıkarıyoruz. Sürekli gelişim anlayışımızla, sektördeki liderliğimizi koruyor ve güçlendiriyoruz.
+    
+    <h3 style="font-size: 20px;">Neden Reklam Atölyesi?</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi olarak, Gaziantep'te 15 yıllık sektör deneyimi ile Vizyon konusunda uzman ekibimizle hizmet veriyoruz. Modern teknoloji altyapımız, kaliteli malzemeler ve profesyonel yaklaşımımızla müşterilerimize değer katıyoruz. Her projede detaylı planlama yapıyor, müşteri memnuniyetini ön planda tutuyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Kalite ve Güven</h3>
+    <p style="font-size: 16px;">
+        Vizyon hizmetlerimizde kaliteden ödün vermeden, en yüksek standartları uyguluyoruz. Yüksek kaliteli malzemeler, profesyonel işçilik ve zamanında teslimat garantimizle müşterilerimize güven veriyoruz. Gaziantep ve çevre illerdeki müşterilerimize hızlı ve güvenilir hizmet sunmak için çalışıyoruz.
+    </p>
+    <h3 style="font-size: 20px;">Profesyonel Hizmet</h3>
+    <p style="font-size: 16px;">
+        Reklam Atölyesi, Vizyon konusunda deneyimli ekibi ve modern teknoloji parkuru ile Gaziantep'in tercih edilen reklam ajansıdır. Ücretsiz keşif, ölçüm ve danışmanlık hizmetlerimizle projelerinizi en iyi şekilde planlıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.
+    </p>
+    <p style="font-size: 16px;">
+        Vizyon ihtiyaçlarınız için hemen bizimle iletişime geçin! Reklam Atölyesi olarak, kaliteli hizmet, uygun fiyat ve zamanında teslimat garantimizle sizlere en iyi hizmeti sunmak için buradayız.
+    </p></p></div>
   </div>
 </div>
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".ziuaj-menu-btn");
-    var menu = document.querySelector(".ziuaj-menu");
-    var overlay = document.querySelector(".ziuaj-menu-overlay");
-    var closeButton = document.querySelector(".ziuaj-menu-close");
+    var menuToggleBtn = document.querySelector(".y8029-menu-btn");
+    var menu = document.querySelector(".y8029-menu");
+    var overlay = document.querySelector(".y8029-menu-overlay");
+    var closeButton = document.querySelector(".y8029-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -250,7 +256,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".ziuaj-menu-close");
+      var closeBtn = event.target.closest(".y8029-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -298,15 +304,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".ziuaj-top").forEach(function (button) {
+    document.querySelectorAll(".y8029-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".ziuaj-menu-group");
+        var group = this.closest(".y8029-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".ziuaj-sub");
+        var sub = group.querySelector(".y8029-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".ziuaj-icon");
+        var icon = this.querySelector(".y8029-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -406,8 +412,8 @@
 </script>
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=kq0tn"></script>
-<script defer src="/src/cookie.js?v=kq0tn"></script>
+<script defer type="text/javascript" src="/src/js.js?v=tsq6a"></script>
+<script defer src="/src/cookie.js?v=tsq6a"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
