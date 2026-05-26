@@ -1,7 +1,7 @@
 
  
 
-  .c94dd {
+  .l8vim {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     justify-content: center;
   }
 
-  .c94ddtitle {
+  .l8vimtitle {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,12 +18,12 @@
     z-index: 1;
   }
 
-  .c94ddtitle:has(.c94ddtitlebodylang:empty),
-  .c94ddtitle:has(.c94ddtitlebodylang ul:empty) {
+  .l8vimtitle:has(.l8vimtitlebodylang:empty),
+  .l8vimtitle:has(.l8vimtitlebodylang ul:empty) {
     display: none;
   }
 
-  .c94ddtitlebody {
+  .l8vimtitlebody {
     color: #f3f6f7;
     width: var(--max);
     display: flex;
@@ -31,34 +31,34 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .c94ddtitlebodytitle {
+  .l8vimtitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .c94ddtitlebodylang {
+  .l8vimtitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .c94ddtitlebodylang:empty,
-  .c94ddtitlebodylang ul:empty {
+  .l8vimtitlebodylang:empty,
+  .l8vimtitlebodylang ul:empty {
     display: none;
   }
 
-  .c94ddtitlebodylang ul {
+  .l8vimtitlebodylang ul {
     display: flex;
     gap: 8px;
   }
 
-  /* Dil seçici: TR / EN metin, bordür tema rengiyle uyumlu (renk uyumsuzluğu yok) */
-  .c94ddtitlebodylang li {
+  
+  .l8vimtitlebodylang li {
     list-style: none;
   }
 
-  .c94ddtitlebodylang li a {
+  .l8vimtitlebodylang li a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -75,13 +75,13 @@
     cursor: pointer;
   }
 
-  .c94ddtitlebodylang li a:hover {
+  .l8vimtitlebodylang li a:hover {
     border-color: #f3f6f7;
     background: #3b85bb;
     color: #f3f6f7 !important;
   }
 
-  .c94ddbody {
+  .l8vimbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -90,8 +90,26 @@
     position: relative;
   }
 
-  /* Mobil hamburger butonu: onclick olduğu için cursor: pointer zorunlu (kural) */
-  .c94dd-mobile-toggle {
+  .l8vimbody > a {
+    display: inline-flex;
+    align-items: center;
+    max-width: min(90vw, 320px);
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+
+  .l8vimbodylogo {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  
+  .l8vim-mobile-toggle {
     display: none;
     background: #183656;
     color: #f3f6f7;
@@ -105,18 +123,18 @@
     right: 0;
   }
 
-  .c94dd-mobile-toggle span {
+  .l8vim-mobile-toggle span {
     font-size: 24px;
   }
 
-  .c94ddmenu {
+  .l8vimmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .c94ddmenulist {
+  .l8vimmenulist {
     width: calc(100% - 20px);
     background-color: #183656;
     padding: 10px;
@@ -125,7 +143,7 @@
     display: flex;
   }
 
-  .c94ddmenubody {
+  .l8vimmenubody {
     width: 100%;
     background-color: #183656;
     display: flex;
@@ -133,7 +151,7 @@
     justify-content: center;
   }
 
-  .c94ddmenulist ul {
+  .l8vimmenulist ul {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -142,7 +160,7 @@
     padding: 0;
   }
 
-  .c94ddmenulist ul a {
+  .l8vimmenulist ul a {
     padding: 10px 15px;
     font-size: 16px;
     color: #f3f6f7 !important;
@@ -155,40 +173,40 @@
     margin: 0 2px;
   }
 
-  .c94ddmenulist ul a:hover {
+  .l8vimmenulist ul a:hover {
     background-color: #3b85bb;
     border-radius: 5px;
     color: #f3f6f7 !important;
     cursor: pointer;
   }
 
-  .c94ddmenulist ul a.c94dd-menu-list-active {
+  .l8vimmenulist ul a.l8vim-menu-list-active {
     color: #f3f6f7 !important;
   }
 
-  .c94dd-menu-list-active {
+  .l8vim-menu-list-active {
     background-color: #3b85bb;
     border-radius: 5px;
     color: #f3f6f7 !important;
     cursor: pointer;
   }
 
-  .c94ddmenulistbody {
+  .l8vimmenulistbody {
     width: 100%;
   }
 
-  .c94ddlanguages-mobile {
+  .l8vimlanguages-mobile {
     display: none;
     padding-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .c94ddlanguages-mobile:empty,
-  .c94ddlanguages-mobile ul:empty {
+  .l8vimlanguages-mobile:empty,
+  .l8vimlanguages-mobile ul:empty {
     display: none !important;
   }
 
-  .c94ddlanguages-mobile ul {
+  .l8vimlanguages-mobile ul {
     display: flex;
     gap: 8px;
     margin: 0;
@@ -197,8 +215,8 @@
     justify-content: center;
   }
 
-  /* Dil seçici: TR / EN metin, bordür ve arka plan tema ile uyumlu */
-  .c94ddlanguages-mobile li {
+  
+  .l8vimlanguages-mobile li {
     list-style: none;
     border: 1px solid color-mix(in srgb, #f3f6f7 35%, transparent);
     padding: 0;
@@ -212,7 +230,7 @@
     transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .c94ddlanguages-mobile li a {
+  .l8vimlanguages-mobile li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,29 +245,28 @@
     cursor: pointer;
   }
 
-  .c94ddlanguages-mobile li:hover {
+  .l8vimlanguages-mobile li:hover {
     background-color: #3b85bb;
     border-color: #f3f6f7;
     box-shadow: 0 2px 8px color-mix(in srgb, #f3f6f7 25%, transparent);
   }
 
-  .c94ddlanguages-mobile li:hover a {
+  .l8vimlanguages-mobile li:hover a {
     color: #f3f6f7 !important;
   }
 
-  /* Mobil drawer için backdrop: masaüstünde görünmez */
-  .c94dd-menu-backdrop {
+  
+  .l8vim-menu-backdrop {
     display: none;
   }
 
   @media screen and (min-width: 1024px) {
-    .c94ddbodylogo {
-      height: 100px;
-      max-width: 90vw;
+    .l8vimbodylogo {
       max-height: 100px;
+      max-width: 100%;
     }
 
-    .c94ddtitle {
+    .l8vimtitle {
     margin-bottom: -30px;
   }
 
@@ -257,59 +274,57 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .c94ddbody {
+    .l8vimbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: center;
     }
 
-    .c94ddmenulist ul {
+    .l8vimmenulist ul {
       flex-direction: row;
     }
 
-    .c94ddbodylogo {
-      width: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .l8vimbodylogo {
+      max-width: min(50vw, 220px);
+      max-height: 80px;
     }
 
-    .c94ddtitlebody {
+    .l8vimtitlebody {
       flex-direction: column;
       gap: 10px;
       align-items: center;
       display: none;
     }
 
-    .c94ddtitlebodytitle {
+    .l8vimtitlebodytitle {
       text-align: center;
       font-size: 14px;
     }
   }
 
-    /* Mobil: app tarzı sağdan kayan drawer menü */
+    
   @media screen and (max-width: 768px) {
-    .c94ddtitlebodylang {
+    .l8vimtitlebodylang {
       display: none;
     }
 
-    .c94ddbody {
+    .l8vimbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
     }
 
-    .c94dd-mobile-toggle {
+    .l8vim-mobile-toggle {
       display: inline-flex;
     }
 
-    .c94ddbodylogo {
-      width: 40vw;
-      max-width: 40vw;
-      max-height: 80px;
+    .l8vimbodylogo {
+      max-width: min(40vw, 180px);
+      max-height: 70px;
     }
 
-    /* Backdrop: sadece menü açıkken görünür; tıklanınca menü kapanır (onclick ile) */
-    .c94dd-menu-backdrop {
+    
+    .l8vim-menu-backdrop {
       display: block;
       position: fixed;
       inset: 0;
@@ -322,14 +337,14 @@
       cursor: pointer;
     }
 
-    .c94dd.c94ddmenu-open .c94dd-menu-backdrop {
+    .l8vim.l8vimmenu-open .l8vim-menu-backdrop {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
 
-    /* Drawer: sağdan kayan panel, fixed, tam yükseklik; kapalıyken ekran dışında */
-    .c94ddmenubody {
+    
+    .l8vimmenubody {
       position: fixed;
       top: 0;
       right: 0;
@@ -349,22 +364,22 @@
       overflow-y: auto;
     }
 
-    .c94dd.c94ddmenu-open .c94ddmenubody {
+    .l8vim.l8vimmenu-open .l8vimmenubody {
       transform: translateX(0);
     }
 
-    .c94ddmenu {
+    .l8vimmenu {
       width: 100%;
       flex-direction: column;
       height: 100%;
     }
 
-    .c94ddmenulistbody {
+    .l8vimmenulistbody {
       flex: 1;
       overflow-y: auto;
     }
 
-    .c94ddmenulist {
+    .l8vimmenulist {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -374,12 +389,12 @@
       box-shadow: none;
     }
 
-    .c94dd.c94ddmenu-open .c94ddmenulist {
+    .l8vim.l8vimmenu-open .l8vimmenulist {
       display: flex;
     }
 
-    /* Mobil kural: lang sayfanın (drawer) en altında ve ortada */
-    .c94dd.c94ddmenu-open .c94ddlanguages-mobile {
+    
+    .l8vim.l8vimmenu-open .l8vimlanguages-mobile {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -391,16 +406,16 @@
       flex-shrink: 0;
     }
 
-    .c94dd.c94ddmenu-open .c94ddlanguages-mobile ul {
+    .l8vim.l8vimmenu-open .l8vimlanguages-mobile ul {
       justify-content: center;
     }
 
-    .c94ddmenulist ul {
+    .l8vimmenulist ul {
       flex-direction: column;
       gap: 0;
     }
 
-    .c94ddmenulist ul a {
+    .l8vimmenulist ul a {
       font-size: 15px;
       width: 100%;
       padding: 14px 12px;
@@ -411,16 +426,16 @@
       box-sizing: border-box;
     }
 
-    .c94ddmenulist ul a:last-child {
+    .l8vimmenulist ul a:last-child {
       border-bottom: none;
     }
 
-    .c94ddmenulist ul a:hover {
+    .l8vimmenulist ul a:hover {
       background-color: #3b85bb;
       border-radius: 0;
     }
 
-    .c94ddtitlebodytitle {
+    .l8vimtitlebodytitle {
       font-size: 12px;
     }
   }
@@ -430,7 +445,7 @@
 #content {
     justify-content: start;
   }
-.og8sh-title {
+.rc85k-title {
     width: 100%;
     height: 100px;
     background-color: #000;
@@ -443,7 +458,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .og8sh-title::before {
+  .rc85k-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -458,12 +473,12 @@
     z-index: 1;
   }
 
-  .og8sh-title h1 {
+  .rc85k-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
   }
-  .og8sh {
+  .rc85k {
     width: var(--max);
     display: flex;
     flex-direction: column;
@@ -471,7 +486,7 @@
     margin-top: 20px;
   }
   @media screen and (max-width: 1024px) {
-    .og8sh {
+    .rc85k {
       width: calc(100% - 20px);
       padding: 10px;
       margin-top: 10px;
@@ -479,7 +494,7 @@
   }
 
 
-  .lslsh {
+  .sq1lt {
     width: 100%;
     margin: 30px 0px 30px 0px;
     display: flex;
@@ -488,14 +503,14 @@
     position: relative;
   }
 
-  .lslshcontainertitle {
+  .sq1ltcontainertitle {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin: 0 0 20px 0;
   }
 
-  .lslshcontainerlist {
+  .sq1ltcontainerlist {
     padding: 10px;
     display: flex;
     border-radius: 8px;
@@ -504,26 +519,26 @@
     transition: background-color 0.3s ease;
   }
 
-  .lslshcontainerlist>div {
+  .sq1ltcontainerlist>div {
     display: flex;
     align-items: center;
     font-size: 20px;
     color: #444;
   }
 
-  .lslshcontainerlist:hover {
+  .sq1ltcontainerlist:hover {
     background-color: #f9f9f9;
     border-bottom-color: #183656;
   }
 
-  .lslshcontainer {
+  .sq1ltcontainer {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
   }
 
-  .lslshcontainerbody {
+  .sq1ltcontainerbody {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -533,7 +548,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .lslshbody {
+  .sq1ltbody {
     width: calc(var(--max) - 40px);
     background-color: #ebebeb;
     border: 1px solid #dedede;
@@ -541,19 +556,19 @@
     padding: 20px;
   }
 
-  .lslshcontainerlist>span {
+  .sq1ltcontainerlist>span {
     font-size: 24px;
     color: #183656;
   }
 
   @media screen and (max-width: 1024px) {
-    .lslshbody {
+    .sq1ltbody {
       width: 100%;
       padding: 20px;
       flex-direction: column;
     }
 
-    .lslshcontainerbody {
+    .sq1ltcontainerbody {
       padding: 15px;
     }
   }

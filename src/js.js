@@ -23,16 +23,12 @@ function poputfullremove() {
         console.log('Element to remove not found.');
     }
 }
-
-// Cookie işlemleri
 function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
     return null;
 }
-
-// Token kontrolü ve oluşturma
 function checkAndCreateToken() {
     let token = getCookie('token');
     if (!token) {
@@ -41,5 +37,4 @@ function checkAndCreateToken() {
     }
     return token;
 }
-// Token oluşturma işlemini başlat
 checkAndCreateToken();
