@@ -90,10 +90,6 @@
     z-index: 1001;
   }
 
-  .h0000-lang-top:has(ul:empty) {
-    display: none !important;
-  }
-
   .h0000-lang-top summary {
     list-style: none;
     display: inline-flex;
@@ -569,6 +565,71 @@
   }
 
   
+  @media screen and (min-width: 1025px) {
+    .h0000-teksatir {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 24px;
+      box-sizing: border-box;
+      padding-inline: max(20px, calc((100% - var(--max)) / 2));
+      background-color: #1e3046;
+    }
+
+    .h0000-teksatir .h0000body {
+      order: 1;
+      width: auto;
+      flex: 0 0 auto;
+      margin: 8px 0;
+      justify-content: flex-start;
+    }
+
+    .h0000-teksatir .h0000menubody {
+      order: 2;
+      flex: 1 1 auto;
+      width: auto;
+      min-width: 0;
+      background-color: transparent;
+    }
+
+    .h0000-teksatir .h0000menu,
+    .h0000-teksatir .h0000menulistbody,
+    .h0000-teksatir .h0000menulist {
+      width: 100%;
+      box-shadow: none;
+    }
+
+    .h0000-teksatir .h0000title {
+      order: 3;
+      width: auto;
+      flex: 0 0 auto;
+      margin-bottom: 0;
+    }
+
+    .h0000-teksatir .h0000titlebody {
+      width: auto;
+      padding: 0;
+    }
+
+    .h0000-teksatir .h0000menulist ul {
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+    }
+
+    .h0000-teksatir .h0000menulist ul > a,
+    .h0000-teksatir .h0000menulist ul > .h0000menulist-menu {
+      flex: 0 1 auto;
+      border-left: none;
+    }
+  }
+
+  
+  @media screen and (max-width: 1024px) {
+    [dir="rtl"] .h0000-teksatir .h0000body {
+      direction: ltr;
+    }
+  }
+
+  
   @media screen and (max-width: 1024px) {
     .h0000titlebodylang {
       display: none;
@@ -751,6 +812,7 @@
     
     .h0000menulist-menu > a::after {
       content: "expand_more";
+      font-family: "Material Symbols Outlined", sans-serif;
       font-size: 22px;
       line-height: 1;
       font-weight: normal;
@@ -2624,20 +2686,31 @@
     bottom: 30px;
     right: 30px;
     padding: 5px;
-    background-color: #4dc247;
+    background-color: #25D366;
     display: flex;
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 18px;
-    color: #000 !important;
+    color: #000000 !important;
     z-index: 10000;
     padding-right: 20px;
+  }
+
+  
+  .whatsapp-cerezkacin {
+    right: auto;
+    inset-inline-end: 30px;
+    bottom: max(30px, calc(var(--mx-cookie-pad, 0px) + 8px));
   }
 
   .whatsappicon {
     width: 40px;
     height: 40px;
+  }
+
+  .whatsappicon svg {
+    fill: currentColor;
   }
 
   
@@ -2671,11 +2744,17 @@
   }
 
 
+    
+    .footer-marka {
+      position: relative;
+      width: 100%;
+    }
     .moduleimg {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 10px 0;
     }
     .moduleimg > img {
       width: 100%;
@@ -2716,6 +2795,13 @@
       transition: transform 0.5s;
     }
   
+    .social-icon__link svg {
+      display: block;
+      font-size: inherit; 
+      width: 1em;
+      height: 1em;
+    }
+
     .social-icon__link:hover {
       transform: translateY(-10px);
     } 
@@ -2875,17 +2961,14 @@
   }
 
   
-  [data-stil="cizgili"] .wm-langbar li a,
-  [data-stil="ortali-sade"] .wm-langbar li a {
+  .footer .wm-langbar li a {
     color: #f3f6f7;
     border-color: color-mix(in srgb, #f3f6f7 35%, transparent);
     background-color: color-mix(in srgb, #f3f6f7 10%, transparent);
   }
 
-  [data-stil="cizgili"] .wm-langbar li.wm-lang-active a,
-  [data-stil="ortali-sade"] .wm-langbar li.wm-lang-active a,
-  [data-stil="cizgili"] .wm-langbar li a:hover,
-  [data-stil="ortali-sade"] .wm-langbar li a:hover {
+  .footer .wm-langbar li.wm-lang-active a,
+  .footer .wm-langbar li a:hover {
     color: #183656;
     background-color: #f3f6f7;
     border-color: #f3f6f7;
