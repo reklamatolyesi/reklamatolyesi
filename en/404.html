@@ -7,11 +7,11 @@
 <title>404 — Gaziantep Tabela ve Reklam Hizmetleri</title>
 </head>
 <body>
-<link rel="stylesheet" href="/src/rubik.css?v=lr48l" />
+<link rel="stylesheet" href="/src/rubik.css?v=naxt2" />
 <nav>
   <div href="/" class="menu">
     <a href="/" class="website_name"
-      ><img src="/img/logo.png?v=lr48l" width="300" alt="Gaziantep Tabela ve Reklam Hizmetleri Logo"
+      ><img src="/img/logo.png?v=naxt2" width="300" alt="Gaziantep Tabela ve Reklam Hizmetleri Logo"
     /></a>
   </div>
 </nav>
@@ -829,8 +829,10 @@
   setTimeout(function() {
     var currentPath = window.location.pathname;
     var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
+
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
+
     if (rtlLanguages.indexOf(currentLang) !== -1) {
       document.documentElement.setAttribute('dir', 'rtl');
     } else {

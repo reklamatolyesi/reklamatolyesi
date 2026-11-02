@@ -38,17 +38,17 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/rubik.css?v=zh4hq" />
-  <link rel="stylesheet" href="/src/css.css?v=zh4hq" />
-  <link rel="stylesheet" href="/src/mx-ds.css?v=zh4hq" />
+  <link rel="stylesheet" href="/src/rubik.css?v=jejus" />
+  <link rel="stylesheet" href="/src/css.css?v=jejus" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=jejus" />
   
-  <link rel="stylesheet" href="/src/mx-ui.css?v=zh4hq" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=jejus" />
   <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=zh4hq" />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=jejus" />
   
-  <link rel="stylesheet" href="/src/cookie.css?v=zh4hq" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=zh4hq" />
-  <link rel="shortcut icon" href="/img/icon.png?v=zh4hq" type="image/png" />
+  <link rel="stylesheet" href="/src/cookie.css?v=jejus" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=jejus" />
+  <link rel="shortcut icon" href="/img/icon.png?v=jejus" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -133,7 +133,7 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=zh4hq">
+<link rel="stylesheet" href="style.css?v=jejus">
 </head>
 
 <body>
@@ -168,7 +168,7 @@
   <div class="h0000body">
     <a href="/en/">
       <img
-        src="/img/logo.png?v=jsaoh"
+        src="/img/logo.png?v=oyxaq"
         alt="Gaziantep Tabela ve Reklam Hizmetleri Logo"
         class="h0000bodylogo"
         loading="lazy"
@@ -3009,26 +3009,32 @@ var allItems = [];
 var isSearching = false;
 
 if (searchInput && b0001body && searchCounter) {
+
   function initializeItems() {
     allItems = Array.from(b0001body.querySelectorAll('.b0001bodyitem'));
     currentVisibleCount = 0;
     loadMoreItems();
   }
+
   function loadMoreItems() {
     var searchTerm = searchInput.value.trim().toLowerCase();
     var itemsToShow = [];
     
     if (isSearching && searchTerm) {
+
       itemsToShow = allItems.filter(function(item) {
         var searchData = item.getAttribute('data-search');
         return searchData && searchData.includes(searchTerm);
       });
     } else {
+
       itemsToShow = allItems;
     }
+
     allItems.forEach(function(item) {
       item.style.display = 'none';
     });
+
     var nextBatch = currentVisibleCount + maxItems;
     itemsToShow.forEach(function(item, index) {
       if (index < nextBatch) {
@@ -3059,6 +3065,7 @@ if (searchInput && b0001body && searchCounter) {
       searchCounter.textContent = `${currentVisibleCount} / ${totalAvailable} results`;
     }
   }
+
   var isLoading = false;
   window.addEventListener('scroll', function() {
     if (isLoading) return;
@@ -3066,6 +3073,7 @@ if (searchInput && b0001body && searchCounter) {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     var windowHeight = window.innerHeight;
     var documentHeight = document.documentElement.scrollHeight;
+
     if (scrollTop + windowHeight >= documentHeight - 200) {
       var searchTerm = searchInput.value.trim().toLowerCase();
       
@@ -3078,6 +3086,7 @@ if (searchInput && b0001body && searchCounter) {
       } else {
         totalAvailable = allItems.length;
       }
+
       if (currentVisibleCount < totalAvailable) {
         isLoading = true;
         loadMoreItems();
@@ -3087,12 +3096,14 @@ if (searchInput && b0001body && searchCounter) {
       }
     }
   });
+
   searchInput.addEventListener('input', function() {
     var searchTerm = this.value.trim().toLowerCase();
     isSearching = searchTerm.length > 0;
     currentVisibleCount = 0;
     loadMoreItems();
   });
+
   initializeItems();
 }
 </script>
@@ -3199,10 +3210,10 @@ if (searchInput && b0001body && searchCounter) {
 
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=zh4hq"></script>
-  <script defer src="/src/mx-store.js?v=zh4hq"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=zh4hq"></script>
-  <script defer src="/src/cookie.js?v=zh4hq"></script>
+  <script defer src="/src/mx-ui.js?v=jejus"></script>
+  <script defer src="/src/mx-store.js?v=jejus"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=jejus"></script>
+  <script defer src="/src/cookie.js?v=jejus"></script>
 
 </body>
 
