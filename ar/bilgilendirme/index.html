@@ -38,17 +38,17 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/rubik.css?v=pegz8" />
-  <link rel="stylesheet" href="/src/css.css?v=pegz8" />
-  <link rel="stylesheet" href="/src/mx-ds.css?v=pegz8" />
+  <link rel="stylesheet" href="/src/rubik.css?v=ln56y" />
+  <link rel="stylesheet" href="/src/css.css?v=ln56y" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=ln56y" />
   
-  <link rel="stylesheet" href="/src/mx-ui.css?v=pegz8" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=ln56y" />
   <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=pegz8" />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=ln56y" />
   
-  <link rel="stylesheet" href="/src/cookie.css?v=pegz8" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=pegz8" />
-  <link rel="shortcut icon" href="/img/icon.png?v=pegz8" type="image/png" />
+  <link rel="stylesheet" href="/src/cookie.css?v=ln56y" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=ln56y" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ln56y" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -135,7 +135,7 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=pegz8">
+<link rel="stylesheet" href="style.css?v=ln56y">
 </head>
 
 <body>
@@ -170,7 +170,7 @@
   <div class="h0000body">
     <a href="/ar/">
       <img
-        src="/img/logo.png?v=vsax9"
+        src="/img/logo.png?v=rib00"
         alt="Reklam Atölyesi | لافتات وإعلانات في غازي عنتاب Logo"
         class="h0000bodylogo"
         loading="lazy"
@@ -3038,6 +3038,7 @@
   let isSearching = false;
 
   if (!(searchInput && b0001body && searchCounter)) return;
+
   const matchSearch = (item, searchTerm) => {
     const searchData = item.getAttribute('data-search');
     return searchData && searchData.includes(searchTerm);
@@ -3059,14 +3060,18 @@
       searchCounter.textContent = `${currentVisibleCount} / ${totalAvailable} نتيجة`;
     }
   };
+
   const loadMoreItems = () => {
     const searchTerm = searchInput.value.trim().toLowerCase();
+
     const itemsToShow = isSearching && searchTerm
       ? allItems.filter((item) => matchSearch(item, searchTerm))
       : allItems;
+
     for (const item of allItems) {
       item.style.display = 'none';
     }
+
     const nextBatch = currentVisibleCount + maxItems;
     itemsToShow.forEach((item, index) => {
       if (index < nextBatch) {
@@ -3077,11 +3082,13 @@
     currentVisibleCount = Math.min(nextBatch, itemsToShow.length);
     updateCounter();
   };
+
   const initializeItems = () => {
     allItems = Array.from(b0001body.querySelectorAll('.b0001bodyitem'));
     currentVisibleCount = 0;
     loadMoreItems();
   };
+
   let isLoading = false;
   window.addEventListener('scroll', () => {
     if (isLoading) return;
@@ -3089,7 +3096,9 @@
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
+
     if (scrollTop + windowHeight >= documentHeight - 200) {
+
       if (currentVisibleCount < getTotalAvailable()) {
         isLoading = true;
         loadMoreItems();
@@ -3099,12 +3108,14 @@
       }
     }
   });
+
   searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.trim().toLowerCase();
     isSearching = searchTerm.length > 0;
     currentVisibleCount = 0;
     loadMoreItems();
   });
+
   initializeItems();
 })();
 </script>
@@ -3184,10 +3195,10 @@
 
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=pegz8"></script>
-  <script defer src="/src/mx-store.js?v=pegz8"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=pegz8"></script>
-  <script defer src="/src/cookie.js?v=pegz8"></script>
+  <script defer src="/src/mx-ui.js?v=ln56y"></script>
+  <script defer src="/src/mx-store.js?v=ln56y"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=ln56y"></script>
+  <script defer src="/src/cookie.js?v=ln56y"></script>
 
 </body>
 

@@ -23,12 +23,14 @@ function poputfullremove() {
         console.log('Element to remove not found.');
     }
 }
+
 function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
     return null;
 }
+
 function checkAndCreateToken() {
     let token = getCookie('token');
     if (!token) {
@@ -37,4 +39,5 @@ function checkAndCreateToken() {
     }
     return token;
 }
+
 checkAndCreateToken();
