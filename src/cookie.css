@@ -202,7 +202,10 @@ body:has(.cookie-banner) {
   }
   .cookie-reopen {
     inset-inline-start: 10px;
-    bottom: 10px;
+    
+    bottom: calc(10px + var(--mx-altbar-h, 0px) + env(safe-area-inset-bottom, 0px));
+    width: 48px;
+    height: 48px;
   }
   .cookie-modal {
     width: calc(100% - 24px);
