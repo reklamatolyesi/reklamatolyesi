@@ -347,8 +347,221 @@
     }).catch(function () {});
   }
 
+  
+  var MX_LANG_ROW_MAX = 4;
+  var mxLangSec = "ul";
+
+  function mxLangLinks(ul) {
+    var out = [];
+    var lis = ul.children;
+    for (var i = 0; i < lis.length; i++) {
+      var a = lis[i].tagName === "LI" ? lis[i].querySelector("a[hreflang]") : null;
+      if (a) out.push(a);
+    }
+    return out;
+  }
+
+  function mxLangActiveLink(links) {
+    var htmlLang = (document.documentElement.getAttribute("lang") || "").toLowerCase().split("-")[0];
+    var i;
+    for (i = 0; i < links.length; i++) {
+      var a = links[i];
+      var li = a.closest("li");
+      if (a.getAttribute("aria-current") === "true" || a.getAttribute("aria-current") === "page" ||
+        /(^|\s|-)(aktif|active|wm-lang-active|current|secili)(\s|$)/.test((a.className || "") + " " + (li ? li.className : ""))) {
+        return a;
+      }
+    }
+    for (i = 0; i < links.length; i++) {
+      if ((links[i].getAttribute("hreflang") || "").toLowerCase() === htmlLang) return links[i];
+    }
+    return links[0];
+  }
+
+  function mxLangBind(wrap) {
+    if (!wrap || wrap.getAttribute("data-wm-lang-js") === "1") return;
+    var btn = wrap.querySelector(".wm-lang-toggle");
+    var menu = wrap.querySelector(".wm-lang-menu");
+    if (!btn || !menu) return;
+    wrap.setAttribute("data-wm-lang-js", "1");
+    wrap.classList.add("wm-lang-js");
+    if (!menu.id) menu.id = "wm-lang-menu-" + Math.random().toString(36).slice(2, 8);
+    btn.setAttribute("aria-controls", menu.id);
+    function items() { return Array.prototype.slice.call(menu.querySelectorAll("a[hreflang]")); }
+    function place() {
+      menu.classList.remove("wm-lang-up", "wm-lang-start");
+      var r = menu.getBoundingClientRect();
+      var br = btn.getBoundingClientRect();
+      if (r.bottom > window.innerHeight - 4 && br.top - r.height - 6 > 4) menu.classList.add("wm-lang-up");
+      var vw = document.documentElement.clientWidth || window.innerWidth;
+      var tasma = function (x) { return Math.max(0, -x.left) + Math.max(0, x.right - vw); };
+      if (tasma(r) > 0) {
+        menu.classList.add("wm-lang-start");
+        if (tasma(menu.getBoundingClientRect()) >= tasma(r)) menu.classList.remove("wm-lang-start");
+      }
+    }
+    function open(focusFirst) {
+      btn.setAttribute("aria-expanded", "true");
+      place();
+      if (focusFirst) {
+        var list = items();
+        var cur = menu.querySelector('a[aria-current="true"], a[aria-current="page"]') || list[0];
+        if (cur) cur.focus();
+      }
+    }
+    function close(returnFocus) {
+      if (btn.getAttribute("aria-expanded") !== "true") return;
+      btn.setAttribute("aria-expanded", "false");
+      if (returnFocus) btn.focus();
+    }
+    btn.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      ev.stopPropagation();
+      if (btn.getAttribute("aria-expanded") === "true") close(false); else open(false);
+    });
+    btn.addEventListener("keydown", function (ev) {
+      if (ev.key === "ArrowDown" || ev.key === "ArrowUp") { ev.preventDefault(); open(true); }
+      else if (ev.key === "Escape") close(true);
+    });
+    menu.addEventListener("keydown", function (ev) {
+      var list = items();
+      var i = list.indexOf(document.activeElement);
+      if (ev.key === "Escape") { ev.preventDefault(); close(true); }
+      else if (ev.key === "ArrowDown") { ev.preventDefault(); list[(i + 1) % list.length].focus(); }
+      else if (ev.key === "ArrowUp") { ev.preventDefault(); list[(i - 1 + list.length) % list.length].focus(); }
+      else if (ev.key === "Home") { ev.preventDefault(); list[0].focus(); }
+      else if (ev.key === "End") { ev.preventDefault(); list[list.length - 1].focus(); }
+    });
+    wrap.addEventListener("focusout", function (ev) {
+      if (ev.relatedTarget && !wrap.contains(ev.relatedTarget)) close(false);
+    });
+    document.addEventListener("click", function (ev) {
+      if (!wrap.contains(ev.target)) close(false);
+    });
+  }
+
+  
+  function mxLangNeedsDd(ul, links) {
+    var r = ul.getBoundingClientRect();
+    if (!r.width || !r.height || links.length < 2) return false;
+    var tops = {}, lefts = {}, nTop = 0, nLeft = 0;
+    for (var i = 0; i < links.length; i++) {
+      var lr = links[i].closest("li").getBoundingClientRect();
+      if (!lr.width) continue;
+      var t = Math.round(lr.top / 3), l = Math.round(lr.left / 3);
+      if (!tops[t]) { tops[t] = 1; nTop++; }
+      if (!lefts[l]) { lefts[l] = 1; nLeft++; }
+    }
+    if (nTop > 1 && nLeft === 1) return false; 
+    if (nTop > 1) return true; 
+    if (links.length > MX_LANG_ROW_MAX) return true;
+    if (ul.scrollWidth > ul.clientWidth + 1) return true;
+    if (getComputedStyle(ul).visibility === "hidden") return false;
+    
+    var p = ul.parentElement;
+    if (p) {
+      var pr = p.getBoundingClientRect();
+      if (pr.width > 0 && (r.right > pr.right + 1 || r.left < pr.left - 1)) return true;
+      var vw = document.documentElement.clientWidth || window.innerWidth;
+      var kapEkranda = pr.left >= -1 && pr.right <= vw + 1;
+      if (kapEkranda && (r.right > vw + 1 || r.left < -1)) return true;
+    }
+    return false;
+  }
+
+  
+  function mxLangLabel(a) {
+    if (!a || a.querySelector(".wm-lang-name")) return;
+    var kod = (a.getAttribute("hreflang") || "").trim();
+    if (!kod) return;
+    var metin = (a.textContent || "").trim();
+    if (metin && metin.toLowerCase() !== kod.toLowerCase()) return;
+    var ad = "";
+    try { ad = new Intl.DisplayNames([kod], { type: "language" }).of(kod) || ""; } catch (e) { ad = ""; }
+    if (!ad || ad.toLowerCase() === kod.toLowerCase()) return;
+    ad = ad.charAt(0).toLocaleUpperCase(kod) + ad.slice(1);
+    if (metin && !a.querySelector("img")) {
+      a.textContent = "";
+      var c = document.createElement("span");
+      c.className = "wm-lang-code";
+      c.textContent = kod.toUpperCase();
+      a.appendChild(c);
+    }
+    var n = document.createElement("span");
+    n.className = "wm-lang-name";
+    n.textContent = ad;
+    a.appendChild(n);
+  }
+
+  function mxLangConvert(ul, links) {
+    var act = mxLangActiveLink(links);
+    var li = document.createElement("li");
+    li.className = "wm-lang-dd";
+    li.setAttribute("data-wm-lang-dd", "1");
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "wm-lang-toggle";
+    btn.setAttribute("aria-expanded", "false");
+    btn.setAttribute("aria-haspopup", "true");
+    var navLabel = ul.getAttribute("aria-label") || (ul.closest("nav") && ul.closest("nav").getAttribute("aria-label")) || "Language";
+    btn.setAttribute("aria-label", navLabel + ": " + (act.getAttribute("hreflang") || "").toUpperCase());
+    var img = act.querySelector("img");
+    if (img) {
+      btn.appendChild(img.cloneNode(false));
+    } else {
+      var code = document.createElement("span");
+      code.className = "wm-lang-code";
+      code.textContent = (act.getAttribute("hreflang") || act.textContent || "").trim().toUpperCase();
+      btn.appendChild(code);
+    }
+    btn.insertAdjacentHTML("beforeend", '<svg class="wm-lang-chev" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    var menu = document.createElement("ul");
+    menu.className = "wm-lang-menu";
+    var olds = Array.prototype.slice.call(ul.children);
+    for (var i = 0; i < olds.length; i++) menu.appendChild(olds[i]);
+    for (var j = 0; j < links.length; j++) mxLangLabel(links[j]);
+    li.appendChild(btn);
+    li.appendChild(menu);
+    ul.appendChild(li);
+    ul.classList.add("wm-lang-dd-host");
+    var bar = ul.closest(".wm-langbar");
+    if (bar) bar.classList.add("wm-langbar--auto-dd");
+    mxLangBind(li);
+  }
+
+  var mxLangRO = null;
+  function mxLangScan() {
+    var bars = document.querySelectorAll(".wm-langbar--dd");
+    for (var b = 0; b < bars.length; b++) mxLangBind(bars[b]);
+    var uls = document.querySelectorAll(mxLangSec);
+    for (var i = 0; i < uls.length; i++) {
+      var ul = uls[i];
+      if (ul.classList.contains("wm-lang-menu") || ul.classList.contains("wm-lang-dd-host") || ul.closest(".wm-lang-dd, .wm-langbar--dd")) continue;
+      var links = mxLangLinks(ul);
+      if (links.length < 2) continue;
+      if (mxLangNeedsDd(ul, links)) { mxLangConvert(ul, links); continue; }
+      if (mxLangRO && !ul.__wmLangObs) { ul.__wmLangObs = true; mxLangRO.observe(ul); }
+    }
+  }
+
+  var mxLangTimer = null;
+  function mxLangScanSoon() {
+    clearTimeout(mxLangTimer);
+    mxLangTimer = setTimeout(mxLangScan, 120);
+  }
+  window.mxLangDd = mxLangScan;
+
+  function mxInitLangDd() {
+    if (typeof ResizeObserver === "function") mxLangRO = new ResizeObserver(mxLangScanSoon);
+    mxLangScan();
+    window.addEventListener("resize", mxLangScanSoon, { passive: true });
+    window.addEventListener("load", mxLangScanSoon);
+  }
+
   setTimeout(function () {
     mxInitReveal();
     mxInitSmoothScroll();
   }, 60);
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mxInitLangDd);
+  else mxInitLangDd();
 })();
