@@ -417,10 +417,16 @@ function mxCerezAlanAyarla() {
   }
   var r = banner.getBoundingClientRect();
   
-  var alt = Math.max(0, window.innerHeight - r.bottom);
+  
+  var alt = (window.getComputedStyle ? parseFloat(window.getComputedStyle(banner).bottom) : 0) || 0;
   root.style.setProperty("--mx-cookie-pad", Math.ceil(r.height + alt + 16) + "px");
 }
 window.addEventListener("resize", mxCerezAlanAyarla);
+window.addEventListener("orientationchange", mxCerezAlanAyarla);
+if (window.visualViewport) window.visualViewport.addEventListener("resize", mxCerezAlanAyarla);
+
+window.addEventListener("pageshow", mxCerezAlanAyarla);
+document.addEventListener("mx:cerez-riza", function () { setTimeout(mxCerezAlanAyarla, 0); });
 
 function mxCerezDugmeler(ortaEtiket, ortaIslev) {
   var t = mxCookieEsc;

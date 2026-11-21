@@ -16,7 +16,8 @@
   animation: slideUp 0.3s ease-out;
 }
 
-body:has(.cookie-banner) {
+
+body:has(.cookie-banner:not([hidden])) {
   padding-bottom: max(var(--mx-cookie-pad, 0px), var(--mx-chat-pad, 0px));
 }
 @keyframes slideUp {
@@ -192,12 +193,32 @@ body:has(.cookie-banner) {
     bottom: 12px;
     padding: 16px;
   }
+  
+  .cookie-banner > div:first-child {
+    font-size: 13px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .cookie-banner-buttons {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .cookie-banner-buttons .cookie-btn {
+    width: 100%;
+    flex: none;
+    padding: 6px 4px;
+    min-height: 44px;
+    font-size: 12.5px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
   }
   .cookie-btn {
     width: 100%;
-    
     flex: 0 0 auto;
   }
   .cookie-reopen {
