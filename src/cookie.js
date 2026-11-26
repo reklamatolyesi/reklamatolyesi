@@ -375,7 +375,20 @@ function mxCerezKutulardan() {
 }
 
 
+function mxCerezSimgeGizli() {
+  try {
+    var m = document.querySelector('meta[name="mx-cerez-simge"]');
+    return !!(m && String(m.getAttribute("content") || "").toLowerCase() === "gizle");
+  } catch (e) {
+    return false;
+  }
+}
+
+
 function mxCerezYeniden(goster) {
+  if (goster && mxCerezSimgeGizli()) {
+    goster = false;
+  }
   var b = document.querySelector(".cookie-reopen");
   if (!b && goster) {
     b = document.createElement("button");
